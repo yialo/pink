@@ -24,7 +24,7 @@
             <a href="contest.html">Конкурс</a>
           </li>
           <li>
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
           </li>
         </ul>
         <button type="button">
@@ -32,6 +32,177 @@
         </button>
       </nav>
     </header>
+
+    <main>
+      <h1>Фотографии пользователей</h1>
+      <section>
+        <h2>Галерея</h2>
+        <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <div>
+          <img src="https://via.placeholder.com/320x137" width="320" height="137" alt="Панорама дня">
+          <p>Панорама дня</p>
+          <blockquote>
+            <cite>
+              <b>Анна</b>
+              <span>(5 минут назад)</span>
+            </cite>
+            <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p>
+              <a href="#">
+                <span>Поставить лайк</span>
+              </a>
+              <span>Нравится: 215</span>
+            </p>
+          </blockquote>
+        </div>
+        <ul>
+          <li>
+            <img src="https://via.placeholder.com/220x180" width="280" height="180" alt="Авто">
+            <blockquote>
+              <cite>
+                <b>Левон</b>
+                <span>(5 часов назад)</span>
+              </cite>
+              <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p>
+                <a href="#">
+                  <span>Поставить лайк</span>
+                </a>
+                <span>Нравится: 356</span>
+              </p>
+            </blockquote>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/220x180" width="280" height="180" alt="Барабаны">
+            <blockquote>
+              <cite>
+                <b>Антон</b>
+                <span>(12 часов назад)</span>
+              </cite>
+              <p>Соседи будут рады!</p>
+              <p>
+                <a href="#">
+                  <span>Поставить лайк</span>
+                </a>
+                <span>Нравится: 666</span>
+              </p>
+            </blockquote>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/220x180" width="280" height="180" alt="Стекло">
+            <blockquote>
+              <cite>
+                <b>Борис</b>
+                <span>(20 часов назад)</span>
+              </cite>
+              <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p>
+                <a href="#">
+                  <span>Поставить лайк</span>
+                </a>
+                <span>Нравится: 215</span>
+              </p>
+            </blockquote>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/220x180" width="280" height="180" alt="Бахча">
+            <blockquote>
+              <cite>
+                <b>Сергей</b>
+                <span>(25 часов назад)</span>
+              </cite>
+              <p>Самая кубанская в мире!</p>
+              <p>
+                <a href="#">
+                  <span>Поставить лайк</span>
+                </a>
+                <span>Нравится: 4</span>
+              </p>
+            </blockquote>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/220x180" width="280" height="180" alt="Горы">
+            <blockquote>
+              <cite>
+                <b>Максим</b>
+                <span>(40 часов назад)</span>
+              </cite>
+              <p>Где снег-то?</p>
+              <p>
+                <a href="#">
+                  <span>Поставить лайк</span>
+                </a>
+                <span>Нравится: 150</span>
+              </p>
+            </blockquote>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/220x180" width="280" height="180" alt="Самолёт">
+            <blockquote>
+              <cite>
+                <b>Надежда</b>
+                <span>(45 часов назад)</span>
+              </cite>
+              <p>Всем GM и взаимные лайки!</p>
+              <p>
+                <a href="#">
+                  <span>Поставить лайк</span>
+                </a>
+                <span>Нравится: 2560</span>
+              </p>
+            </blockquote>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Редактор</h2>
+        <p>Затмите их всех! Выкладывайте всё, что накопилось в телефоне!</p>
+        <img src="https://via.placeholder.com/280x374" width="280" height="374" alt="Целевое изображение">
+        <ul>
+          <li>
+            <button type="button">
+              <span>Режим кадрирования</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span>Режим настройки цвета</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span>Режим смены контрастности</span>
+            </button>
+          </li>
+        </ul>
+        <form action="https://echo.htmlacademy.ru" method="POST" name="image-data">
+          <ul>
+            <li>
+              <label for="crop">
+                <span>Кадрирование</span>
+              </label>
+              <input type="range" name="crop" id="crop">
+            </li>
+            <li>
+              <label for="color">
+                <span>Баланс цвета</span>
+              </label>
+              <input type="range" name="color" id="color">
+            </li>
+            <li>
+              <label for="contrast">
+                <span>Контрастность</span>
+              </label>
+              <input type="range" name="contrast" id="contrast">
+            </li>
+          </ul>
+          <button type="submit">
+            <span>Запостить</span>
+          </button>
+        </form>
+      </section>
+    </main>
 
     <footer>
       <a>
@@ -54,7 +225,7 @@
           </a>
         </li>
       </ul>
-      <a href="https://htmlacademy.ru/intensive/adaptive">
+      <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span>Разработано</span>
         <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy">
       </a>

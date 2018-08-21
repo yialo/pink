@@ -24,7 +24,7 @@
             <a>Конкурс</a>
           </li>
           <li>
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
           </li>
         </ul>
         <button type="button">
@@ -40,18 +40,20 @@
         <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
         <form action="https://echo.htmlacademy.ru" method="POST" name="contest-data">
           <fieldset>
-            <p>
-              <label for="last-name">Фамилия:</label>
-              <input type="text" name="last-name" id="last-name" required>
-            </p>
-            <p>
-              <label for="first-name">Имя:</label>
-              <input type="text" name="first-name" id="first-name" required>
-            </p>
-            <p>
-              <label for="middle-name">Отчество:</label>
-              <input type="text" name="middle-name" id="middle-name">
-            </p>
+            <ul>
+              <li>
+                <label for="last-name">Фамилия:</label>
+                <input type="text" name="last-name" id="last-name" required>
+              </li>
+              <li>
+                <label for="first-name">Имя:</label>
+                <input type="text" name="first-name" id="first-name" required>
+              </li>
+              <li>
+                <label for="middle-name">Отчество:</label>
+                <input type="text" name="middle-name" id="middle-name">
+              </li>
+            </ul>
           </fieldset>
           <fieldset>
             <legend>Ваши безбашенные достижения в путешествии</legend>
@@ -82,10 +84,47 @@
               </li>
             </ul>
           </fieldset>
+          <fieldset>
+            <legend>Контактная информация</legend>
+            <ul>
+              <li>
+                <label for="phone-number">Номер телефона</label>
+                <input type="tel" name="phone-number" id="phone-number">
+              </li>
+              <li>
+                <label for="email">Адрес почты</label>
+                <input type="email" name="email" id="email" required>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>С каким приложением путешествовали?</legend>
+            <ul>
+              <li>
+                <input type="radio" name="platform" value="ios" id="ios">
+                <label for="ios">Pink для iOS</label>
+              </li>
+              <li>
+                <input type="radio" name="platform" value="android" id="android">
+                <label for="android">Pink на Android</label>
+              </li>
+              <li>
+                <input type="radio" name="platform" value="winphone" id="winphone">
+                <label for="winphone">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Опишите свои эмоции</legend>
+            <textarea name="message"></textarea>
+          </fieldset>
+          <button type="submit">
+            <span>Отправить форму</span>
+          </button>
+          <p><span>*</span> — обязательные поля</p>
         </form>
       </section>
     </main>
-
 
     <footer>
       <a>
@@ -108,7 +147,7 @@
           </a>
         </li>
       </ul>
-      <a href="https://htmlacademy.ru/intensive/adaptive">
+      <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span>Разработано</span>
         <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy">
       </a>
