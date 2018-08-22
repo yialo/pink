@@ -8,7 +8,7 @@
     <header class="page-header page-header--index">
       <div class="page-header__top-wrapper aligner">
         <div class="page-header__wrapper">
-          <a class="logo logo--header page-header__logo">
+          <a class="page-header__logo logo logo--header">
             <img class="logo__image" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Pink">
           </a>
           <nav class="navigation page-header__navigation">
@@ -240,53 +240,55 @@
         </div>
       </section>
 
-      <section>
-        <h2>Контактная информация</h2>
-        <p>Остались вопросы? Свяжитесь с нами!</p>
-        <ul>
-          <li>
-            <b>Звоните:</b>
-            <span>+7 (812) 555-66-66</span>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <p class="contacts__tip">Остались вопросы? Свяжитесь с нами!</p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <b class="contacts__legend">Звоните:</b>
+            <span class="contacts__value">+7 (812) 555-66-66</span>
           </li>
-          <li>
-            <b>Пишите:</b>
-            <span>mail@htmlacademy.ru</span>
+          <li class="contacts__item">
+            <b class="contacts__legend">Пишите:</b>
+            <span class="contacts__value">
+              <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </span>
           </li>
-          <li>
-            <b>Приезжайте в гости:</b>
-            <span>ул. Большая Конюшенная, 19/8</span>
+          <li class="contacts__item">
+            <b class="contacts__legend">Приезжайте в гости:</b>
+            <span class="contacts__value">ул. Большая Конюшенная, 19/8</span>
           </li>
         </ul>
-        <div>
-          <img src="https://via.placeholder.com/320x200" width="320" height="200" alt="Схема проезда">
+        <div class="contacts__map">
+          <img class="contacts__map-image" src="https://via.placeholder.com/320x200" width="320" height="200" alt="Схема проезда">
         </div>
       </section>
     </main>
 
-    <footer>
-      <a>
-        <img src="https://via.placeholder.com/147x40" width="147" height="40" alt="Pink">
+    <footer class="page-footer">
+      <a class="page-header__logo logo logo--header">
+        <img class="" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Pink">
       </a>
-      <ul>
-        <li>
-          <a href="#">
-            <span>Twitter</span>
+      <ul class="page-header__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Twitter</span>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <span>Facebook</span>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Facebook</span>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <span>YouTube</span>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">YouTube</span>
           </a>
         </li>
       </ul>
-      <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-        <span>Разработано</span>
-        <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy">
+      <a class="page-header__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <span class="copyright__legend">Разработано</span>
+        <img class="copyright__image" src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy">
       </a>
     </footer>
   </body>
