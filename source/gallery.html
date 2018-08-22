@@ -5,13 +5,16 @@
     <title>Фотографии | HTML Academy: Pink</title>
   </head>
   <body>
-    <header>
+    <header class="page-header page-header--gallery">
       <a href="index.html">
         <img src="https://via.placeholder.com/147x40" width="147" height="40" alt="Pink">
       </a>
       <nav>
-        <button type="button">
-          <span>Показать меню</span>
+        <button class="navigation__button navigation__button--open" type="button">
+          <span class="visually-hidden">Показать меню</span>
+        </button>
+        <button class="navigation__button navigation__button--close" type="button">
+          <span class="visually-hidden">Скрыть меню</span>
         </button>
         <ul>
           <li>
@@ -27,14 +30,12 @@
             <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
           </li>
         </ul>
-        <button type="button">
-          <span>Скрыть меню</span>
-        </button>
       </nav>
+
+      <h1>Фотографии пользователей</h1>
     </header>
 
     <main>
-      <h1>Фотографии пользователей</h1>
       <section>
         <h2>Галерея</h2>
         <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
@@ -179,26 +180,23 @@
         <form action="https://echo.htmlacademy.ru" method="POST" name="image-data">
           <ul>
             <li>
-              <label for="crop">
-                <span>Кадрирование</span>
-              </label>
-              <input type="range" name="crop" id="crop">
+              <span>Кадрирование</span>
+              <input type="range" name="crop">
             </li>
             <li>
-              <label for="color">
-                <span>Баланс цвета</span>
-              </label>
-              <input type="range" name="color" id="color">
+              <span>Баланс цвета</span>
+              <input type="range" name="color">
             </li>
             <li>
-              <label for="contrast">
-                <span>Контрастность</span>
-              </label>
-              <input type="range" name="contrast" id="contrast">
+              <span>Контрастность</span>
+              <input type="range" name="contrast">
             </li>
           </ul>
           <button type="submit">
             <span>Запостить</span>
+          </button>
+          <button type="reset">
+            <span>Отмена</span>
           </button>
         </form>
       </section>
