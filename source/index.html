@@ -6,35 +6,39 @@
   </head>
   <body>
     <header class="page-header page-header--index">
-      <a class="logo logo--header page-header__logo">
-        <img class="logo__image" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Pink">
-      </a>
-      <nav class="navigation page-header__navigation">
-        <button class="navigation__button navigation__button--open" type="button">
-          <span class="visually-hidden">Показать меню</span>
-        </button>
-        <button class="navigation__button navigation__button--close" type="button">
-          <span class="visually-hidden">Скрыть меню</span>
-        </button>
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="gallery.html">Фотографии</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="contest.html">Конкурс</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__top-wrapper aligner">
+        <div class="page-header__wrapper">
+          <a class="logo logo--header page-header__logo">
+            <img class="logo__image" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Pink">
+          </a>
+          <nav class="navigation page-header__navigation">
+            <button class="navigation__button navigation__button--open" type="button">
+              <span class="visually-hidden">Показать меню</span>
+            </button>
+            <button class="navigation__button navigation__button--close" type="button">
+              <span class="visually-hidden">Скрыть меню</span>
+            </button>
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="gallery.html">Фотографии</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="contest.html">Конкурс</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
       <h1 class="visually-hidden">Мобильное приложение Pink</h1>
 
-      <section class="intro intro--index">
+      <section class="intro intro--index aligner">
         <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
         <a class="intro__main-link" href="#">Скачать приложение</a>
         <ul class="intro__list">
@@ -60,78 +64,82 @@
 
     <main class="page-main">
       <section class="advantages">
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <p class="advantages__lead">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
-        <ul class="advantages__list">
-          <li class="advantage advantages__item">
-            <h3 class="advantage__title">Поднимает настроение</h3>
-            <p class="advantage__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="advantage advantages__item">
-            <h3 class="advantage__title">Меняет мир вокруг</h3>
-            <p class="advantage__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="advantage advantages__item">
-            <h3 class="advantage__title">Заводит новых друзей</h3>
-            <p class="advantage__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <div class="research advantages__research">
-          <h3 class="research__title">Эффект на 24 часа!</h3>
-          <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="research__link" href="#">Узнать больше об исследовании</a>
+        <div class="advantages__wrapper aligner">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <p class="advantages__lead">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--mood">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item advantages__item--change">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item advantages__item--friends">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <div class="research advantages__research">
+            <h3 class="research__title">Эффект на 24 часа!</h3>
+            <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="research__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
 
-      <section>
-        <h2>Отзывы</h2>
-        <div>
-          <ul>
-            <li>
-              <blockquote>
-                <cite>
-                  <b>Николай Петров</b>
-                  <span>25 лет, водитель трамвая</span>
-                </cite>
-                <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </blockquote>
-            </li>
-            <li>
-              <blockquote>
-                <cite>
-                  <b>Автор отзыва №2</b>
-                  <span>Возраст и профессия</span>
-                </cite>
-                <p>Здесь расположен текст отзыва №2. Это небольшой по объёму отзыв.</p>
-              </blockquote>
-            </li>
-            <li>
-              <blockquote>
-                <cite>
-                  <b>Автор отзыва №3</b>
-                  <span>Возраст и профессия</span>
-                </cite>
-                <p>Здесь расположен текст отзыва №3. Как и в предыдущем случае, размер текста этого отзыва также не отличается размером.</p>
-              </blockquote>
-            </li>
-          </ul>
-          <button type="button">
-            <span>Предыдущий отзыв</span>
-          </button>
-          <button type="button">
-            <span>Следующий отзыв</span>
-          </button>
-        </div>
-        <div>
-          <button type="button">
-            <span>Отзыв №1</span>
-          </button>
-          <button type="button">
-            <span>Отзыв №2</span>
-          </button>
-          <button type="button">
-            <span>Отзыв №3</span>
-          </button>
+      <section class="reviews">
+        <div class="advantages__wrapper aligner">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <div class="slider">
+            <ul>
+              <li>
+                <blockquote>
+                  <cite>
+                    <b>Николай Петров</b>
+                    <span>25 лет, водитель трамвая</span>
+                  </cite>
+                  <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </blockquote>
+              </li>
+              <li>
+                <blockquote>
+                  <cite>
+                    <b>Автор отзыва №2</b>
+                    <span>Возраст и профессия</span>
+                  </cite>
+                  <p>Здесь расположен текст отзыва №2. Это небольшой по объёму отзыв.</p>
+                </blockquote>
+              </li>
+              <li>
+                <blockquote>
+                  <cite>
+                    <b>Автор отзыва №3</b>
+                    <span>Возраст и профессия</span>
+                  </cite>
+                  <p>Здесь расположен текст отзыва №3. Как и в предыдущем случае, размер текста этого отзыва также не отличается размером.</p>
+                </blockquote>
+              </li>
+            </ul>
+            <button type="button">
+              <span>Предыдущий отзыв</span>
+            </button>
+            <button type="button">
+              <span>Следующий отзыв</span>
+            </button>
+          </div>
+          <div>
+            <button type="button">
+              <span>Отзыв №1</span>
+            </button>
+            <button type="button">
+              <span>Отзыв №2</span>
+            </button>
+            <button type="button">
+              <span>Отзыв №3</span>
+            </button>
+          </div>
         </div>
       </section>
 
