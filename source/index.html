@@ -149,89 +149,94 @@
         </div>
       </section>
 
-      <section>
-        <h2>Тарифы и цены</h2>
-        <table>
-          <col span="1">
-          <col span="3">
-          <thead>
-            <tr>
-              <th></th>
-              <th>
-                <b>База</b>
-                <span>1,99 USD</span>
-                <span>Хит</span>
-              </th>
-              <th>
-                <b>Стандарт</b>
-                <span>3,99 USD</span>
-                <span>Хит</span>
-              </th>
-              <th>
-                <b>Анлим</b>
-                <span>9,99 USD</span>
-                <span>Хит</span>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Розовый фильтр</td>
-              <td>
-                <span>Розовый фильтр</span>
-                <span>Есть</span>
-              </td>
-              <td>
-                <span>Розовый фильтр</span>
-                <span>Есть</span>
-              </td>
-              <td>
-                <span>Розовый фильтр</span>
-                <span>Есть</span>
-              </td>
-            </tr>
-            <tr>
-              <td>Смайлики</td>
-              <td>
-                <span>Смайлики</span>
-                <span>Нет</span>
-              </td>
-              <td>
-                <span>Смайлики</span>
-                <span>Есть</span>
-              </td>
-              <td>
-                <span>Смайлики</span>
-                <span>Есть</span>
-              </td>
-            </tr>
-            <tr>
-              <td>Комментарии</td>
-              <td>
-                <span>Комментарии</span>
-                <span>Нет</span>
-              </td>
-              <td>
-                <span>Комментарии</span>
-                <span>Нет</span>
-              </td>
-              <td>
-                <span>Комментарии</span>
-                <span>Есть</span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <div>
-          <button type="button">
-            <span>Показать тариф «База»</span>
-          </button>
-          <button type="button">
-            <span>Показать тариф «Стандарт»</span>
-          </button>
-          <button type="button">
-            <span>Показать тариф «Анлим»</span>
-          </button>
+      <section class="price">
+        <div class="price__wrapper slider aligner">
+          <h2 class="visually-hidden">Тарифы и цены</h2>
+          <table class="price__table table slider__body">
+            <col class="table__column table__column--first" span="1">
+            <col class="table__column table__column--other" span="3">
+            <thead class="table__header">
+              <tr class="table__row">
+                <th class="table__header-cell"></th>
+                <th class="table__header-cell">
+                  <b class="table__column-title">База</b>
+                  <span class="table__price-value">1,99 USD</span>
+                </th>
+                <th class="table__header-cell">
+                  <b class="table__column-title">Стандарт</b>
+                  <span class="table__price-value">3,99 USD</span>
+                </th>
+                <th class="table__header-cell">
+                  <b class="table__column-title">Анлим</b>
+                  <span class="table__price-value">9,99 USD</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr class="table__row">
+                <td class="table__cell">Розовый фильтр</td>
+                <td class="table__cell">
+                  <span class="table__cell-name">Розовый фильтр</span>
+                  <span class="table__cell-value">Есть</span>
+                </td>
+                <td class="table__cell">
+                  <span class="table__cell-name">Розовый фильтр</span>
+                  <span class="table__cell-value">Есть</span>
+                </td>
+                <td class="table__cell">
+                  <span class="table__cell-name">Розовый фильтр</span>
+                  <span class="table__cell-value">Есть</span>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Смайлики</td>
+                <td class="table__cell">
+                  <span class="table__cell-name">Смайлики</span>
+                  <span class="table__cell-value">Нет</span>
+                </td>
+                <td class="table__cell">
+                  <span class="table__cell-name">Смайлики</span>
+                  <span class="table__cell-value">Есть</span>
+                </td>
+                <td class="table__cell">
+                  <span class="table__cell-name">Смайлики</span>
+                  <span class="table__cell-value">Есть</span>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Комментарии</td>
+                <td class="table__cell">
+                  <span class="table__cell-name">Комментарии</span>
+                  <span class="table__cell-value">Нет</span>
+                </td>
+                <td class="table__cell">
+                  <span class="table__cell-name">Комментарии</span>
+                  <span class="table__cell-value">Нет</span>
+                </td>
+                <td class="table__cell">
+                  <span class="table__cell-name">Комментарии</span>
+                  <span class="table__cell-value">Есть</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="price__toggles slider__toggles">
+            <li class="slider__toggles-item">
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Показать тариф «База»</span>
+              </button>
+            </li>
+            <li class="slider__toggles-item">
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Показать тариф «Стандарт»</span>
+              </button>
+            </li>
+            <li class="slider__toggles-item">
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Показать тариф «Анлим»</span>
+              </button>
+            </li>
+          </ul>
         </div>
       </section>
 
