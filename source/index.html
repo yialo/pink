@@ -90,56 +90,62 @@
       </section>
 
       <section class="reviews">
-        <div class="advantages__wrapper aligner">
+        <div class="reviews__wrapper slider aligner">
           <h2 class="visually-hidden">Отзывы</h2>
-          <div class="slider">
-            <ul>
-              <li>
-                <blockquote>
-                  <cite>
-                    <b>Николай Петров</b>
-                    <span>25 лет, водитель трамвая</span>
+          <div class="reviews__inner-wrapper slider__body">
+            <ul class="reviews__list slider__list">
+              <li class="reviews__item slider__item">
+                <blockquote class="reviews__content">
+                  <cite class="reviews__author">
+                    <b class="reviews__author-name">Николай Петров</b>
+                    <span class="reviews__author-status">25 лет, водитель трамвая</span>
                   </cite>
-                  <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                  <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                 </blockquote>
               </li>
-              <li>
-                <blockquote>
-                  <cite>
-                    <b>Автор отзыва №2</b>
-                    <span>Возраст и профессия</span>
+              <li class="reviews__item slider__item">
+                <blockquote class="reviews__content">
+                  <cite class="reviews__author">
+                    <b class="reviews__author-name">Автор отзыва №2</b>
+                    <span class="reviews__author-status">Возраст и профессия</span>
                   </cite>
-                  <p>Здесь расположен текст отзыва №2. Это небольшой по объёму отзыв.</p>
+                  <p class="reviews__text">Здесь расположен текст отзыва №2. Это небольшой по объёму отзыв.</p>
                 </blockquote>
               </li>
-              <li>
-                <blockquote>
-                  <cite>
-                    <b>Автор отзыва №3</b>
-                    <span>Возраст и профессия</span>
+              <li class="reviews__item slider__item">
+                <blockquote class="reviews__content">
+                  <cite class="reviews__author">
+                    <b class="reviews__author-name">Автор отзыва №3</b>
+                    <span class="reviews__author-status">Возраст и профессия</span>
                   </cite>
-                  <p>Здесь расположен текст отзыва №3. Как и в предыдущем случае, размер текста этого отзыва также не отличается размером.</p>
+                  <p class="reviews__text">Здесь расположен текст отзыва №3. Как и в предыдущем случае, размер текста этого отзыва также не отличается размером.</p>
                 </blockquote>
               </li>
             </ul>
-            <button type="button">
-              <span>Предыдущий отзыв</span>
+            <button class="reviews__button reviews__button--previous" type="button">
+              <span class="visually-hidden">Предыдущий отзыв</span>
             </button>
-            <button type="button">
-              <span>Следующий отзыв</span>
-            </button>
-          </div>
-          <div>
-            <button type="button">
-              <span>Отзыв №1</span>
-            </button>
-            <button type="button">
-              <span>Отзыв №2</span>
-            </button>
-            <button type="button">
-              <span>Отзыв №3</span>
+            <button class="reviews__button reviews__button--next" type="button">
+              <span class="visually-hidden">Следующий отзыв</span>
             </button>
           </div>
+          <ul class="reviews__toggles slider__toggles">
+            <li class="slider__toggles-item">
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Отзыв №1</span>
+              </button>
+            </li>
+            <li class="slider__toggles-item">
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Отзыв №2</span>
+              </button>
+            </li>
+            <li class="slider__toggles-item">
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Отзыв №3</span>
+              </button>
+            </li>
+          </ul>
         </div>
       </section>
 
