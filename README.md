@@ -1,2 +1,2 @@
 # Pink
-Pink project repo
+Pink project repository
