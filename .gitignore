@@ -1,3 +1,4 @@
+Thumbs.db
 .DS_Store
 .idea
 *.ai
@@ -5,8 +6,8 @@
 *.pdf
 *.psd
 *.sublime*
-node_modules/
 npm-debug.*
-Thumbs.db
 source/css/*.css
+build/
+node_modules/
 specification/
