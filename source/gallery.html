@@ -6,9 +6,9 @@
   </head>
   <body>
     <header class="page-header page-header--gallery">
-      <div class="page-header__top-wrapper aligner">
+      <div class="aligner page-header__top-wrapper">
         <div class="page-header__wrapper">
-          <a class="page-header__logo logo logo--header" href="index.html">
+          <a class="logo logo--header page-header__logo" href="index.html">
             <img class="logo__image" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Pink">
           </a>
           <nav class="navigation page-header__navigation">
@@ -36,17 +36,17 @@
         </div>
       </div>
 
-      <h1 page-header__title aligner>Фотографии пользователей</h1>
+      <h1 class="aligner page-header__title">Фотографии пользователей</h1>
     </header>
 
     <main class="page-main">
       <section class="feed">
         <h2 class="visually-hidden">Галерея</h2>
-        <p class="feed__slogan slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <div class="feed__panorama panorama">
+        <p class="feed__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <div class="panorama feed__panorama">
           <img class="panorama__image" src="https://via.placeholder.com/320x137" width="320" height="137" alt="Панорама дня">
           <p class="panorama__legend">Панорама дня</p>
-          <blockquote class="panorama__caption caption">
+          <blockquote class="caption panorama__caption">
             <cite class="caption__author">
               <b class="caption__name">Анна</b>
               <span class="caption__period">(5 минут назад)</span>
@@ -61,9 +61,9 @@
           </blockquote>
         </div>
         <ul class="feed__list">
-          <li class="feed__item article">
+          <li class="article feed__item">
             <img class="article__image" src="https://via.placeholder.com/220x180" width="280" height="180" alt="Авто">
-            <blockquote class="article__caption caption">
+            <blockquote class="caption article__caption">
               <cite class="caption__author">
                 <b class="caption__name">Левон</b>
                 <span class="caption__period">(5 часов назад)</span>
@@ -77,7 +77,7 @@
               </p>
             </blockquote>
           </li>
-          <li class="feed__item article">
+          <li class="article feed__item">
             <img class="article__image" src="https://via.placeholder.com/220x180" width="280" height="180" alt="Барабаны">
             <blockquote class="article__caption caption">
               <cite class="caption__author">
@@ -93,7 +93,7 @@
               </p>
             </blockquote>
           </li>
-          <li class="feed__item article">
+          <li class="article feed__item">
             <img class="article__image" src="https://via.placeholder.com/220x180" width="280" height="180" alt="Стекло">
             <blockquote class="article__caption caption">
               <cite class="caption__author">
@@ -109,7 +109,7 @@
               </p>
             </blockquote>
           </li>
-          <li class="feed__item article">
+          <li class="article feed__item">
             <img class="article__image" src="https://via.placeholder.com/220x180" width="280" height="180" alt="Бахча">
             <blockquote class="article__caption caption">
               <cite class="caption__author">
@@ -125,7 +125,7 @@
               </p>
             </blockquote>
           </li>
-          <li class="feed__item article">
+          <li class="article feed__item">
             <img class="article__image" src="https://via.placeholder.com/220x180" width="280" height="180" alt="Горы">
             <blockquote class="article__caption caption">
               <cite class="caption__author">
@@ -141,7 +141,7 @@
               </p>
             </blockquote>
           </li>
-          <li class="feed__item article">
+          <li class="article feed__item">
             <img class="article__image" src="https://via.placeholder.com/220x180" width="280" height="180" alt="Самолёт">
             <blockquote class="article__caption caption">
               <cite class="caption__author">
@@ -162,7 +162,7 @@
 
       <section class="editor">
         <h2 class="visually-hidden">Редактор</h2>
-        <p class="editor__slogan slogan">Затмите их всех! Выкладывайте всё, что накопилось в телефоне!</p>
+        <p class="editor__slogan">Затмите их всех! Выкладывайте всё, что накопилось в телефоне!</p>
         <img class="editor__image" src="https://via.placeholder.com/280x374" width="280" height="374" alt="Целевое изображение">
         <ul class="editor__toggles">
           <li class="editor__toggles-item">
@@ -207,10 +207,10 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-header__logo logo logo--header" href="index.html">
+      <a class="logo logo--footer page-header__logo">
         <img class="" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Pink">
       </a>
-      <ul class="page-header__social social">
+      <ul class="social page-header__social">
         <li class="social__item">
           <a class="social__link" href="#">
             <span class="visually-hidden">Twitter</span>
@@ -227,7 +227,7 @@
           </a>
         </li>
       </ul>
-      <a class="page-header__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+      <a class="copyright page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="copyright__legend">Разработано</span>
         <img class="copyright__image" src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy">
       </a>
