@@ -1,10 +1,42 @@
 .page-header {
   background-image: url("../img/back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center 0;
-  background-color: #273442;
+  background-repeat: repeat-y;
+  background-position: top;
+  background-color: $navy;
 }
 
-.page-header__outer-wrapper {
+.page-header__navigation {
+  position: relative;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header__logo-wrapper {
+  position: relative;
+  @include padding-vert(22px, 25px);
+  @include padding-hor;
+}
+
+.page-header__button {
+  position: absolute;
+  vertical-align: top;
+  background-color: red;
+  border-style: none;
+  &--open {
+    display: none;
+    width: 50px;
+    height: 24px;
+  }
+  &--close {
+    top: 21px;
+    right: 19px;
+    width: 24px;
+    height: 23px;
+  }
+}
+
+.page-header__list {
+  position: absolute;
+  top: calc(100% + 1px);
+  display: none;
+  width: 320px;
 }

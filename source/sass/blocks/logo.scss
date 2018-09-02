@@ -1,0 +1,15 @@
+.logo {
+  display: block;
+}
+
+.logo__image {
+  display: block;
+  &--header {
+    width: 75px;
+    height: 22px;
+  }
+  &--footer {
+    width: 147px;
+    height: 40px;
+  }
+}

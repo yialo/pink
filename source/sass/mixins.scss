@@ -2,4 +2,34 @@
   font-weight: $fw;
   font-size: $fs;
   line-height: $lh;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+@mixin list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+@mixin margin-vert($mt: 0, $mb: 0) {
+  margin-top: $mt;
+  margin-bottom: $mb;
+}
+
+@mixin padding-hor($ph: 20px) {
+  padding-right: $ph;
+  padding-left: $ph;
+}
+
+@mixin padding-vert($pt: 10px, $pb: 10px) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
+// AUXILIARY
+
+@mixin outline {
+  outline: 1px solid green;
+  outline-offset: -1px;
 }
