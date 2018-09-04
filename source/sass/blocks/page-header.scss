@@ -1,5 +1,5 @@
 .page-header {
-  background-image: url("../img/back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: repeat-y;
   background-position: top;
   background-color: $navy;
@@ -18,6 +18,7 @@
 
 .page-header__button {
   position: absolute;
+  display: inline-block;
   vertical-align: top;
   background-color: red;
   border-style: none;
@@ -39,4 +40,8 @@
   top: calc(100% + 1px);
   display: none;
   width: 320px;
+}
+
+.page-header__intro {
+  min-height: 500px;
 }
