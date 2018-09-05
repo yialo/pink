@@ -1,5 +1,5 @@
 .reviews {
-  @include padding-vert(42px, 133px);
+  @include padding-vert(42px, 123px);
 }
 
 .reviews__inner-wrapper {
@@ -16,8 +16,6 @@
 }
 
 .reviews__item {
-  @include outline;
-
   width: 320px;
   @include padding-hor;
 }
