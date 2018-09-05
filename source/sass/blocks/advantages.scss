@@ -5,6 +5,10 @@
 
 .advantages__wrapper {
   @include padding-hor;
+  padding-bottom: 300px;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 50% calc(100% + 60px);
 }
 
 .advantages__lead {
@@ -38,4 +42,8 @@
   @include margin-vert;
   @include font(400, 14px, 24px);
   color: $navy;
+}
+
+.advantages__research {
+  display: none;
 }
