@@ -1,0 +1,40 @@
+.reviews {
+  @include padding-vert(50px, 0);
+}
+
+.reviews__wrapper {
+  @include padding-hor;
+}
+
+.reviews__list {
+  @include list;
+}
+
+.reviews__content {
+  margin: 0;
+  text-align: center;
+}
+
+.reviews__author {
+  display: block;
+  font-style: normal;
+}
+
+.reviews__author-name {
+  display: block;
+  @include font(700, 18px, 30px);
+  color: black;
+}
+
+.reviews__author-status {
+  display: none;
+}
+
+.reviews__text {
+  @include margin-vert;
+  @include font(400, 14px, 30px);
+}
+
+.reviews__button {
+  display: none;
+}

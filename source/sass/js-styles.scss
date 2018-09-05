@@ -2,6 +2,11 @@
   display: none;
 }
 
-.menu-shadow {
+.visible {
+  display: block;
+}
+
+.menu-visible-style {
+  background-color: $navy;
   box-shadow: 0 1px 0 0 #000000;
 }

@@ -1,0 +1,11 @@
+.slider__toggles {
+  @include outline;
+
+  display: flex;
+  @include list;
+}
+
+.slider__toggle {
+  background-color: red;
+  border-style: none;
+}

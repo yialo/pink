@@ -16,6 +16,10 @@
   @include padding-hor;
 }
 
+.page-header__logo {
+  width: 75px;
+}
+
 .page-header__button {
   position: absolute;
   display: inline-block;
@@ -23,7 +27,8 @@
   background-color: red;
   border-style: none;
   &--open {
-    display: none;
+    top: 21px;
+    right: 20px;
     width: 50px;
     height: 24px;
   }
@@ -38,6 +43,6 @@
 .page-header__list {
   position: absolute;
   top: calc(100% + 1px);
-  display: none;
+  display: block;
   width: 320px;
 }
