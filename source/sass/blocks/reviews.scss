@@ -1,13 +1,25 @@
 .reviews {
-  @include padding-vert(50px, 0);
+  @include padding-vert(42px, 133px);
 }
 
-.reviews__wrapper {
-  @include padding-hor;
+.reviews__inner-wrapper {
+  margin-bottom: 10px;
+  overflow-x: hidden;
 }
 
 .reviews__list {
+  display: flex;
+  justify-content: center;
+  width: 300%;
   @include list;
+  margin-bottom: 33px;
+}
+
+.reviews__item {
+  @include outline;
+
+  width: 320px;
+  @include padding-hor;
 }
 
 .reviews__content {
@@ -17,6 +29,7 @@
 
 .reviews__author {
   display: block;
+  margin-bottom: 12px;
   font-style: normal;
 }
 
@@ -33,6 +46,7 @@
 .reviews__text {
   @include margin-vert;
   @include font(400, 14px, 30px);
+  color: $navy;
 }
 
 .reviews__button {

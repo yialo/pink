@@ -2,11 +2,19 @@
   display: none;
 }
 
-.visible {
-  display: block;
-}
-
 .menu-visible-style {
   background-color: $navy;
   box-shadow: 0 1px 0 0 #000000;
+}
+
+.show-reviews-item-1 {
+  transform: translateX(0);
+}
+
+.show-reviews-item-2 {
+  transform: translateX(-320px);
+}
+
+.show-reviews-item-3 {
+  transform: translateX(-640px);
 }

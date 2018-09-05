@@ -1,8 +1,11 @@
 .slider__toggles {
-  @include outline;
-
   display: flex;
+  justify-content: center;
   @include list;
+}
+
+.slider__toggles-item:not(:last-child) {
+  margin-right: 13px;
 }
 
 .slider__toggle {
