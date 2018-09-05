@@ -1,0 +1,54 @@
+.reviews {
+  @include padding-vert(42px, 133px);
+}
+
+.reviews__inner-wrapper {
+  margin-bottom: 10px;
+  overflow-x: hidden;
+}
+
+.reviews__list {
+  display: flex;
+  justify-content: center;
+  width: 300%;
+  @include list;
+  margin-bottom: 33px;
+}
+
+.reviews__item {
+  @include outline;
+
+  width: 320px;
+  @include padding-hor;
+}
+
+.reviews__content {
+  margin: 0;
+  text-align: center;
+}
+
+.reviews__author {
+  display: block;
+  margin-bottom: 12px;
+  font-style: normal;
+}
+
+.reviews__author-name {
+  display: block;
+  @include font(700, 18px, 30px);
+  color: black;
+}
+
+.reviews__author-status {
+  display: none;
+}
+
+.reviews__text {
+  @include margin-vert;
+  @include font(400, 14px, 30px);
+  color: $navy;
+}
+
+.reviews__button {
+  display: none;
+}

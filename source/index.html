@@ -16,11 +16,11 @@
             <button class="page-header__button page-header__button--open" type="button">
               <span class="visually-hidden">Показать меню</span>
             </button>
-            <button class="page-header__button page-header__button--close" type="button">
+            <button class="page-header__button page-header__button--close hidden" type="button">
               <span class="visually-hidden">Скрыть меню</span>
             </button>
           </div>
-          <ul class="main-menu page-header__list">
+          <ul class="main-menu page-header__list hidden">
             <li class="main-menu__item main-menu__item--current">
               <a class="main-menu__link">Главная</a>
             </li>
@@ -99,8 +99,8 @@
         <div class="slider aligner reviews__wrapper">
           <h2 class="visually-hidden">Отзывы</h2>
           <div class="slider__body reviews__inner-wrapper">
-            <ul class="slider__list reviews__list">
-              <li class="slider__item reviews__item">
+            <ul class="slider__list reviews__list show-reviews-item-1">
+              <li class="slider__item reviews__item reviews__item--1">
                 <blockquote class="reviews__content">
                   <cite class="reviews__author">
                     <b class="reviews__author-name">Николай Петров</b>
@@ -109,7 +109,7 @@
                   <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                 </blockquote>
               </li>
-              <li class="slider__item reviews__item">
+              <li class="slider__item reviews__item reviews__item--2">
                 <blockquote class="reviews__content">
                   <cite class="reviews__author">
                     <b class="reviews__author-name">Автор отзыва №2</b>
@@ -118,7 +118,7 @@
                   <p class="reviews__text">Здесь расположен текст отзыва №2. Это небольшой по объёму отзыв.</p>
                 </blockquote>
               </li>
-              <li class="slider__item reviews__item">
+              <li class="slider__item reviews__item reviews__item--3">
                 <blockquote class="reviews__content">
                   <cite class="reviews__author">
                     <b class="reviews__author-name">Автор отзыва №3</b>
@@ -137,17 +137,17 @@
           </div>
           <ul class="slider__toggles reviews__toggles">
             <li class="slider__toggles-item">
-              <button class="slider__toggle" type="button">
+              <button class="slider__toggle slider__toggle--1" type="button">
                 <span class="visually-hidden">Отзыв №1</span>
               </button>
             </li>
             <li class="slider__toggles-item">
-              <button class="slider__toggle" type="button">
+              <button class="slider__toggle slider__toggle--2" type="button">
                 <span class="visually-hidden">Отзыв №2</span>
               </button>
             </li>
             <li class="slider__toggles-item">
-              <button class="slider__toggle" type="button">
+              <button class="slider__toggle slider__toggle--3" type="button">
                 <span class="visually-hidden">Отзыв №3</span>
               </button>
             </li>
@@ -301,5 +301,8 @@
         </a>
       </div>
     </footer>
+
+    <script src="js/main-menu.js"></script>
+    <script src="js/slider-reviews.js"></script>
   </body>
 </html>
