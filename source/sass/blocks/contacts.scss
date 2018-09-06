@@ -1,0 +1,23 @@
+.contacts {
+  @include padding-vert(55px, 0);
+}
+
+.contacts__wrapper {
+  @include padding-hor;
+  text-align: center;
+}
+
+.contacts__tip {
+  @include margin-vert(33px);
+  @include font(300, 24px, 30px);
+  color: $navy;
+}
+
+.contacts__list {
+  @include list;
+}
+
+.contacts__legend {
+  display: block;
+  @include font(700, 18px, 24px);
+}
