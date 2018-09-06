@@ -8,10 +8,16 @@
   border-left: 2px solid #e5e5e5;
   border-right: 2px solid #e5e5e5;
   &--header {
-    position: relative;
-    @include padding-vert(17px, 20px);
+    @include padding-vert(17px, 18px);
     @include padding-hor;
     background-color: $navy;
+    border-bottom: 2px solid $navy;
+    &:nth-child(2) {
+      border-left: 2px solid $navy;
+    }
+    &:last-child {
+      border-right: 2px solid $navy;
+    }
   }
   &--body {
     position: relative;
@@ -21,6 +27,7 @@
     border-bottom: 2px solid #e5e5e5;
   }
   &--best {
+    position: relative;
     background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat;
     &::before {
