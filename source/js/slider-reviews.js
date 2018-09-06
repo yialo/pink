@@ -1,6 +1,6 @@
-var reviewButton_1 = document.querySelector('.slider__toggle--1');
-var reviewButton_2 = document.querySelector('.slider__toggle--2');
-var reviewButton_3 = document.querySelector('.slider__toggle--3');
+var reviewButton_1 = document.querySelector('.reviews__toggle--1');
+var reviewButton_2 = document.querySelector('.reviews__toggle--2');
+var reviewButton_3 = document.querySelector('.reviews__toggle--3');
 var reviewList = document.querySelector('.reviews__list');
 
 reviewButton_1.addEventListener('click', function(evt) {

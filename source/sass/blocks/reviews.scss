@@ -1,9 +1,9 @@
 .reviews {
-  @include padding-vert(42px, 123px);
+  @include padding-vert(42px, 133px);
 }
 
 .reviews__inner-wrapper {
-  margin-bottom: 10px;
+  margin-bottom: 33px;
   overflow-x: hidden;
 }
 
@@ -12,7 +12,6 @@
   justify-content: center;
   width: 300%;
   @include list;
-  margin-bottom: 33px;
 }
 
 .reviews__item {

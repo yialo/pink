@@ -1,20 +1,14 @@
 .table {
-  width: 838px;
+  width: 836px;
   border-collapse: collapse;
-  transform: translateX(calc(-836px / 3));
-}
-
-.price__inner-wrapper {
-  margin-bottom: 40px;
-  padding-left: 20px;
-  overflow-x: hidden;
 }
 
 .table__cell {
-  width: calc(836px / 3);
+  width: 280px;
   border-left: 2px solid #e5e5e5;
   border-right: 2px solid #e5e5e5;
   &--header {
+    position: relative;
     @include padding-vert(17px, 20px);
     @include padding-hor;
     background-color: $navy;
@@ -25,6 +19,22 @@
     padding-left: 22px;
     padding-right: 70px;
     border-bottom: 2px solid #e5e5e5;
+  }
+  &--best {
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    &::before {
+      content: "Хит";
+      position: absolute;
+      top: 5px;
+      left: 3px;
+      width: 74px;
+      height: 73px;
+      @include font(600, 14px, 30px);
+      text-transform: uppercase;
+      color: white;
+      transform: rotate(-45deg);
+    }
   }
   &:first-child {
     display: none;
