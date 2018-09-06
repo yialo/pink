@@ -3,6 +3,7 @@
 }
 
 .contacts__wrapper {
+  margin-bottom: 36px;
   @include padding-hor;
   text-align: center;
 }
@@ -17,7 +18,44 @@
   @include list;
 }
 
+.contacts__item {
+  &--phone {
+    margin-bottom: 21px;
+  }
+  &--email {
+    margin-bottom: 24px;
+  }
+}
+
 .contacts__legend {
   display: block;
   @include font(700, 18px, 24px);
+  &--email {
+    margin-bottom: 2px;
+  }
+  &--address {
+    margin-bottom: 2px;
+  }
+}
+
+.contacts__value {
+  display: block;
+  @include font(300, 24px, 30px);
+  color: #d22856;
+}
+
+.contacts__link {
+  display: block;
+}
+
+.contacts__map {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.contacts__map-image {
+  display: block;
+  width: 320px;
+  height: 200px;
 }
