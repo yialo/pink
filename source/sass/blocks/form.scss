@@ -32,6 +32,9 @@
 }
 
 .form__group--text {
+  .form__item:not(:last-child) {
+    margin-bottom: 17px;
+  }
   .form__label {
     margin-bottom: 5px;
     padding-left: 23px;
@@ -56,12 +59,10 @@
 }
 
 .form__group--select {
+  @include padding-vert(38px, 47px);
   background-color: #f2f2f2;
   .form__item {
     padding-left: 70px;
-  }
-  .form__item:not(:last-child) {
-    margin-bottom: 52px;
   }
   .form__label {
     position: relative;
@@ -78,16 +79,15 @@
 
 .form__group--fullname {
   @include padding-vert(34px, 42px);
-  .form__item:not(:last-child) {
-    margin-bottom: 17px;
-  }
 }
 
 .form__group--achievements {
-  @include padding-vert(38px, 47px);
   .form__group-title {
     @include padding-hor(20px);
     margin-bottom: 43px;
+  }
+  .form__item:not(:last-child) {
+    margin-bottom: 52px;
   }
   .form__label::before {
       content: "";
@@ -114,8 +114,15 @@
 }
 
 .form__group--contacts {
-  @include padding-vert(10px, 10px);
+  @include padding-vert(32px, 42px);
+}
+
+.form__group--application {
+  .form__group-title {
+    @include padding-hor(20px);
+    margin-bottom: 39px;
+  }
   .form__item:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 45px;
   }
 }
