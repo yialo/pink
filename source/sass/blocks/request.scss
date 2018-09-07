@@ -1,0 +1,15 @@
+.request {
+  padding-top: 45px;
+}
+
+.request__slogan {
+  @include margin-vert;
+  @include padding-hor;
+  @include font(400, 14px, 30px);
+  text-align: center;
+  color: $navy;
+}
+
+.request__slogan-tip {
+  display: none;
+}

@@ -41,7 +41,7 @@
 .contacts__value {
   display: block;
   @include font(300, 24px, 30px);
-  color: #d22856;
+  color: $pink;
 }
 
 .contacts__link {
