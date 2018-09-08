@@ -3,16 +3,8 @@
   text-align: center;
 }
 
-.advantages__wrapper {
-  @include padding-hor;
-  padding-bottom: 319px;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50% calc(100% + 41px);
-}
-
 .advantages__lead {
-  margin-bottom: 113px;
+  @include padding-hor;
   @include font(300, 24px, 29px);
   color: $navy;
 }
@@ -26,6 +18,17 @@
 
 .advantages__list {
   @include list;
+  @include padding-vert(113px, 319px);
+  @include padding-hor;
+  background-image:
+    url("../img/iphone-screen-mobile@1x.png"),
+    linear-gradient(174.4deg, transparent 62px, #f2f2f2 62px);
+  background-repeat:
+    no-repeat,
+    no-repeat;
+  background-position:
+    50% calc(100% + 41px),
+    0 0;
 }
 
 .advantages__item:not(:last-child) {

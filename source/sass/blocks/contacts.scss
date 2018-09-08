@@ -1,21 +1,19 @@
 .contacts {
   @include padding-vert(55px, 0);
-}
-
-.contacts__wrapper {
-  margin-bottom: 36px;
-  @include padding-hor;
   text-align: center;
 }
 
 .contacts__tip {
   @include margin-vert(33px);
+  @include padding-hor;
   @include font(300, 24px, 30px);
   color: $navy;
 }
 
 .contacts__list {
   @include list;
+  margin-bottom: 36px;
+  @include padding-hor;
 }
 
 .contacts__item {

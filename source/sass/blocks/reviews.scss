@@ -1,8 +1,8 @@
 .reviews {
-  @include padding-vert(42px, 133px);
+  @include padding-vert(42px, 0);
 }
 
-.reviews__inner-wrapper {
+.reviews__wrapper {
   margin-bottom: 33px;
   overflow-x: hidden;
 }
