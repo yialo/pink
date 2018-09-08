@@ -1,0 +1,45 @@
+.social {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.social__link {
+  position: relative;
+  display: block;
+  width: 51px;
+  height: 51px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+  &:hover {
+    border-color: $navy;
+  }
+  &:active {
+    border-color: rgba(40, 54, 69, 0.1);
+    .social__icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.social__icon {
+  position: absolute;
+  fill: $pink;
+  &--twitter {
+    top: 15.7px;
+    left: 14px;
+  }
+  &--facebook {
+    top: 11.5px;
+    left: 18px;
+  }
+  &--youtube {
+    top: 14.5px;
+    left: 17px;
+  }
+}
