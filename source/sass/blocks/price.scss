@@ -1,6 +1,8 @@
 .price {
-  @include padding-vert(133px, 34px);
-  background-image: linear-gradient(175.6deg, transparent 67px, #f2f2f2 67px);
+  @include padding-vert(133px, 47px);
+  &::before {
+    top: 2px;
+  }
 }
 
 .price__wrapper {

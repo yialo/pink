@@ -16,19 +16,23 @@
   }
 }
 
+.advantages__wrapper {
+  padding-top: 113px;
+  &::before {
+    top: 0;
+  }
+}
+
 .advantages__list {
   @include list;
-  @include padding-vert(113px, 319px);
+  padding-bottom: 319px;
   @include padding-hor;
   background-image:
-    url("../img/iphone-screen-mobile@1x.png"),
-    linear-gradient(174.4deg, transparent 62px, #f2f2f2 62px);
+    url("../img/iphone-screen-mobile@1x.png");
   background-repeat:
-    no-repeat,
     no-repeat;
   background-position:
-    50% calc(100% + 41px),
-    0 0;
+    50% calc(100% + 41px);
 }
 
 .advantages__item:not(:last-child) {
