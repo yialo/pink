@@ -5,6 +5,7 @@
 }
 
 .form__group-title {
+  width: 100%;
   float: left;
   @include font(400, 14px, 18px);
   text-align: center;
@@ -141,4 +142,54 @@
     border-radius: 50%;
     transform: rotate(-45deg);
   }
+}
+
+.form__group--emotions {
+  @include padding-vert(38px, 48px);
+  .form__group-title {
+    @include padding-hor(20px);
+    margin-bottom: 16px;
+  }
+  .form__field {
+    height: 201px;
+    @include padding-hor(19px);
+    overflow-y: hidden;
+    resize: none;
+  }
+}
+
+.form__button {
+  display: block;
+  width: calc(100% - 40px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+  @include padding-vert(17px, 16px);
+  @include padding-hor(10px);
+  @include font(700, 18px, 30px);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: #2aab6d;
+  border-style: none;
+  border-radius: 3px;
+  &:hover {
+    background-color: #1c9b5e;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.form__tip {
+  @include margin-vert;
+  @include padding-hor;
+  @include font(400, 14px, 30px);
+  text-align: center;
+  text-transform: uppercase;
+  color: $navy;
+}
+
+.form__highlight {
+  color: $pink;
 }
