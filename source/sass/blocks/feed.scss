@@ -1,0 +1,9 @@
+.feed {
+  padding-top: 20px;
+}
+
+.feed__slogan {
+  @include margin-vert;
+  @include font;
+
+}

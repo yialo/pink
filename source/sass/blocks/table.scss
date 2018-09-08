@@ -64,7 +64,7 @@
 }
 
 .table__cell-name {
-  @include font(400, 14px, 30px);
+  @include font;
   text-transform: uppercase;
   color: $navy;
 }

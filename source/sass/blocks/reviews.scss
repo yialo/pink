@@ -42,7 +42,7 @@
 
 .reviews__text {
   @include margin-vert;
-  @include font(400, 14px, 30px);
+  @include font;
   color: $navy;
 }
 
