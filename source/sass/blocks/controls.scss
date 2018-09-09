@@ -1,14 +1,14 @@
-.slider__toggles {
+.controls {
   display: flex;
   justify-content: center;
   @include list;
 }
 
-.slider__toggles-item:not(:last-child) {
+.controls__item:not(:last-child) {
   margin-right: 13px;
 }
 
-.slider__toggle {
+.controls__button {
   display: block;
   width: 12px;
   height: 12px;

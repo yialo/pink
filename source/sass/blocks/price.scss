@@ -1,8 +1,11 @@
 .price {
-  padding-bottom: 34px;
+  @include padding-vert(133px, 47px);
+  &::before {
+    top: 2px;
+  }
 }
 
-.price__inner-wrapper {
+.price__wrapper {
   margin-bottom: 40px;
   padding-left: 20px;
   overflow-x: hidden;
