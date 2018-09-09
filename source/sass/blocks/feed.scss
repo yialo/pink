@@ -1,9 +1,11 @@
 .feed {
-  padding-top: 20px;
+  padding-top: 45px;
 }
 
 .feed__slogan {
-  @include margin-vert;
+  @include margin-vert(49px);
+  @include padding-hor(35px);
   @include font;
-
+  text-align: center;
+  color: $navy;
 }

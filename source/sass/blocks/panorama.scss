@@ -1,0 +1,26 @@
+.panorama {
+  position: relative;
+}
+
+.panorama__image {
+  display: block;
+}
+
+.panorama__legend {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 140px;
+  @include margin-vert;
+  @include padding-vert(6px, 6px);
+  @include padding-hor(10px);
+  @include font(700, 12px, 24px);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: $pink;
+}
+
+.panorama__caption {
+  @include margin-hor;
+}

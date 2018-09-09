@@ -1,0 +1,50 @@
+.caption {
+  margin: 0;
+  @include padding-vert(18px, 20px);
+  @include padding-hor(18px);
+  background-color: #f2f2f2;
+}
+
+.caption__header {
+  display: block;
+  line-height: 24px;
+  color: $navy;
+}
+
+.caption__author {
+  @include font(700, 14px, 24px);
+}
+
+.caption__timestamp {
+  @include font(300, 12px, 24px);
+  text-transform: uppercase;
+}
+
+.caption__text {
+  @include margin-vert(10px);
+  @include font(400, 14px, 24px);
+  color: $navy;
+}
+
+.caption__feedback {
+  display: flex;
+  @include margin-vert;
+}
+
+.caption__like {
+  display: block;
+  margin-right: 20px;
+}
+
+.caption__icon {
+  display: block;
+  margin-top: 6px;
+  fill: $pink;
+}
+
+.caption__response {
+  display: block;
+  @include font(400, 12px, 24px);
+  text-transform: uppercase;
+  color: $pink;
+}
