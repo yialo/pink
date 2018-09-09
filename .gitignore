@@ -9,7 +9,6 @@ Thumbs.db
 *.sublime*
 .vscode/
 npm-debug.*
-source/css/*.css
 build/
 node_modules/
 specification/
