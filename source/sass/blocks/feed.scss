@@ -9,3 +9,16 @@
   text-align: center;
   color: $navy;
 }
+
+.feed__panorama {
+  margin-bottom: 20px;
+}
+
+.feed__list {
+  @include list;
+  @include padding-hor;
+}
+
+.feed__item:not(:last-child) {
+  margin-bottom: 20px;
+}

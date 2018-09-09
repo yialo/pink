@@ -1,0 +1,13 @@
+.slogan {
+  @include padding-hor(35px);
+  @include font;
+  text-align: center;
+  color: $navy;
+  &--wide {
+    @include padding-hor;
+  }
+}
+
+.slogan-tip {
+  display: none;
+}
