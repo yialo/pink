@@ -22,9 +22,8 @@
 
 .page-header__button {
   position: absolute;
-  display: inline-block;
-  vertical-align: top;
-  background-color: red;
+  padding: 0;
+  background-color: transparent;
   border-style: none;
   &--open {
     top: 21px;
@@ -36,9 +35,13 @@
     top: 21px;
     right: 19px;
     width: 24px;
-    height: 23px;
+    height: 24px;
   }
 }
+
+ .page-header__icon {
+   display: block;
+ }
 
 .page-header__list {
   position: absolute;

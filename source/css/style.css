@@ -1009,6 +1009,9 @@ a {
     margin-top: 12px;
     margin-left: 12px; }
 
+.intro__icon {
+  display: block; }
+
 .intro__annotation {
   margin-top: 0;
   margin-bottom: 0;
@@ -1096,9 +1099,8 @@ a {
 
 .page-header__button {
   position: absolute;
-  display: inline-block;
-  vertical-align: top;
-  background-color: red;
+  padding: 0;
+  background-color: transparent;
   border-style: none; }
   .page-header__button--open {
     top: 21px;
@@ -1109,7 +1111,10 @@ a {
     top: 21px;
     right: 19px;
     width: 24px;
-    height: 23px; }
+    height: 24px; }
+
+.page-header__icon {
+  display: block; }
 
 .page-header__list {
   position: absolute;

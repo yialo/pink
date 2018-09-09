@@ -61,6 +61,10 @@
   }
 }
 
+ .intro__icon {
+   display: block;
+ }
+
 .intro__annotation {
   @include margin-vert;
   @include font(300, 14px, 24px);
