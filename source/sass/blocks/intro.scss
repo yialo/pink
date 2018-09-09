@@ -30,23 +30,21 @@
 
 .intro__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   @include list;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
   @include padding-hor(2px);
 }
 
 .intro__item {
   width: 92px;
-  height: 56px;
 }
 
 .intro__link {
   display: block;
-  background-color: red;
   &--apple {
     width: 47px;
-    height: 56px;
+    height: 57px;
     margin-left: 35px;
   }
   &--android {
@@ -57,7 +55,7 @@
   }
   &--windows {
     width: 44px;
-    height: 41px;
+    height: 42px;
     margin-top: 12px;
     margin-left: 12px;
   }

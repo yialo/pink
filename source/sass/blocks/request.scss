@@ -5,4 +5,12 @@
 
 .request__slogan {
   @include margin-vert;
+  @include padding-hor;
+  @include font;
+  text-align: center;
+  color: $navy;
+}
+
+.request__slogan-tip {
+  display: none;
 }

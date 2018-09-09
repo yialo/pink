@@ -61,7 +61,7 @@
 
 .form__group--select {
   @include padding-vert(38px, 47px);
-  background-color: #f2f2f2;
+  background-color: $gray;
   .form__item {
     padding-left: 70px;
   }

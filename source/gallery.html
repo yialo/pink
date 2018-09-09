@@ -43,7 +43,7 @@
     <main class="page-main aligner">
       <section class="feed">
         <h2 class="visually-hidden">Галерея</h2>
-        <p class="slogan feed__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <p class="feed__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="panorama feed__panorama">
           <img class="panorama__image" src="https://via.placeholder.com/320x137" width="320" height="137" alt="Панорама дня">
           <p class="panorama__legend">Панорама дня</p>
@@ -198,47 +198,49 @@
 
       <section class="editor">
         <h2 class="visually-hidden">Редактор</h2>
-        <p class="slogan editor__slogan">Затмите их всех!<br>Выкладывайте всё, что накопилось в телефоне!</p>
-        <img class="editor__image" src="https://via.placeholder.com/280x374" width="280" height="374" alt="Целевое изображение">
-        <ul class="editor__toggles">
-          <li class="editor__toggles-item">
-            <button class="editor__toggle-button editor__toggle-button--crop" type="button">
-              <span class="visually-hidden">Режим кадрирования</span>
-            </button>
-          </li>
-          <li class="editor__toggles-item">
-            <button class="editor__toggle-button editor__toggle-button--color" type="button">
-              <span class="visually-hidden">Режим настройки цвета</span>
-            </button>
-          </li>
-          <li class="editor__toggles-item">
-            <button class="editor__toggle-button editor__toggle-button--contrast" type="button">
-              <span class="visually-hidden">Режим смены контрастности</span>
-            </button>
-          </li>
-        </ul>
-        <form class="editor__form" action="https://echo.htmlacademy.ru" method="POST" name="image-data">
-          <ul class="editor__list">
-            <li class="editor__item">
-              <span class="visually-hidden">Кадрирование</span>
-              <input class="editor__scale editor__scale--crop" type="range" name="crop">
+        <p class="editor__slogan">Затмите их всех!<br>Выкладывайте всё, что накопилось в телефоне!</p>
+        <div class="editor__wrapper">
+          <img class="editor__image" src="https://via.placeholder.com/280x374" width="280" height="374" alt="Целевое изображение">
+          <ul class="editor__toggles">
+            <li class="editor__toggles-item">
+              <button class="editor__toggle-button editor__toggle-button--crop" type="button">
+                <span class="visually-hidden">Режим кадрирования</span>
+              </button>
             </li>
-            <li class="editor__item">
-              <span class="visually-hidden">Баланс цвета</span>
-              <input class="editor__scale editor__scale--color" type="range" name="color">
+            <li class="editor__toggles-item">
+              <button class="editor__toggle-button editor__toggle-button--color" type="button">
+                <span class="visually-hidden">Режим настройки цвета</span>
+              </button>
             </li>
-            <li class="editor__item">
-              <span class="visually-hidden">Контрастность</span>
-              <input class="editor__scale editor__scale--contrast" type="range" name="contrast">
+            <li class="editor__toggles-item">
+              <button class="editor__toggle-button editor__toggle-button--contrast" type="button">
+                <span class="visually-hidden">Режим смены контрастности</span>
+              </button>
             </li>
           </ul>
-          <button class="editor__button editor__button--send" type="submit">
-            <span class="button-fix">Запостить</span>
-          </button>
-          <button class="editor__button editor__button--cancel" type="reset">
-            <span class="button-fix">Отмена</span>
-          </button>
-        </form>
+          <form class="editor__form" action="https://echo.htmlacademy.ru" method="POST" name="image-data">
+            <ul class="editor__list">
+              <li class="editor__item">
+                <span class="visually-hidden">Кадрирование</span>
+                <input class="editor__scale editor__scale--crop" type="range" name="crop">
+              </li>
+              <li class="editor__item">
+                <span class="visually-hidden">Баланс цвета</span>
+                <input class="editor__scale editor__scale--color" type="range" name="color">
+              </li>
+              <li class="editor__item">
+                <span class="visually-hidden">Контрастность</span>
+                <input class="editor__scale editor__scale--contrast" type="range" name="contrast">
+              </li>
+            </ul>
+            <button class="editor__button editor__button--send" type="submit">
+              <span class="button-fix">Запостить</span>
+            </button>
+            <button class="editor__button editor__button--cancel" type="reset">
+              <span class="button-fix">Отмена</span>
+            </button>
+          </form>
+        </div>
       </section>
     </main>
 
