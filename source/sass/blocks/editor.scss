@@ -11,7 +11,7 @@
 }
 
 .editor__wrapper {
-  padding-top: 20px;
+  @include padding-vert(20px, 41px);
   @include padding-hor;
   background-color: $gray;
 }
@@ -58,13 +58,13 @@
 
 .editor__list {
   @include list;
+  margin-bottom: 57px;
 }
 
 .editor__scale {
   -webkit-appearance: none;
   width: 240px;
   height: 14px;
-  margin-bottom: 40px;
   @include margin-hor(20px);
   padding: 0;
   background: transparent;
@@ -110,4 +110,7 @@
 
 .editor__button {
   width: 280px;
+  &:first-of-type {
+    margin-bottom: 12px;
+  }
 }
