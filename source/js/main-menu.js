@@ -9,6 +9,7 @@ menuOpen.addEventListener('click', function(evt) {
   firstMenuItem.classList.toggle('menu-visible-style');
   menuOpen.classList.toggle('hidden');
   menuClose.classList.toggle('hidden');
+  menuClose.focus();
 });
 
 menuClose.addEventListener('click', function(evt) {
@@ -17,4 +18,15 @@ menuClose.addEventListener('click', function(evt) {
   firstMenuItem.classList.toggle('menu-visible-style');
   menuOpen.classList.toggle('hidden');
   menuClose.classList.toggle('hidden');
+  menuOpen.focus();
+});
+
+window.addEventListener('keydown', function(evt) {
+  if (evt.keyCode === 27) {
+    if (!menu.classList.contains('hidden')) {
+      evt.preventDefault();
+      menu.classList.add('hidden');
+      firstMenuItem.classList.remove('menu-visible-style');
+    }
+  }
 });

@@ -235,23 +235,23 @@
           </ul>
           <form class="editor__form" action="https://echo.htmlacademy.ru" method="POST" name="image-data">
             <ul class="editor__list">
-              <li class="editor__item">
+              <li class="editor__item editor__item--crop">
                 <span class="visually-hidden">Кадрирование</span>
-                <input class="editor__scale editor__scale--crop" type="range" name="crop">
+                <input class="editor__scale editor__scale--crop" type="range" name="crop" mix="0" max="100" value="84.75">
               </li>
-              <li class="editor__item">
+              <li class="editor__item editor__item--color hidden">
                 <span class="visually-hidden">Баланс цвета</span>
-                <input class="editor__scale editor__scale--color" type="range" name="color">
+                <input class="editor__scale editor__scale--color" type="range" name="color" mix="0" max="100" value="84.75">
               </li>
-              <li class="editor__item">
+              <li class="editor__item editor__item--contrast hidden">
                 <span class="visually-hidden">Контрастность</span>
-                <input class="editor__scale editor__scale--contrast" type="range" name="contrast">
+                <input class="editor__scale editor__scale--contrast" type="range" name="contrast" mix="0" max="100" value="84.75">
               </li>
             </ul>
-            <button class="editor__button editor__button--send" type="submit">
+            <button class="button button--send editor__button" type="submit">
               <span class="button-fix">Запостить</span>
             </button>
-            <button class="editor__button editor__button--cancel" type="reset">
+            <button class="button button--cancel editor__button" type="reset">
               <span class="button-fix">Отмена</span>
             </button>
           </form>
@@ -301,6 +301,7 @@
       </div>
     </footer>
 
+    <script src="js/editor-range.js"></script>
     <script src="js/main-menu.js"></script>
   </body>
 </html>

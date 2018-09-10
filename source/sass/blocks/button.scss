@@ -1,0 +1,45 @@
+.button {
+  display: block;
+  @include padding-vert(15px, 16px);
+  @include padding-hor(10px);
+  @include font(700, 18px, 18px);
+  background-color: transparent;
+  border-radius: 27px;
+  &--white {
+    color: white;
+    border: 3px solid white;
+    &:hover {
+      color: $pink;
+      background-color: white;
+    }
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+      background-color: white;
+    }
+  }
+  &--send {
+    color: $pink;
+    border: 3px solid $pink;
+    &:hover {
+      color: white;
+      background-color: $pink;
+    }
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: $pink;
+    }
+  }
+  &--cancel {
+    color: rgba(40, 54, 69, 0.1);
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    &:hover {
+      color: rgba(40, 54, 69, 0.3);
+      border: 3px solid rgba(40, 54, 69, 0.3);
+    }
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(40, 54, 69, 0.3);
+      border: 3px solid transparent;
+    }
+  }
+}
