@@ -33,6 +33,22 @@
   padding-bottom: $pb;
 }
 
+@mixin range-track {
+  width: 240px;
+  height: 2px;
+  background-color: $navy;
+  border-style: none;
+}
+
+@mixin range-thumb {
+  width: 14px;
+  height: 14px;
+  background-color: $gray;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 // AUXILIARY
 
 @mixin outline {

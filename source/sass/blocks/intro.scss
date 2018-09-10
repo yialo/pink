@@ -17,15 +17,8 @@
 }
 
 .intro__main-link {
-  display: block;
   width: 280px;
   margin-bottom: 32px;
-  @include padding-vert(15px, 16px);
-  @include padding-hor(10px);
-  @include font(700, 18px, 18px);
-  color: white;
-  border: 3px solid white;
-  border-radius: 27px;
 }
 
 .intro__list {
