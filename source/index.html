@@ -270,28 +270,28 @@
         </ul>
       </section>
 
-      <section class="contacts aligner">
+      <section class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <p class="contacts__tip">Остались вопросы? Свяжитесь с нами!</p>
-        <ul class="contacts__list">
-          <li class="contacts__item contacts__item--phone">
-            <b class="contacts__legend contacts__legend--phone">Звоните:</b>
-            <span class="contacts__value">+7 (812) 555-66-66</span>
-          </li>
-          <li class="contacts__item contacts__item--email">
-            <b class="contacts__legend contacts__legend--email">Пишите:</b>
-            <span class="contacts__value">
-              <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </span>
-          </li>
-          <li class="contacts__item contacts__item--address">
-            <b class="contacts__legend contacts__legend--address">Приезжайте в гости:</b>
-            <span class="contacts__value">ул. Большая Конюшенная, 19/8</span>
-          </li>
-        </ul>
-        <div class="contacts__map">
-          <img class="contacts__map-image" src="https://via.placeholder.com/320x200" width="320" height="200" alt="Схема проезда">
+        <div class="contact__wrapper aligner">
+          <p class="contacts__tip">Остались вопросы? Свяжитесь с нами!</p>
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--phone">
+              <b class="contacts__legend contacts__legend--phone">Звоните:</b>
+              <span class="contacts__value">+7 (812) 555-66-66</span>
+            </li>
+            <li class="contacts__item contacts__item--email">
+              <b class="contacts__legend contacts__legend--email">Пишите:</b>
+              <span class="contacts__value">
+                <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </span>
+            </li>
+            <li class="contacts__item contacts__item--address">
+              <b class="contacts__legend contacts__legend--address">Приезжайте в гости:</b>
+              <span class="contacts__value">ул. Большая Конюшенная, 19/8</span>
+            </li>
+          </ul>
         </div>
+        <div class="contacts__map" id="map"></div>
       </section>
     </main>
 
@@ -337,6 +337,7 @@
       </div>
     </footer>
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss&callback=initMap" async defer></script>
     <script src="js/main-menu.js"></script>
     <script src="js/slider-reviews.js"></script>
     <script src="js/slider-price.js"></script>
