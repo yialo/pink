@@ -25,8 +25,11 @@ window.addEventListener('keydown', function(evt) {
   if (evt.keyCode === 27) {
     if (!menu.classList.contains('hidden')) {
       evt.preventDefault();
-      menu.classList.add('hidden');
-      firstMenuItem.classList.remove('menu-visible-style');
+      menu.classList.toggle('hidden');
+      firstMenuItem.classList.toggle('menu-visible-style');
+      menuOpen.classList.toggle('hidden');
+      menuClose.classList.toggle('hidden');
+      menuOpen.focus();
     }
   }
 });
