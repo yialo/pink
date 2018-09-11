@@ -7,7 +7,7 @@ function initMap() {
     zoomControl: true,
     mapTypeControl: false,
     scaleControl: false,
-    scrollWheel: false,
+    scrollwheel: false,
     streetViewControl: false,
     rotateControl: false,
     fullscreenControl: true,
