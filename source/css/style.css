@@ -1102,6 +1102,9 @@ a {
   padding-left: 2px; }
 
 .intro__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 92px; }
 
 .intro__link {
