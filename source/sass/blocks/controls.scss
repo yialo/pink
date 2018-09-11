@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   @include list;
-}
+}  
 
 .controls__item:not(:last-child) {
   margin-right: 13px;
