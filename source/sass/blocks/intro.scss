@@ -23,6 +23,7 @@
 
 .intro__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   @include list;
   margin-bottom: 21px;

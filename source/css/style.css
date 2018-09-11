@@ -625,6 +625,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
     width: 100%;
     height: 33px;
     background-image: url("../img/bg-triangle-white-footer.svg");
@@ -730,7 +731,7 @@ a {
 .editor__toggle-button {
   display: block;
   padding: 0;
-  background-color: red;
+  background-color: transparent;
   border-style: none; }
   .editor__toggle-button--crop {
     width: 44px;
@@ -745,6 +746,16 @@ a {
     height: 32px;
     margin-top: 6px;
     margin-left: 16px; }
+  .editor__toggle-button:hover .editor__path {
+    fill: rgba(40, 54, 69, 0.5); }
+  .editor__toggle-button:active .editor__path {
+    fill: #d22856; }
+
+.editor__icon {
+  display: block; }
+
+.editor__path {
+  fill: rgba(40, 54, 69, 0.3); }
 
 .editor__list {
   margin-top: 0;
@@ -1090,6 +1101,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1498,8 +1511,7 @@ a {
   color: #283645; }
 
 .table__cell-value {
-  position: absolute;
-  background-color: red; }
+  position: absolute; }
   .table__cell-value--yes {
     top: 20px;
     right: 17px;
@@ -1509,7 +1521,10 @@ a {
     top: 15px;
     right: 19px;
     width: 27px;
-    height: 26px; }
+    height: 27px; }
+
+.table__cell-icon {
+  display: block; }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -1557,3 +1572,6 @@ input[type="radio"].visually-hidden {
 .show-price-item-3 {
   -webkit-transform: translateX(-556px);
           transform: translateX(-556px); }
+
+.editor-active-toggle {
+  fill: #d22856; }

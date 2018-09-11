@@ -72,7 +72,6 @@
 
 .table__cell-value {
   position: absolute;
-  background-color: red;
   &--yes {
     top: 20px;
     right: 17px;
@@ -83,6 +82,10 @@
     top: 15px;
     right: 19px;
     width: 27px;
-    height: 26px;
+    height: 27px;
   }
+}
+
+.table__cell-icon {
+  display: block;
 }

@@ -33,10 +33,12 @@
   width: 92px;
 }
 
+
+
 .editor__toggle-button {
   display: block;
   padding: 0;
-  background-color: red;
+  background-color: transparent;
   border-style: none;
   &--crop {
     width: 44px;
@@ -54,6 +56,20 @@
     margin-top: 6px;
     margin-left: 16px;
   }
+  &:hover .editor__path {
+    fill: rgba(40, 54, 69, 0.5);
+  }
+  &:active .editor__path {
+    fill: $pink;
+  }
+}
+
+.editor__icon {
+  display: block;
+}
+
+.editor__path {
+  fill: rgba(40, 54, 69, 0.3);
 }
 
 .editor__list {
