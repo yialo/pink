@@ -11,7 +11,7 @@ function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), mapOptions);
   var marker = new google.maps.Marker({
     map: map,
-    position: target,
-    icon: icon
+    position: target
+    // icon: icon
   });
 }
