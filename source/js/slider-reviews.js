@@ -8,6 +8,9 @@ reviewButton_1.addEventListener('click', function(evt) {
   reviewList.classList.add('show-reviews-item-1');
   reviewList.classList.remove('show-reviews-item-2');
   reviewList.classList.remove('show-reviews-item-3');
+  reviewButton_1.classList.add('slider-active-toggle');
+  reviewButton_2.classList.remove('slider-active-toggle');
+  reviewButton_3.classList.remove('slider-active-toggle');
 });
 
 reviewButton_2.addEventListener('click', function(evt) {
@@ -15,6 +18,9 @@ reviewButton_2.addEventListener('click', function(evt) {
   reviewList.classList.remove('show-reviews-item-1');
   reviewList.classList.add('show-reviews-item-2');
   reviewList.classList.remove('show-reviews-item-3');
+  reviewButton_1.classList.remove('slider-active-toggle');
+  reviewButton_2.classList.add('slider-active-toggle');
+  reviewButton_3.classList.remove('slider-active-toggle');
 });
 
 reviewButton_3.addEventListener('click', function(evt) {
@@ -22,4 +28,7 @@ reviewButton_3.addEventListener('click', function(evt) {
   reviewList.classList.remove('show-reviews-item-1');
   reviewList.classList.remove('show-reviews-item-2');
   reviewList.classList.add('show-reviews-item-3');
+  reviewButton_1.classList.remove('slider-active-toggle');
+  reviewButton_2.classList.remove('slider-active-toggle');
+  reviewButton_3.classList.add('slider-active-toggle');
 });
