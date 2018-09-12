@@ -355,8 +355,10 @@ a {
   text-decoration: none; }
 
 .advantages {
-  padding-top: 41px;
-  text-align: center; }
+  padding-top: 41px; }
+  @media (min-width: 660px) {
+    .advantages {
+      padding-top: 49px; } }
 
 .advantages__lead {
   padding-right: 20px;
@@ -366,18 +368,30 @@ a {
   font-size: 24px;
   line-height: 29px;
   font-family: "Open Sans", "Arial", sans-serif;
+  text-align: center;
   color: #283645; }
+  @media (min-width: 660px) {
+    .advantages__lead {
+      font-weight: 300;
+      font-style: normal;
+      font-size: 40px;
+      line-height: 48px;
+      font-family: "Open Sans", "Arial", sans-serif; } }
 
 .advantages__lead-item {
   margin-top: 0;
   margin-bottom: 0; }
   .advantages__lead-item:not(:last-child) {
     margin-bottom: 29px; }
+  @media (min-width: 660px) {
+    .advantages__lead-item:not(:last-child) {
+      margin-bottom: 0; }
+    .advantages__lead-item:last-child {
+      padding-right: 30px;
+      padding-left: 30px; } }
 
 .advantages__wrapper {
   padding-top: 113px; }
-  .advantages__wrapper::before {
-    top: 0; }
 
 .advantages__list {
   margin-top: 0;
@@ -387,12 +401,27 @@ a {
   padding-bottom: 319px;
   padding-right: 20px;
   padding-left: 20px;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-image: url("../img/iphone-screen-3-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 50% calc(100% + 41px); }
+  @media (min-width: 660px) {
+    .advantages__list {
+      padding-top: 122px;
+      padding-bottom: 43px;
+      padding-left: 330px;
+      background-image: url("../img/iphone-screen-3-tablet@1x.png");
+      background-position: 21px calc(100% + 0px); } }
 
-.advantages__item:not(:last-child) {
-  margin-bottom: 32px; }
+.advantages__item {
+  text-align: center; }
+  .advantages__item:not(:last-child) {
+    margin-bottom: 32px; }
+  @media (min-width: 660px) {
+    .advantages__item {
+      width: 310px;
+      text-align: left; }
+      .advantages__item:not(:last-child) {
+        margin-bottom: 35px; } }
 
 .advantages__title {
   margin-top: 0;
@@ -416,10 +445,11 @@ a {
 
 .advantages__research {
   display: none; }
+  @media (min-width: 660px) {
+    .advantages__research {
+      display: block; } }
 
 .aligner {
-  outline: 1px solid green;
-  outline-offset: -1px;
   width: 320px;
   margin: 0 auto; }
   @media (min-width: 660px) {
@@ -435,14 +465,21 @@ a {
     content: "";
     position: absolute;
     left: 0;
+    top: 0;
+    z-index: -1;
     width: 100%;
     height: 100%;
     background-color: #f2f2f2;
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 100% auto;
-    z-index: -1; }
+    background-size: 100% auto; }
+  @media (min-width: 660px) {
+    .background-triangle {
+      padding-top: 0px; }
+      .background-triangle::before {
+        top: 20px;
+        height: calc(100% - 20px); } }
 
 .button-fix {
   position: relative;
@@ -1109,21 +1146,24 @@ a {
       display: flex;
       padding-top: 94px;
       padding-bottom: 110px;
+      padding-left: 20px;
       background-image: url("../img/iphone-hand-tablet@1x.png");
       background-position: -20px 100%; } }
 
 .intro__wrapper {
   padding-top: 28px;
   padding-bottom: 30px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 0;
+  padding-left: 0;
   text-align: center;
   background-color: #1d2631; }
   @media (min-width: 660px) {
     .intro__wrapper {
       padding-top: 0;
       padding-bottom: 0;
-      width: 340px;
+      width: 300px;
+      padding-right: 0;
+      padding-left: 0;
       background-color: transparent; } }
 
 .intro__title {
@@ -1414,6 +1454,55 @@ a {
 .request__slogan-tip {
   display: none; }
 
+.research {
+  outline: 1px solid green;
+  outline-offset: -1px;
+  position: relative;
+  padding-top: 96px;
+  padding-bottom: 50px;
+  padding-left: 330px;
+  padding-right: 20px; }
+
+.research__icon {
+  position: absolute;
+  top: 59px;
+  left: 21px; }
+
+.research__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 36px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: black; }
+
+.research__description {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-right: 5px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #283645; }
+
+.research__link {
+  display: block;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-decoration: underline;
+  color: #d22856; }
+  .research__link:hover {
+    color: rgba(210, 40, 86, 0.6); }
+  .research__link:active {
+    color: rgba(210, 40, 86, 0.3); }
+
 .reviews {
   padding-top: 42px;
   padding-bottom: 0; }
@@ -1606,6 +1695,12 @@ a {
 
 .table__cell-icon {
   display: block; }
+
+.text-wrap {
+  display: none; }
+  @media (min-width: 660px) {
+    .text-wrap {
+      display: inline; } }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
