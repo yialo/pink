@@ -1,4 +1,10 @@
 .aligner {
+  @include outline;
+
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: 660px) {
+    width: 660px;
+  }
 }

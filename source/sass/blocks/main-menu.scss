@@ -16,4 +16,7 @@
   &:not(:last-child) {
     margin-bottom: 1px;
   }
+  @media (min-width: 660px) {
+    padding-top: 17px;
+  }
 }

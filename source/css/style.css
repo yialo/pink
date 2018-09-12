@@ -418,8 +418,13 @@ a {
   display: none; }
 
 .aligner {
+  outline: 1px solid green;
+  outline-offset: -1px;
   width: 320px;
   margin: 0 auto; }
+  @media (min-width: 660px) {
+    .aligner {
+      width: 660px; } }
 
 .article__image {
   display: block; }
@@ -1097,6 +1102,15 @@ a {
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 0 110px; }
+  @media (min-width: 660px) {
+    .intro {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-top: 94px;
+      padding-bottom: 110px;
+      background-image: url("../img/iphone-hand-tablet@1x.png");
+      background-position: -20px 100%; } }
 
 .intro__wrapper {
   padding-top: 28px;
@@ -1105,13 +1119,35 @@ a {
   padding-left: 20px;
   text-align: center;
   background-color: #1d2631; }
+  @media (min-width: 660px) {
+    .intro__wrapper {
+      padding-top: 0;
+      padding-bottom: 0;
+      width: 340px;
+      background-color: transparent; } }
 
 .intro__title {
   display: none; }
+  @media (min-width: 660px) {
+    .intro__title {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 31px;
+      padding-right: 30px;
+      padding-left: 30px;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 40px;
+      line-height: 48px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      color: white; } }
 
 .intro__main-link {
-  width: 280px;
+  width: 100%;
   margin-bottom: 32px; }
+  @media (min-width: 660px) {
+    .intro__main-link {
+      margin-bottom: 45px; } }
 
 .intro__list {
   display: -webkit-box;
@@ -1129,6 +1165,9 @@ a {
   margin-bottom: 21px;
   padding-right: 2px;
   padding-left: 2px; }
+  @media (min-width: 660px) {
+    .intro__list {
+      margin-bottom: 36px; } }
 
 .intro__item {
   display: -webkit-box;
@@ -1165,6 +1204,9 @@ a {
   line-height: 24px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: white; }
+  @media (min-width: 660px) {
+    .intro__annotation {
+      font-size: 18px; } }
 
 .logo {
   display: block; }
@@ -1174,6 +1216,10 @@ a {
   .logo__image--header {
     width: 75px;
     height: 22px; }
+    @media (min-width: 660px) {
+      .logo__image--header {
+        width: 147px;
+        height: 40px; } }
   .logo__image--footer {
     width: 147px;
     height: 40px; }
@@ -1202,6 +1248,9 @@ a {
           box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15), 0 1px 0 0 #000000; }
   .main-menu__item:not(:last-child) {
     margin-bottom: 1px; }
+  @media (min-width: 660px) {
+    .main-menu__item {
+      padding-top: 17px; } }
 
 .page-footer {
   padding-top: 40px;
@@ -1228,8 +1277,10 @@ a {
   background-color: #283645; }
 
 .page-header__navigation {
-  position: relative;
   background-color: rgba(0, 0, 0, 0.3); }
+
+.page-header__wrapper {
+  position: relative; }
 
 .page-header__logo-wrapper {
   position: relative;
@@ -1237,9 +1288,15 @@ a {
   padding-bottom: 25px;
   padding-right: 20px;
   padding-left: 20px; }
+  @media (min-width: 660px) {
+    .page-header__logo-wrapper {
+      padding-bottom: 42px; } }
 
 .page-header__logo {
   width: 75px; }
+  @media (min-width: 660px) {
+    .page-header__logo {
+      width: 147px; } }
 
 .page-header__button {
   position: absolute;
@@ -1251,11 +1308,19 @@ a {
     right: 20px;
     width: 50px;
     height: 24px; }
+    @media (min-width: 660px) {
+      .page-header__button--open {
+        top: 39px;
+        right: 20px; } }
   .page-header__button--close {
     top: 21px;
     right: 19px;
     width: 24px;
     height: 24px; }
+    @media (min-width: 660px) {
+      .page-header__button--close {
+        top: 39px;
+        right: 19px; } }
 
 .page-header__icon {
   display: block; }
@@ -1265,6 +1330,9 @@ a {
   top: calc(100% + 1px);
   display: block;
   width: 320px; }
+  @media (min-width: 660px) {
+    .page-header__list {
+      width: 660px; } }
 
 .page-header__title {
   margin-top: 0;
@@ -1358,9 +1426,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 300%;
   margin-top: 0;
   margin-bottom: 0;
