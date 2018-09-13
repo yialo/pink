@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: 0 110px;
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablet) {
     display: flex;
     @include padding-vert(94px, 110px);
     padding-left: 20px;
@@ -19,7 +19,7 @@
   text-align: center;
   background-color: #1d2631;
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablet) {
     @include padding-vert(0, 0);
     width: 300px;
     @include padding-hor(0);
@@ -30,7 +30,7 @@
 .intro__title {
   display: none;
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablet) {
     display: block;
     @include margin-vert(31px);
     @include padding-hor(30px);
@@ -43,7 +43,7 @@
   width: 100%;
   margin-bottom: 32px;
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablet) {
     margin-bottom: 45px;
   }
 }
@@ -56,7 +56,7 @@
   margin-bottom: 21px;
   @include padding-hor(2px);
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablet) {
     margin-bottom: 36px;
   }
 }
@@ -96,7 +96,7 @@
   @include font(300, 14px, 24px);
   color: white;
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablet) {
     font-size: 18px;
   }
 }

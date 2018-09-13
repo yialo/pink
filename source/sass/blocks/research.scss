@@ -2,9 +2,14 @@
   @include outline;
 
   position: relative;
+  display: none;
   @include padding-vert(96px, 50px);
   padding-left: 330px;
   padding-right: 20px;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
 }
 
 .research__icon {
