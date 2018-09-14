@@ -15,7 +15,7 @@
 
 .intro__wrapper {
   @include padding-vert(28px, 30px);
-  @include padding-hor(0);
+  @include padding-hor;
   text-align: center;
   background-color: #1d2631;
 
@@ -28,7 +28,9 @@
 }
 
 .intro__title {
-  display: none;
+  @media (max-width: $mobile-max) {
+    @include visually-hider;
+  }
 
   @media (min-width: $tablet) {
     display: block;

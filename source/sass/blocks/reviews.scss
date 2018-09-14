@@ -1,8 +1,14 @@
 .reviews {
-  @include padding-vert(42px, 0);
+  background-color: white;
 }
 
 .reviews__wrapper {
+  @include outline;
+
+  @include padding-vert(42px, 0);
+}
+
+.reviews__inner-wrapper {
   margin-bottom: 33px;
   overflow-x: hidden;
 }

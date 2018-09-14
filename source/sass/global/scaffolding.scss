@@ -10,11 +10,12 @@ html {
 
 body {
   min-width: 320px;
-
   @include font;
   color: $navy;
-
-  background-color: #ffffff;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: repeat-y;
+  background-position: top;
+  background-color: $navy;
 }
 
 img {

@@ -5,7 +5,7 @@
     <title>HTML Academy: Pink</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page">
     <header class="page-header page-header--index">
       <nav class="page-header__navigation">
         <div class="page-header__wrapper aligner">
@@ -120,72 +120,76 @@
             </li>
           </ul>
         </div>
-        <div class="research advantages__research aligner">
-          <svg class="research__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="238px" height="276px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
-            <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z" fill="#dedede"/>
-          </svg>
-          <h3 class="research__title">Эффект<br class="text-wrap"> на 24 часа!</h3>
-          <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект<br class="text-wrap"> от использования приложения длится целые сутки!</p>
-          <a class="research__link" href="#">Узнать больше об исследовании</a>
+        <div class="research advantages__research">
+          <div class="research__wrapper aligner">
+            <svg class="research__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="238px" height="276px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+              <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z" fill="#dedede"/>
+            </svg>
+            <h3 class="research__title">Эффект<br class="text-wrap"> на 24 часа!</h3>
+            <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект<br class="text-wrap"> от использования приложения длится целые сутки!</p>
+            <a class="research__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
 
-      <section class="reviews aligner">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <div class="reviews__wrapper">
-          <ul class="reviews__list show-reviews-item-1">
-            <li class="reviews__item reviews__item--1">
-              <blockquote class="reviews__content">
-                <cite class="reviews__author">
-                  <b class="reviews__author-name">Николай Петров</b>
-                  <span class="reviews__author-status">25 лет, водитель трамвая</span>
-                </cite>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </blockquote>
+      <section class="reviews">
+        <div class="reviews__wrapper aligner">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <div class="reviews__inner-wrapper">
+            <ul class="reviews__list show-reviews-item-1">
+              <li class="reviews__item reviews__item--1">
+                <blockquote class="reviews__content">
+                  <cite class="reviews__author">
+                    <b class="reviews__author-name">Николай Петров</b>
+                    <span class="reviews__author-status">25 лет, водитель трамвая</span>
+                  </cite>
+                  <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </blockquote>
+              </li>
+              <li class="reviews__item reviews__item--2">
+                <blockquote class="reviews__content">
+                  <cite class="reviews__author">
+                    <b class="reviews__author-name">Автор отзыва №2</b>
+                    <span class="reviews__author-status">Возраст и профессия</span>
+                  </cite>
+                  <p class="reviews__text">Здесь расположен текст отзыва №2. Это небольшой по объёму отзыв.</p>
+                </blockquote>
+              </li>
+              <li class="reviews__item reviews__item--3">
+                <blockquote class="reviews__content">
+                  <cite class="reviews__author">
+                    <b class="reviews__author-name">Автор отзыва №3</b>
+                    <span class="reviews__author-status">Возраст и профессия</span>
+                  </cite>
+                  <p class="reviews__text">Здесь расположен текст отзыва №3. Как и в предыдущем случае, размер текста этого отзыва также не отличается размером.</p>
+                </blockquote>
+              </li>
+            </ul>
+            <button class="reviews__button reviews__button--previous" type="button">
+              <span class="visually-hidden">Предыдущий отзыв</span>
+            </button>
+            <button class="reviews__button reviews__button--next" type="button">
+              <span class="visually-hidden">Следующий отзыв</span>
+            </button>
+          </div>
+          <ul class="controls reviews__toggles">
+            <li class="controls__item">
+              <button class="controls__button reviews__toggle reviews__toggle--1 slider-active-toggle" type="button">
+                <span class="visually-hidden">Отзыв №1</span>
+              </button>
             </li>
-            <li class="reviews__item reviews__item--2">
-              <blockquote class="reviews__content">
-                <cite class="reviews__author">
-                  <b class="reviews__author-name">Автор отзыва №2</b>
-                  <span class="reviews__author-status">Возраст и профессия</span>
-                </cite>
-                <p class="reviews__text">Здесь расположен текст отзыва №2. Это небольшой по объёму отзыв.</p>
-              </blockquote>
+            <li class="controls__item">
+              <button class="controls__button reviews__toggle reviews__toggle--2" type="button">
+                <span class="visually-hidden">Отзыв №2</span>
+              </button>
             </li>
-            <li class="reviews__item reviews__item--3">
-              <blockquote class="reviews__content">
-                <cite class="reviews__author">
-                  <b class="reviews__author-name">Автор отзыва №3</b>
-                  <span class="reviews__author-status">Возраст и профессия</span>
-                </cite>
-                <p class="reviews__text">Здесь расположен текст отзыва №3. Как и в предыдущем случае, размер текста этого отзыва также не отличается размером.</p>
-              </blockquote>
+            <li class="controls__item">
+              <button class="controls__button reviews__toggle reviews__toggle--3" type="button">
+                <span class="visually-hidden">Отзыв №3</span>
+              </button>
             </li>
           </ul>
-          <button class="reviews__button reviews__button--previous" type="button">
-            <span class="visually-hidden">Предыдущий отзыв</span>
-          </button>
-          <button class="reviews__button reviews__button--next" type="button">
-            <span class="visually-hidden">Следующий отзыв</span>
-          </button>
         </div>
-        <ul class="controls reviews__toggles">
-          <li class="controls__item">
-            <button class="controls__button reviews__toggle reviews__toggle--1 slider-active-toggle" type="button">
-              <span class="visually-hidden">Отзыв №1</span>
-            </button>
-          </li>
-          <li class="controls__item">
-            <button class="controls__button reviews__toggle reviews__toggle--2" type="button">
-              <span class="visually-hidden">Отзыв №2</span>
-            </button>
-          </li>
-          <li class="controls__item">
-            <button class="controls__button reviews__toggle reviews__toggle--3" type="button">
-              <span class="visually-hidden">Отзыв №3</span>
-            </button>
-          </li>
-        </ul>
       </section>
 
       <section class="price background-triangle">
