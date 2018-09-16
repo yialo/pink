@@ -7,11 +7,6 @@
   &--header {
     width: 75px;
     height: 22px;
-
-    @media (min-width: $tablet) {
-      width: 147px;
-      height: 40px;
-    }
   }
   &--footer {
     width: 147px;
