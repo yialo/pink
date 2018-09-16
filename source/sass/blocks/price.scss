@@ -1,8 +1,5 @@
 .price {
   @include padding-vert(133px, 47px);
-  &::before {
-    top: 2px;
-  }
 }
 
 .price__wrapper {

@@ -16,7 +16,4 @@
   &:not(:last-child) {
     margin-bottom: 1px;
   }
-  @media (min-width: $tablet) {
-    padding-top: 17px;
-  }
 }

@@ -1,8 +1,4 @@
 .aligner {
   width: 320px;
   margin: 0 auto;
-
-  @media (min-width: $tablet) {
-    width: 660px;
-  }
 }

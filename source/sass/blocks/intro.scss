@@ -2,15 +2,8 @@
   padding-top: 396px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 110px;
-
-  @media (min-width: $tablet) {
-    display: flex;
-    @include padding-vert(94px, 110px);
-    padding-left: 20px;
-    background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: -20px 100%;
-  }
+  background-origin: content-box;
+  background-position: calc(50% - 31px) -286px;
 }
 
 .intro__wrapper {
@@ -18,36 +11,17 @@
   @include padding-hor;
   text-align: center;
   background-color: #1d2631;
-
-  @media (min-width: $tablet) {
-    @include padding-vert(0, 0);
-    width: 300px;
-    @include padding-hor(0);
-    background-color: transparent;
-  }
 }
 
 .intro__title {
   @media (max-width: $mobile-max) {
     @include visually-hider;
   }
-
-  @media (min-width: $tablet) {
-    display: block;
-    @include margin-vert(31px);
-    @include padding-hor(30px);
-    @include font(300, 40px, 48px);
-    color: white;
-  }
 }
 
 .intro__main-link {
   width: 100%;
   margin-bottom: 32px;
-
-  @media (min-width: $tablet) {
-    margin-bottom: 45px;
-  }
 }
 
 .intro__list {
@@ -57,10 +31,6 @@
   @include list;
   margin-bottom: 21px;
   @include padding-hor(2px);
-
-  @media (min-width: $tablet) {
-    margin-bottom: 36px;
-  }
 }
 
 .intro__item {
@@ -97,8 +67,4 @@
   @include margin-vert;
   @include font(300, 14px, 24px);
   color: white;
-
-  @media (min-width: $tablet) {
-    font-size: 18px;
-  }
 }

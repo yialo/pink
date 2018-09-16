@@ -1,0 +1,17 @@
+.page-main__title {
+  @include margin-vert;
+  padding-top: 30px;
+  @include padding-hor;
+  @include font(300, 24px, 30px);
+  text-align: center;
+  color: white;
+  &--index {
+    @include visually-hider;
+  }
+  &--contest {
+    padding-bottom: 51px;
+  }
+  &--gallery {
+    padding-bottom: 81px;
+  }
+}

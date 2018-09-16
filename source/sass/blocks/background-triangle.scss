@@ -1,25 +1,7 @@
 .background-triangle {
-  position: relative;
-  z-index: 0;
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: $gray;
-    background-image: url("../img/bg-triangle-white.svg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100% auto;
-  }
-
-  @media (min-width: $tablet) {
-    &::before {
-      top: 20px;
-      height: calc(100% - 20px);
-    }
-  }
+  background-color: $gray;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
 }
