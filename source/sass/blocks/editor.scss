@@ -1,5 +1,6 @@
 .editor {
   padding-top: 40px;
+  background-color: white;
 }
 
 .editor__slogan {
@@ -10,10 +11,13 @@
   color: $navy;
 }
 
-.editor__wrapper {
+.editor__outer-wrapper {
+  background-color: $gray;
+}
+
+.editor__inner-wrapper {
   @include padding-vert(20px, 41px);
   @include padding-hor;
-  background-color: $gray;
 }
 
 .editor__image {

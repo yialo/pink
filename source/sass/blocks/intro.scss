@@ -2,22 +2,32 @@
   padding-top: 396px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 110px;
+  background-origin: content-box;
+  background-position: calc(50% - 31px) -286px;
 }
 
-.intro__wrapper {
-  @include padding-vert(28px, 30px);
-  @include padding-hor;
-  text-align: center;
+.intro__outer-wrapper {
   background-color: #1d2631;
 }
 
+.intro__inner-wrapper {
+  width: 320px;
+  @include margin-hor(auto);
+  @include padding-vert(28px, 30px);
+  @include padding-hor;
+  text-align: center;
+}
+
 .intro__title {
-  display: none;
+  display: none; //tmp declaration
+
+  @media (max-width: $mobile-max) {
+    @include visually-hider;
+  }
 }
 
 .intro__main-link {
-  width: 280px;
+  width: 100%;
   margin-bottom: 32px;
 }
 

@@ -1,13 +1,9 @@
 .page-header {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: repeat-y;
-  background-position: top;
-  background-color: $navy;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__navigation {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__logo-wrapper {
@@ -25,6 +21,7 @@
   padding: 0;
   background-color: transparent;
   border-style: none;
+
   &--open {
     top: 21px;
     right: 20px;
@@ -39,28 +36,13 @@
   }
 }
 
- .page-header__icon {
-   display: block;
- }
+.page-header__icon {
+  display: block;
+}
 
 .page-header__list {
   position: absolute;
   top: calc(100% + 1px);
   display: block;
   width: 320px;
-}
-
-.page-header__title {
-  @include margin-vert;
-  padding-top: 30px;
-  @include padding-hor;
-  @include font(300, 24px, 30px);
-  text-align: center;
-  color: white;
-  &--contest {
-    padding-bottom: 51px;
-  }
-  &--gallery {
-    padding-bottom: 81px;
-  }
 }

@@ -1,0 +1,44 @@
+.research {
+  display: none;
+}
+
+.research__wrapper {
+  @include outline;
+
+  position: relative;
+  @include padding-vert(96px, 50px);
+  padding-left: 330px;
+  padding-right: 20px;
+}
+
+.research__icon {
+  position: absolute;
+  top: 59px;
+  left: 21px;
+}
+
+.research__title {
+  @include margin-vert(10px);
+  @include font(700, 30px, 36px);
+  color: black;
+}
+
+.research__description {
+  @include margin-vert(10px);
+  padding-right: 5px;
+  @include font(400, 14px, 24px);
+  color: $navy;
+}
+
+.research__link {
+  display: block;
+  @include font(400, 14px, 24px);
+  text-decoration: underline;
+  color: $pink;
+  &:hover {
+    color: rgba(210, 40, 86, 0.6);
+  }
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
