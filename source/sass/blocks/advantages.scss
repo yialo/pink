@@ -18,7 +18,18 @@
 }
 
 .advantages__wrapper {
+  position: relative;
+  z-index: 0;
   padding-top: 113px;
+  background-color: $gray;
+}
+
+.advantages__background-image {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: auto;
 }
 
 .advantages__list {

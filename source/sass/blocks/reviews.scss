@@ -3,8 +3,6 @@
 }
 
 .reviews__wrapper {
-  @include outline;
-
   @include padding-vert(42px, 0);
 }
 

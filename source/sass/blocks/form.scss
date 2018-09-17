@@ -1,5 +1,11 @@
+.form__wrapper {
+  &--gray {
+    background-color: $gray;
+  }
+}
+
 .form__group {
-  margin: 0;
+  @include margin-vert;
   @include padding-hor;
   border-style: none;
 }
@@ -62,7 +68,6 @@
 
 .form__group--select {
   @include padding-vert(38px, 47px);
-  background-color: $gray;
   .form__item {
     padding-left: 70px;
   }

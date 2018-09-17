@@ -6,14 +6,21 @@
   background-position: calc(50% - 31px) -286px;
 }
 
-.intro__wrapper {
-  @include padding-vert(28px, 30px);
-  @include padding-hor;
-  text-align: center;
+.intro__outer-wrapper {
   background-color: #1d2631;
 }
 
+.intro__inner-wrapper {
+  width: 320px;
+  @include margin-hor(auto);
+  @include padding-vert(28px, 30px);
+  @include padding-hor;
+  text-align: center;
+}
+
 .intro__title {
+  display: none; //tmp declaration
+
   @media (max-width: $mobile-max) {
     @include visually-hider;
   }

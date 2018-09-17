@@ -1,6 +1,7 @@
 .contacts {
   @include padding-vert(42px, 0);
   text-align: center;
+  background-color: white;
 }
 
 .contacts__tip {
