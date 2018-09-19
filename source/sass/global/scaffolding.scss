@@ -12,14 +12,7 @@ body {
   min-width: 320px;
   @include font;
   color: $navy;
-<<<<<<< HEAD:source/sass/global/scaffolding.scss
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: repeat-y;
-  background-position: top;
-  background-color: $navy;
-=======
   background-color: white;
->>>>>>> master:source/sass/global/scaffolding.scss
 }
 
 img {
