@@ -425,6 +425,53 @@ a {
   font-family: "Open Sans", "Arial", sans-serif;
   color: #283645; }
 
+@media (min-width: 660px) {
+  .advantages {
+    padding-top: 49px; }
+  .advantages__lead {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    margin-bottom: 20px; }
+  .advantages__lead-item:not(:last-child) {
+    margin-bottom: 0; }
+  .advantages__lead-item:last-child {
+    padding-right: 120px;
+    padding-left: 120px; }
+  .advantages__wrapper {
+    padding-top: 0; }
+  .advantages__list {
+    padding-top: 102px;
+    padding-bottom: 43px;
+    padding-left: 330px;
+    padding-right: 20px;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-position: 20px 100%; }
+  .advantages__item {
+    text-align: left; }
+    .advantages__item:not(:last-child) {
+      margin-bottom: 35px; }
+  .advantages__title {
+    margin-top: 0;
+    margin-bottom: 11px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: black; }
+  .advantages__description {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: #283645; } }
+
 .aligner {
   width: 320px;
   margin-right: auto;
@@ -434,7 +481,7 @@ a {
   .aligner {
     width: 660px; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 2000px) {
   .aligner {
     width: 960px; } }
 
@@ -488,7 +535,7 @@ a {
       background-color: rgba(40, 54, 69, 0.3);
       border: 3px solid transparent; }
 
-@media (min-width: 1000px) {
+@media (min-width: 2000px) {
   .button {
     padding-top: 13px;
     padding-bottom: 15px;
@@ -822,7 +869,7 @@ a {
   .download__annotation {
     font-size: 18px; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 2000px) {
   .download {
     padding-top: 106px;
     padding-bottom: 122px;
@@ -1281,7 +1328,7 @@ a {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position-y: -110px; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 2000px) {
   .intro {
     padding-top: 110px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
@@ -1327,7 +1374,7 @@ a {
   .main-menu__item:not(:last-child) {
     margin-bottom: 1px; }
 
-@media (min-width: 1000px) {
+@media (min-width: 2000px) {
   .main-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1339,7 +1386,6 @@ a {
     font-size: 18px;
     line-height: 18px;
     font-family: "Open Sans", "Arial", sans-serif;
-    text-align: left;
     text-transform: none; }
   .main-menu__item {
     margin-bottom: 0;
@@ -1427,7 +1473,7 @@ a {
   .page-header__logo {
     width: 147px; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 2000px) {
   .page-header {
     position: absolute;
     width: 100%;
@@ -1792,7 +1838,7 @@ input[type="radio"].visually-hidden {
   background-color: #283645;
   -webkit-box-shadow: 0 1px 0 0 #000000;
           box-shadow: 0 1px 0 0 #000000; }
-  @media (min-width: 1000px) {
+  @media (min-width: 2000px) {
     .menu-visible-style {
       margin-bottom: 0;
       background-color: transparent;
