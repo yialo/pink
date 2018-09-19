@@ -1,4 +1,18 @@
 .aligner {
+  @include outline;
+
   width: 320px;
   @include margin-hor(auto);
+}
+
+@media (min-width: $tablet) {
+  .aligner {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .aligner {
+    width: 960px;
+  }
 }

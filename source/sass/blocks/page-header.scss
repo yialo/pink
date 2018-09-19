@@ -1,22 +1,22 @@
-.page-header {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
 .page-header__navigation {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-.page-header__logo-wrapper {
+.page-header__top-wrapper {
   position: relative;
   @include padding-vert(22px, 25px);
-  @include padding-hor;
 }
 
 .page-header__logo {
   width: 75px;
+  margin-left: 20px;
 }
 
 .page-header__button {
+  display: none;
+
   position: absolute;
   padding: 0;
   background-color: transparent;
@@ -41,8 +41,32 @@
 }
 
 .page-header__list {
-  position: absolute;
-  top: calc(100% + 1px);
-  display: block;
-  width: 320px;
+  @include margin-vert;
+}
+
+@media (min-width: $tablet) {
+  .page-header__top-wrapper {
+    @include padding-vert(27px, 42px);
+  }
+
+  .page-header__logo {
+    width: 147px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-header {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .page-header__navigation {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-header__top-wrapper {
+    padding-bottom: 43px;
+  }
 }

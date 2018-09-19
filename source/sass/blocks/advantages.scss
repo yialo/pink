@@ -59,3 +59,42 @@
   @include font(400, 14px, 24px);
   color: $navy;
 }
+
+@media (min-width: $tablet) {
+  .advantages {
+    padding-top: 49px;
+  }
+
+  .advantages__lead {
+    @include font(300, 40px, 48px);
+    margin-bottom: 20px;
+  }
+
+  .advantages__lead-item {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+    &:last-child {
+      @include padding-hor(120px);
+    }
+  }
+
+  .advantages__wrapper {
+    padding-top: 0;
+  }
+
+  .advantages__list {
+    @include padding-vert(102px, 43px);
+    padding-left: 330px;
+    padding-right: 20px;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-position: 20px 100%;
+  }
+
+  .advantages__item {
+    text-align: left;
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+}
