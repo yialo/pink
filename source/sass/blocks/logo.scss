@@ -13,3 +13,12 @@
     height: 40px;
   }
 }
+
+@media (min-width: $tablet) {
+  .logo__image {
+    &--header {
+      width: 147px;
+      height: 40px;
+    }
+  }
+}

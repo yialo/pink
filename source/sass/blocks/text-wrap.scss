@@ -1,3 +1,9 @@
 .text-wrap {
   display: none;
 }
+
+@media (min-width: $tablet) {
+  .text-wrap {
+    display: inline;
+  }
+}

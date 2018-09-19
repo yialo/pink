@@ -1,77 +1,39 @@
 .intro {
-  padding-top: 396px;
-  background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  background-position: calc(50% - 31px) -286px;
-}
-
-.intro__outer-wrapper {
   background-color: #1d2631;
-}
-
-.intro__inner-wrapper {
-  width: 320px;
-  @include margin-hor(auto);
-  @include padding-vert(28px, 30px);
-  @include padding-hor;
-  text-align: center;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .intro__title {
-  display: none; //tmp declaration
-
-  @media (max-width: $mobile-max) {
+  @include margin-vert;
+  padding-top: 30px;
+  @include padding-hor;
+  @include font(300, 24px, 30px);
+  text-align: center;
+  color: white;
+  &--index {
     @include visually-hider;
   }
-}
-
-.intro__main-link {
-  width: 100%;
-  margin-bottom: 32px;
-}
-
-.intro__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  @include list;
-  margin-bottom: 21px;
-  @include padding-hor(2px);
-}
-
-.intro__item {
-  display: flex;
-  width: 92px;
-}
-
-.intro__link {
-  display: block;
-  &--apple {
-    width: 47px;
-    height: 57px;
-    margin-left: 35px;
+  &--contest {
+    padding-bottom: 51px;
   }
-  &--android {
-    width: 43px;
-    height: 47px;
-    margin-top: 8px;
-    margin-left: 24px;
-  }
-  &--windows {
-    width: 44px;
-    height: 42px;
-    margin-top: 12px;
-    margin-left: 12px;
+  &--gallery {
+    padding-bottom: 81px;
   }
 }
 
- .intro__icon {
-   display: block;
- }
+@media (min-width: $tablet) {
+  .intro {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position-y: -110px;
+  }
+}
 
-.intro__annotation {
-  @include margin-vert;
-  @include font(300, 14px, 24px);
-  color: white;
+@media (min-width: $desktop) {
+  .intro {
+    padding-top: 110px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: calc(50% + 10px) 0;
+  }
 }

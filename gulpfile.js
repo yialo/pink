@@ -15,11 +15,13 @@ var posthtml = require('gulp-posthtml');
 var rename = require('gulp-rename');
 var run = require('run-sequence'); //maybe need to delete at final development stage
 var sass = require('gulp-sass');
+var wait = require('gulp-wait');
 
 // Task functions
 
 var style = function () {
   return gulp.src('source/sass/style.scss')
+    .pipe(wait(50))
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
