@@ -1,6 +1,4 @@
 .aligner {
-  @include outline;
-
   width: 320px;
   @include margin-hor(auto);
 }
