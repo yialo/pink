@@ -97,16 +97,4 @@
       margin-bottom: 35px;
     }
   }
-
-  .advantages__title {
-    @include margin-vert(11px);
-    @include font(700, 18px, 24px);
-    color: black;
-  }
-
-  .advantages__description {
-    @include margin-vert;
-    @include font(400, 14px, 24px);
-    color: $navy;
-  }
 }
