@@ -4,6 +4,10 @@
   background-color: white;
 }
 
+.contacts__wrapper {
+  margin-bottom: 36px;
+}
+
 .contacts__tip {
   @include margin-vert(33px);
   @include padding-hor;
@@ -13,28 +17,12 @@
 
 .contacts__list {
   @include list;
-  margin-bottom: 36px;
   @include padding-hor;
-}
-
-.contacts__item {
-  &--phone {
-    margin-bottom: 21px;
-  }
-  &--email {
-    margin-bottom: 24px;
-  }
 }
 
 .contacts__legend {
   display: block;
   @include font(700, 18px, 24px);
-  &--email {
-    margin-bottom: 2px;
-  }
-  &--address {
-    margin-bottom: 2px;
-  }
 }
 
 .contacts__value {
@@ -51,6 +39,21 @@
   }
   &:active {
     color: rgba(40, 54, 69, 0.3);
+  }
+}
+
+.contacts__item {
+  &--phone {
+    margin-bottom: 21px;
+    .contacts__legend {
+      margin-bottom: 2px;
+    }
+  }
+  &--email {
+    margin-bottom: 24px;
+    .contacts__legend {
+      margin-bottom: 2px;
+    }
   }
 }
 
@@ -82,5 +85,71 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
+  }
+}
+
+
+
+@media (min-width: $tablet) {
+  .contacts {
+    padding-top: 46px;
+  }
+
+  .contacts__tip {
+    @include margin-vert(44px);
+    @include padding-hor(50px);
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .contacts__wrapper {
+    margin-bottom: 27px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contacts__item {
+    width: 300px;
+    &:not(:last-child) {
+      margin-bottom: 47px;
+    }
+    &--phone {
+      margin-right: 20px;
+      .contacts__legend {
+        margin-bottom: 3px;
+      }
+    }
+    &--email {
+      .contacts__legend {
+        margin-bottom: 3px;
+      }
+    }
+    &--address {
+      .contacts__legend {
+        margin-bottom: 5px;
+      }
+      .contacts__value {
+        @include padding-hor(20px);
+      }
+    }
+  }
+
+  .contacts__map {
+    height: 372px;
+    background-image:
+      url("../img/icon-map-marker.svg"),
+      url("../img/bg-map-tablet@1x.jpg");
+    background-position:
+      50% 193px,
+      50% -133px;
+    &::before {
+      width: 660px;
+      height: 68px;
+      margin-left: -330px;
+    }
   }
 }

@@ -20,3 +20,11 @@
 .page-footer__list {
   @include margin-vert(40px);
 }
+
+
+
+@media (min-width: $tablet) {
+  .page-footer {
+    display: flex;
+  }
+}

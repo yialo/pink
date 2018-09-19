@@ -19,8 +19,6 @@
   overflow-x: hidden;
 }
 
-
-
 @media (min-width: $tablet) {
   .price {
     @include padding-vert(109px, 68px);
