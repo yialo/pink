@@ -53,11 +53,9 @@
   display: none;
 }
 
-
-
 @media (min-width: $tablet) {
   .reviews__wrapper {
-    @include padding-vert(75px, 0);
+    padding-top: 75px;
   }
 
   .reviews__inner-wrapper {
@@ -90,11 +88,7 @@
 
   .reviews__text {
     order: 1;
-    margin-bottom: 36px;;
+    margin-bottom: 36px;
     font-size: 18px;
-  }
-
-  .reviews__button {
-    display: none;
   }
 }

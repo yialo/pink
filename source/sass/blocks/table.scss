@@ -89,3 +89,68 @@
 .table__cell-icon {
   display: block;
 }
+
+
+
+@media (min-width: $tablet) {
+  .table {
+    width: 620px;
+  }
+
+  .table__cell {
+    width: 152px;
+    &--header {
+      @include padding-vert(12px, 2px);
+    }
+    &--body {
+      @include padding-vert(7px, 8px);
+      @include padding-hor(15px);
+    }
+    &--best {
+      background-image: url("../img/bg-hit-tablet.svg");
+      background-size: 57px 57px;
+      &::before {
+        top: 0;
+        left: 0;
+        width: 57px;
+        height: 57px;
+        transform: rotate(-45deg);
+      }
+    }
+    &:first-child {
+      display: table-cell;
+      width: 154px;
+      @include padding-hor(15px);
+    }
+    &:empty {
+      visibility: hidden;
+      border-right-color: $navy;
+      border-bottom-color: #e5e5e5;
+    }
+  }
+
+  .table__column-title {
+    margin-bottom: 3px;
+    font-size: 16px;
+ }
+
+  .table__price-value {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .table__cell-name {
+    display: none;
+  }
+
+  .table__cell-value {
+    &--yes {
+      top: 13px;
+      left: 61px;
+    }
+    &--no {
+      top: 9px;
+      left: 62px;
+    }
+  }
+}

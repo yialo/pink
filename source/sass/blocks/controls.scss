@@ -34,3 +34,11 @@
     background-color: rgba(40, 54, 69, 0.1);
   }
 }
+
+
+
+@media (min-width: $tablet) {
+  .controls--price {
+    display: none;
+  }
+}

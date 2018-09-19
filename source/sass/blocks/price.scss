@@ -18,3 +18,16 @@
   padding-left: 20px;
   overflow-x: hidden;
 }
+
+
+
+@media (min-width: $tablet) {
+  .price {
+    @include padding-vert(109px, 68px);
+  }
+  .price__wrapper {
+    margin-bottom: 0;
+    padding-right: 20px;
+    overflow-x: visible;
+  }
+}
