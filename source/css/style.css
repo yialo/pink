@@ -1446,11 +1446,9 @@ a {
   padding-right: 20px;
   padding-left: 20px; }
 
-.page-footer__logo-wrapper {
-  margin-bottom: 40px; }
-
 .page-footer__logo {
   width: 147px;
+  margin-bottom: 40px;
   margin-right: auto;
   margin-left: auto; }
 
@@ -1467,13 +1465,10 @@ a {
     display: flex;
     padding-top: 37px;
     padding-bottom: 37px; }
-  .page-footer__logo-wrapper {
-    margin-bottom: 0;
-    margin-right: 74px; }
   .page-footer__logo {
     margin-bottom: 0;
-    margin-right: 0;
-    margin-left: 0; }
+    margin-left: 0;
+    margin-right: 74px; }
   .page-footer__list {
     margin-top: 3px;
     margin-bottom: 0; }
@@ -1829,8 +1824,8 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  list-style-type: none;
-  padding-left: 0; }
+  padding-left: 0;
+  list-style-type: none; }
 
 .social__item:not(:last-child) {
   margin-right: 12px; }

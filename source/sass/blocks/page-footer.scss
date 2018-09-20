@@ -10,12 +10,9 @@
   @include padding-hor;
 }
 
-.page-footer__logo-wrapper {
-  margin-bottom: 40px;
-}
-
 .page-footer__logo {
   width: 147px;
+  margin-bottom: 40px;
   @include margin-hor(auto);
 }
 
@@ -33,14 +30,10 @@
     @include padding-vert(37px, 37px);
   }
 
-  .page-footer__logo-wrapper {
-    margin-bottom: 0;
-    margin-right: 74px;
-  }
-
   .page-footer__logo {
     margin-bottom: 0;
-    @include margin-hor(0);
+    margin-left: 0;
+    margin-right: 74px;
   }
 
   .page-footer__list {
