@@ -1,12 +1,15 @@
 .caption {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
   @include padding-vert(18px, 20px);
   @include padding-hor(18px);
   background-color: $gray;
+  &--panorama {
+    @include margin-hor;
+  }
 }
 
 .caption__header {
-  display: block;
   line-height: 24px;
   color: $navy;
 }
@@ -20,15 +23,18 @@
   text-transform: uppercase;
 }
 
-.caption__text {
-  @include margin-vert(10px);
+.caption__body {
+  margin-bottom: 10px;
   @include font(400, 14px, 24px);
   color: $navy;
 }
 
-.caption__feedback {
-  display: flex;
+.caption__text {
   @include margin-vert;
+}
+
+.caption__footer {
+  display: flex;
 }
 
 .caption__like {
@@ -42,9 +48,66 @@
   fill: $pink;
 }
 
-.caption__response {
+.caption__counter {
   display: block;
   @include font(400, 12px, 24px);
   text-transform: uppercase;
   color: $pink;
+}
+
+
+
+@media (min-width: $tablet) {
+  .caption {
+    padding-top: 24px;
+    @include padding-hor(28px);
+
+    .caption__like {
+      order: 1;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .caption__counter {
+      order: 0;
+    }
+
+    &--panorama {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-bottom: 15px;
+      .caption__header {
+        order: -1;
+        max-width: 400px;
+        margin-right: auto;
+      }
+
+      .caption__body {
+        order: 1;
+      }
+
+      .caption__footer {
+        order: 0;
+        max-width: 150px;
+      }
+
+      .caption__like {
+        margin-left: 20px;
+      }
+    }
+
+    &--card {
+      flex-grow: 1;
+      min-height: 155px;
+      padding-bottom: 23px;
+      .caption__body {
+        flex-grow: 1;
+        margin-bottom: 12px;
+      }
+
+      .caption__footer {
+        padding-right: 4px;
+      }
+    }
+  }
 }

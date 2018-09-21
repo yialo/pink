@@ -11,7 +11,7 @@
   color: $navy;
 }
 
-.feed__panorama {
+.feed__post--panorama {
   margin-bottom: 20px;
 }
 
@@ -22,4 +22,38 @@
 
 .feed__item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+
+
+@media (min-width: $tablet) {
+  .feed {
+    padding-top: 92px;
+  }
+
+  .feed__slogan {
+    margin-bottom: 76px;
+    @include padding-hor(80px);
+    font-size: 18px;
+  }
+
+  .feed__post--panorama {
+    margin-bottom: 50px;
+  }
+
+  .feed__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+
+  .feed__item {
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
 }

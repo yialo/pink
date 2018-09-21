@@ -6,7 +6,6 @@
 }
 
 .download__wrapper {
-  @include margin-hor(auto);
   @include padding-vert(28px, 30px);
   @include padding-hor;
   text-align: center;
@@ -77,7 +76,6 @@
   .download__wrapper {
     width: 300px;
     margin-left: 20px;
-    margin-right: 0;
     @include padding-vert(0, 0);
     @include padding-hor(0);
     background-color: transparent;

@@ -28,6 +28,18 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position-y: -110px;
   }
+
+  .intro__title {
+    padding-top: 68px;
+    font-size: 50px;
+    line-height: 62px;
+    &--contest {
+      padding-bottom: 51px;
+    }
+    &--gallery {
+      padding-bottom: 138px;
+    }
+  }
 }
 
 @media (min-width: $desktop) {
