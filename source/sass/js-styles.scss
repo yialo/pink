@@ -2,6 +2,14 @@
   display: none;
 }
 
+.range-hidden {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
 .menu-visible-style {
   margin-bottom: 1px;
   background-color: $navy;

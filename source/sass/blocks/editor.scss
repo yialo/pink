@@ -1,10 +1,10 @@
 .editor {
-  padding-top: 40px;
   background-color: white;
 }
 
 .editor__slogan {
-  @include margin-vert(42px);
+  @include margin-vert;
+  @include padding-vert(40px, 42px);
   @include padding-hor(30px);
   @include font;
   text-align: center;
@@ -37,8 +37,6 @@
   width: 92px;
 }
 
-
-
 .editor__toggle-button {
   display: block;
   padding: 0;
@@ -70,6 +68,9 @@
 
 .editor__icon {
   display: block;
+  &--scale {
+    display: none;
+  }
 }
 
 .editor__path {
@@ -132,5 +133,95 @@
   width: 280px;
   &:first-of-type {
     margin-bottom: 12px;
+  }
+}
+
+
+
+@media (min-width: $tablet) {
+  .editor__slogan {
+    @include padding-vert(65px, 69px);
+    font-size: 18px;
+  }
+
+  .editor__inner-wrapper {
+    display: flex;
+    @include padding-vert(57px, 53px);
+  }
+
+  .editor__image {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+
+  .editor__controls-wrapper {
+    width: 275px;
+  }
+
+  .editor__toggles {
+    display: none;
+  }
+
+  .editor__icon--scale {
+    position: absolute;
+    display: block;
+    .editor__path {
+      fill: $pink;
+    }
+  }
+
+  .editor__list {
+    margin-bottom: 66px;
+  }
+
+  .editor__item {
+    position: relative;
+    @include padding-vert(23px, 18px);
+    padding-left: 57px;
+    padding-right: 18px;
+    border-bottom: 1px solid #dddfe0;
+    &--crop {
+      padding-top: 7px;
+      .editor__icon--scale {
+        top: 8px;
+        left: 2px;
+        width: 22px;
+        height: 22px;
+      }
+    }
+    &--color {
+      .editor__icon--scale {
+        top: 27px;
+        left: 3px;
+        width: 24px;
+        height: 22px;
+      }
+    }
+    &--contrast {
+      .editor__icon--scale {
+        top: 27px;
+        left: 8px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .editor__scale {
+    width: 200px;
+    @include margin-hor(0);
+  }
+
+  .editor__button-wrapper {
+    padding-left: 2px;
+  }
+
+  .editor__button {
+    width: 260px;
+    &:first-of-type {
+      margin-bottom: 24px;
+    }
   }
 }

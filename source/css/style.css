@@ -852,6 +852,10 @@ a {
   width: 27px;
   height: 34px; }
 
+@media (min-width: 660px) {
+  .copyright__legend {
+    padding-top: 6px; } }
+
 .download {
   padding-top: 396px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
@@ -978,12 +982,13 @@ a {
     margin-bottom: 55px; } }
 
 .editor {
-  padding-top: 40px;
   background-color: white; }
 
 .editor__slogan {
   margin-top: 0;
-  margin-bottom: 42px;
+  margin-bottom: 0;
+  padding-top: 40px;
+  padding-bottom: 42px;
   padding-right: 30px;
   padding-left: 30px;
   font-weight: 400;
@@ -1050,6 +1055,8 @@ a {
 
 .editor__icon {
   display: block; }
+  .editor__icon--scale {
+    display: none; }
 
 .editor__path {
   fill: rgba(40, 54, 69, 0.3); }
@@ -1130,6 +1137,68 @@ a {
   width: 280px; }
   .editor__button:first-of-type {
     margin-bottom: 12px; }
+
+@media (min-width: 660px) {
+  .editor__slogan {
+    padding-top: 65px;
+    padding-bottom: 69px;
+    font-size: 18px; }
+  .editor__inner-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 57px;
+    padding-bottom: 53px; }
+  .editor__image {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 0;
+    margin-right: auto; }
+  .editor__controls-wrapper {
+    width: 275px; }
+  .editor__toggles {
+    display: none; }
+  .editor__icon--scale {
+    position: absolute;
+    display: block; }
+    .editor__icon--scale .editor__path {
+      fill: #d22856; }
+  .editor__list {
+    margin-bottom: 66px; }
+  .editor__item {
+    position: relative;
+    padding-top: 23px;
+    padding-bottom: 18px;
+    padding-left: 57px;
+    padding-right: 18px;
+    border-bottom: 1px solid #dddfe0; }
+    .editor__item--crop {
+      padding-top: 7px; }
+      .editor__item--crop .editor__icon--scale {
+        top: 8px;
+        left: 2px;
+        width: 22px;
+        height: 22px; }
+    .editor__item--color .editor__icon--scale {
+      top: 27px;
+      left: 3px;
+      width: 24px;
+      height: 22px; }
+    .editor__item--contrast .editor__icon--scale {
+      top: 27px;
+      left: 8px;
+      width: 16px;
+      height: 16px; }
+  .editor__scale {
+    width: 200px;
+    margin-right: 0;
+    margin-left: 0; }
+  .editor__button-wrapper {
+    padding-left: 2px; }
+  .editor__button {
+    width: 260px; }
+    .editor__button:first-of-type {
+      margin-bottom: 24px; } }
 
 .feed {
   padding-top: 45px;
@@ -2119,6 +2188,12 @@ input[type="radio"].visually-hidden {
 
 .hidden {
   display: none; }
+
+.range-hidden {
+  display: none; }
+  @media (min-width: 660px) {
+    .range-hidden {
+      display: block; } }
 
 .menu-visible-style {
   margin-bottom: 1px;

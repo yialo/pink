@@ -10,9 +10,9 @@ var rangeContrast = document.querySelector('.editor__item--contrast');
 
 buttonCrop.addEventListener('click', function(evt) {
   evt.preventDefault();
-  rangeCrop.classList.remove('hidden');
-  rangeColor.classList.add('hidden');
-  rangeContrast.classList.add('hidden');
+  rangeCrop.classList.remove('range-hidden');
+  rangeColor.classList.add('range-hidden');
+  rangeContrast.classList.add('range-hidden');
   pathCrop.classList.add('editor-active-toggle');
   for (var i = 0; i <= 1; i++) {
     pathColor[i].classList.remove('editor-active-toggle');
@@ -22,9 +22,9 @@ buttonCrop.addEventListener('click', function(evt) {
 
 buttonColor.addEventListener('click', function(evt) {
   evt.preventDefault();
-  rangeCrop.classList.add('hidden');
-  rangeColor.classList.remove('hidden');
-  rangeContrast.classList.add('hidden');
+  rangeCrop.classList.add('range-hidden');
+  rangeColor.classList.remove('range-hidden');
+  rangeContrast.classList.add('range-hidden');
   pathCrop.classList.remove('editor-active-toggle');
   for (var i = 0; i <= 1; i++) {
     pathColor[i].classList.add('editor-active-toggle');
@@ -34,9 +34,9 @@ buttonColor.addEventListener('click', function(evt) {
 
 buttonContrast.addEventListener('click', function(evt) {
   evt.preventDefault();
-  rangeCrop.classList.add('hidden');
-  rangeColor.classList.add('hidden');
-  rangeContrast.classList.remove('hidden');
+  rangeCrop.classList.add('range-hidden');
+  rangeColor.classList.add('range-hidden');
+  rangeContrast.classList.remove('range-hidden');
   pathCrop.classList.remove('editor-active-toggle');
   for (var i = 0; i <= 1; i++) {
     pathColor[i].classList.remove('editor-active-toggle');

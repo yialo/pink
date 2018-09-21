@@ -20,3 +20,11 @@
   width: 27px;
   height: 34px;
 }
+
+
+
+@media (min-width: $tablet) {
+  .copyright__legend {
+    padding-top: 6px;
+  }
+}
