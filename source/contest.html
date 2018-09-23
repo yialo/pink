@@ -63,9 +63,9 @@
         <h2 class="visually-hidden">Форма заявки на участие</h2>
         <p class="request__slogan aligner">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="request__slogan-tip"> Пожалуйста, заполните форму ниже:</span></p>
         <form class="form request__form" action="https://echo.htmlacademy.ru" method="POST" name="contest-data">
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--fullname">
             <fieldset class="form__group form__group--text form__group--fullname aligner">
-              <legend class="visually-hidden">Как вас зовут</legend>
+              <legend class="form__group-title">Как вас зовут</legend>
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__label" for="last-name">Фамилия:</label>
@@ -82,8 +82,8 @@
               </ul>
             </fieldset>
           </div>
-          <div class="form__wrapper form__wrapper--gray">
-            <fieldset class="form__group form__group--select form__group--achievements aligner">
+          <div class="form__wrapper form__wrapper--gray form__wrapper--achievements">
+            <fieldset class="form__group form__group--select form__group--achievements aligner aligner--outlined">
               <legend class="form__group-title">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form__list">
                 <li class="form__item">
@@ -113,23 +113,27 @@
               </ul>
             </fieldset>
           </div>
-          <div class="form__wrapper">
-            <fieldset class="form__group form__group--text form__group--contacts aligner">
-              <legend class="visually-hidden">Контактная информация</legend>
+          <div class="form__wrapper form__wrapper--contacts">
+            <fieldset class="form__group form__group--text form__group--contacts aligner aligner--outlined">
+              <legend class="form__group-title">Контактная информация</legend>
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__label" for="phone-number">Номер телефона</label>
-                  <input class="form__field" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+                  <div class="form__field-wrapper form__field-wrapper--phone">
+                    <input class="form__field" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+                  </div>
                 </li>
                 <li class="form__item">
                   <label class="form__label" for="email">Адрес почты</label>
-                  <input class="form__field" type="email" name="email" id="email" placeholder="Введите почту *" required>
+                  <div class="form__field-wrapper form__field-wrapper--email">
+                    <input class="form__field" type="email" name="email" id="email" placeholder="Введите почту *" required>
+                  </div>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <div class="form__wrapper form__wrapper--gray">
-            <fieldset class="form__group form__group--select form__group--application aligner">
+          <div class="form__wrapper form__wrapper--gray form__wrapper--application">
+            <fieldset class="form__group form__group--select form__group--application aligner aligner--outlined">
               <legend class="form__group-title">С каким приложением путешествовали?</legend>
               <ul class="form__list">
                 <li class="form__item">
@@ -147,13 +151,13 @@
               </ul>
             </fieldset>
           </div>
-          <div class="form__wrapper">
-            <fieldset class="form__group form__group--text form__group--emotions aligner">
+          <div class="form__wrapper form__wrapper--emotions">
+            <fieldset class="form__group form__group--text form__group--emotions aligner aligner--outlined">
               <legend class="form__group-title" for="message">Опишите свои эмоции</legend>
               <textarea class="form__field" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
           </div>
-          <div class="form__wrapper aligner">
+          <div class="form__wrapper form__wrapper--button aligner">
             <button class="form__button" type="submit">
               <span class="button-fix">Отправить форму</span>
             </button>

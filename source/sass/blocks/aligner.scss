@@ -1,4 +1,6 @@
 .aligner {
+  // @include outline;
+
   width: 320px;
   @include margin-hor(auto);
 }
@@ -6,6 +8,9 @@
 @media (min-width: $tablet) {
   .aligner {
     width: 660px;
+    &--outlined {
+      width: 620px;
+    }
   }
 }
 

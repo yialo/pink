@@ -1,6 +1,5 @@
 .request {
-  padding-top: 45px;
-  padding-bottom: 15px;
+  @include padding-vert(45px, 15px);
   background-color: white;
 }
 
@@ -14,4 +13,21 @@
 
 .request__slogan-tip {
   display: none;
+}
+
+
+
+@media (min-width: $tablet) {
+  .request {
+    @include padding-vert(92px, 49px);
+  }
+
+  .request__slogan {
+    @include padding-hor(60px);
+    font-size: 18px;
+  }
+
+  .request__slogan-tip {
+    display: block;
+  }
 }
