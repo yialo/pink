@@ -63,3 +63,44 @@
     }
   }
 }
+
+
+
+@media (min-width: $desktop) {
+  .research {
+    background-color: $gray;
+  }
+
+  .research__wrapper {
+    @include padding-vert(111px, 113px);
+    padding-left: 376px;
+    padding-right: 10px;
+    &::before {
+      top: 147px;
+      left: 90px;
+      @include font(700, 120px, 120px);
+    }
+  }
+
+  .research__icon {
+    top: 17px;
+    left: 11px;
+    width: 298px;
+    height: 345px;
+  }
+
+  .research__title {
+    margin-bottom: 24px;
+    line-height: 30px;
+  }
+
+  .research__description {
+    margin-bottom: 31px;
+    padding-right: 0;
+    @include font(400, 18px, 30px);
+  }
+
+  .research__link {
+    @include font(400, 18px, 30px);
+  }
+}

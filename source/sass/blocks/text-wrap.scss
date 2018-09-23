@@ -3,7 +3,18 @@
 }
 
 @media (min-width: $tablet) {
-  .text-wrap {
+  .text-wrap--tablet {
     display: inline;
+  }
+}
+
+@media (min-width: $desktop) {
+  .text-wrap {
+    &--tablet {
+      display: none;
+    }
+    &--desktop {
+      display: inline;
+    }
   }
 }
