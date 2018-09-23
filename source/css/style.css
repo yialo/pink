@@ -455,6 +455,8 @@ a {
       margin-bottom: 35px; } }
 
 .aligner {
+  outline: 1px solid green;
+  outline-offset: -1px;
   width: 320px;
   margin-right: auto;
   margin-left: auto; }
@@ -465,7 +467,7 @@ a {
     .aligner--outlined {
       width: 620px; } }
 
-@media (min-width: 3000px) {
+@media (min-width: 1000px) {
   .aligner {
     width: 960px; } }
 
@@ -516,7 +518,7 @@ a {
       background-color: rgba(40, 54, 69, 0.3);
       border: 3px solid transparent; }
 
-@media (min-width: 3000px) {
+@media (min-width: 1000px) {
   .button {
     padding-top: 13px;
     padding-bottom: 15px;
@@ -965,7 +967,7 @@ a {
   .download__annotation {
     font-size: 18px; } }
 
-@media (min-width: 3000px) {
+@media (min-width: 1000px) {
   .download {
     padding-top: 106px;
     padding-bottom: 122px;
@@ -1335,7 +1337,7 @@ a {
   line-height: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #283645;
-  border: 2px solid $darkgray;
+  border: 2px solid #e5e5e5;
   border-radius: 3px; }
   .form__group--text .form__field:hover {
     border: 2px solid #283645; }
@@ -1367,7 +1369,7 @@ a {
     width: 39px;
     height: 39px;
     background-color: white;
-    border: 2px solid $darkgray; }
+    border: 2px solid #e5e5e5; }
   .form__group--select .form__field:checked + .form__label::after {
     content: "";
     position: absolute; }
@@ -1513,7 +1515,7 @@ a {
     padding-top: 0;
     padding-right: 58px;
     padding-left: 58px;
-    border: 2px solid $darkgray; }
+    border: 2px solid #e5e5e5; }
   .form__group-title {
     float: none;
     padding-right: 29px;
@@ -1586,7 +1588,7 @@ a {
         right: 0;
         width: 60px;
         height: 100%;
-        background-color: $darkgray;
+        background-color: #e5e5e5;
         background-repeat: no-repeat;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px; }
@@ -1673,11 +1675,11 @@ a {
     .intro__title--contest {
       padding-bottom: 76px; } }
 
-@media (min-width: 3000px) {
+@media (min-width: 1000px) {
   .intro {
     padding-top: 110px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: calc(50% + 10px) 0; } }
+    background-position: calc(50% + 1px) 0; } }
 
 .logo {
   display: block; }
@@ -1719,7 +1721,7 @@ a {
   .main-menu__item:not(:last-child) {
     margin-bottom: 1px; }
 
-@media (min-width: 3000px) {
+@media (min-width: 1000px) {
   .main-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1838,7 +1840,7 @@ a {
   .page-header__logo {
     width: 147px; } }
 
-@media (min-width: 3000px) {
+@media (min-width: 1000px) {
   .page-header {
     position: absolute;
     width: 100%;
@@ -1850,9 +1852,13 @@ a {
             flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px; }
   .page-header__top-wrapper {
-    padding-bottom: 43px; } }
+    padding-bottom: 43px; }
+  .page-header__logo {
+    margin-left: 0; } }
 
 .page-main__title {
   margin-top: 0;
@@ -1914,7 +1920,7 @@ a {
     width: 300px;
     height: 300px; }
     .post__image--panorama {
-      width: 100%;
+      width: 660px;
       height: 509px; }
   .post__legend {
     top: 57px;
@@ -2191,8 +2197,8 @@ a {
 
 .table__cell {
   width: 280px;
-  border-left: 2px solid $darkgray;
-  border-right: 2px solid $darkgray; }
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5; }
   .table__cell--header {
     padding-top: 17px;
     padding-bottom: 18px;
@@ -2211,7 +2217,7 @@ a {
     padding-left: 22px;
     padding-right: 70px;
     background-color: white;
-    border-bottom: 2px solid $darkgray; }
+    border-bottom: 2px solid #e5e5e5; }
   .table__cell--best {
     position: relative;
     background-image: url("../img/bg-hit.svg");
@@ -2312,7 +2318,7 @@ a {
     .table__cell:empty {
       visibility: hidden;
       border-right-color: #283645;
-      border-bottom-color: $darkgray; }
+      border-bottom-color: #e5e5e5; }
   .table__column-title {
     margin-bottom: 3px;
     font-size: 16px; }
@@ -2364,7 +2370,7 @@ input[type="radio"].visually-hidden {
   background-color: #283645;
   -webkit-box-shadow: 0 1px 0 0 #000000;
           box-shadow: 0 1px 0 0 #000000; }
-  @media (min-width: 3000px) {
+  @media (min-width: 1000px) {
     .menu-visible-style {
       margin-bottom: 0;
       background-color: transparent;

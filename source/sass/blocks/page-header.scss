@@ -64,9 +64,14 @@
   .page-header__navigation {
     flex-direction: row;
     justify-content: space-between;
+    @include padding-hor(10px);
   }
 
   .page-header__top-wrapper {
     padding-bottom: 43px;
+  }
+
+  .page-header__logo {
+    margin-left: 0;
   }
 }
