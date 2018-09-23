@@ -61,7 +61,7 @@
     @include padding-hor(21px);
     @include font(400, 18px, 30px);
     color: $navy;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $darkgray;
     border-radius: 3px;
     &:hover {
       border: 2px solid $navy;
@@ -96,7 +96,7 @@
     width: 39px;
     height: 39px;
     background-color: white;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $darkgray;
   }
   .form__field:checked + .form__label::after {
     content: "";
@@ -237,7 +237,7 @@
   .form__group {
     padding-top: 0;
     @include padding-hor(58px);
-    border: 2px solid #e5e5e5;
+    border: 2px solid $darkgray;
   }
 
   .form__group-title {
@@ -326,7 +326,7 @@
         right: 0;
         width: 60px;
         height: 100%;
-        background-color: #e5e5e5;
+        background-color: $darkgray;
         background-repeat: no-repeat;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;

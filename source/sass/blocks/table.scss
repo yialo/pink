@@ -5,8 +5,8 @@
 
 .table__cell {
   width: 280px;
-  border-left: 2px solid #e5e5e5;
-  border-right: 2px solid #e5e5e5;
+  border-left: 2px solid $darkgray;
+  border-right: 2px solid $darkgray;
   &--header {
     @include padding-vert(17px, 18px);
     @include padding-hor;
@@ -25,7 +25,7 @@
     padding-left: 22px;
     padding-right: 70px;
     background-color: white;
-    border-bottom: 2px solid #e5e5e5;
+    border-bottom: 2px solid $darkgray;
   }
   &--best {
     position: relative;
@@ -123,7 +123,7 @@
     &:empty {
       visibility: hidden;
       border-right-color: $navy;
-      border-bottom-color: #e5e5e5;
+      border-bottom-color: $darkgray;
     }
   }
 
