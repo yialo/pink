@@ -69,13 +69,13 @@
 @media (min-width: $tablet) {
   .download {
     @include padding-vert(93px, 110px);
+    padding-left: 20px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-position: 50% 74px;
   }
 
   .download__wrapper {
     width: 300px;
-    margin-left: 20px;
     @include padding-vert(0, 0);
     @include padding-hor(0);
     background-color: transparent;
@@ -105,8 +105,9 @@
 @media (min-width: $desktop) {
   .download {
     @include padding-vert(106px, 122px);
+    padding-left: 10px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: calc(50% + 81px) 99px;
+    background-position: calc(50% + 71px) 99px;
   }
 
   .download__title {

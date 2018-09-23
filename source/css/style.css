@@ -938,11 +938,11 @@ a {
   .download {
     padding-top: 93px;
     padding-bottom: 110px;
+    padding-left: 20px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-position: 50% 74px; }
   .download__wrapper {
     width: 300px;
-    margin-left: 20px;
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 0;
@@ -971,8 +971,9 @@ a {
   .download {
     padding-top: 106px;
     padding-bottom: 122px;
+    padding-left: 10px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: calc(50% + 81px) 99px; }
+    background-position: calc(50% + 71px) 99px; }
   .download__title {
     margin-bottom: 51px;
     font-weight: 300;
