@@ -85,6 +85,8 @@
     padding-top: 0;
   }
 
+// TODO: попробовать сделать фоноввый SVG без скосов
+
   .advantages__list {
     @include padding-vert(102px, 43px);
     padding-left: 330px;
