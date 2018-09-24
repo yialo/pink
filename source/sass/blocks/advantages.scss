@@ -18,18 +18,12 @@
 }
 
 .advantages__wrapper {
-  position: relative;
-  z-index: 0;
   padding-top: 113px;
   background-color: $gray;
-}
-
-.advantages__background-image {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  height: auto;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
 }
 
 .advantages__list {
@@ -85,8 +79,6 @@
     padding-top: 0;
   }
 
-// TODO: попробовать сделать фоноввый SVG без скосов
-
   .advantages__list {
     @include padding-vert(102px, 43px);
     padding-left: 330px;
@@ -119,18 +111,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    @include padding-vert(3px, 49px);
+    @include padding-vert(0, 49px);
     @include padding-hor(10px);
     background-image: none;
   }
 
   .advantages__item {
     width: 300px;
-    padding-top: 358px;
+    padding-top: 361px;
     @include padding-hor(30px);
     text-align: center;
     background-repeat: no-repeat;
-    background-position: 7px 0;
+    background-position: 7px 3px;
     &:not(:last-child) {
       margin-bottom: 0;
     }

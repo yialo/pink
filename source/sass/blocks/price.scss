@@ -1,16 +1,10 @@
 .price {
-  position: relative;
-  z-index: 0;
   @include padding-vert(133px, 47px);
   background-color: $gray;
-}
-
-.price__background-image {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  height: auto;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
 }
 
 .price__wrapper {
@@ -19,10 +13,13 @@
   overflow-x: hidden;
 }
 
+
+
 @media (min-width: $tablet) {
   .price {
     @include padding-vert(109px, 68px);
   }
+
   .price__wrapper {
     margin-bottom: 0;
     padding-right: 20px;
