@@ -38,8 +38,18 @@
   }
 }
 
+
+
 @media (min-width: $tablet) {
   .controls--price {
+    display: none;
+  }
+}
+
+
+
+@media (min-width: $desktop) {
+  .controls {
     display: none;
   }
 }
