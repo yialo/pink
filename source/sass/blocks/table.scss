@@ -5,18 +5,19 @@
 
 .table__cell {
   width: 280px;
-  border-left: 2px solid $darkgray;
-  border-right: 2px solid $darkgray;
   &--header {
-    @include padding-vert(17px, 18px);
+    @include padding-vert(17px, 20px);
     @include padding-hor;
     background-color: $navy;
-    border-bottom: 2px solid $navy;
     &:nth-child(2) {
-      border-left: 2px solid $navy;
+      border-right: 2px solid $gray;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
     }
     &:last-child {
-      border-right: 2px solid $navy;
+      border-left: 2px solid $gray;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
     }
   }
   &--body {
@@ -27,6 +28,8 @@
     @include font;
     color: $navy;
     background-color: white;
+    border-left: 2px solid $darkgray;
+    border-right: 2px solid $darkgray;
     border-bottom: 2px solid $darkgray;
   }
   &--best {
@@ -100,7 +103,7 @@
   .table__cell {
     width: 152px;
     &--header {
-      @include padding-vert(12px, 2px);
+      @include padding-vert(12px, 4px);
     }
     &--body {
       @include padding-vert(7px, 8px);
@@ -163,7 +166,7 @@
   .table__cell {
     width: 232px;
     &--header {
-      @include padding-vert(17px, 18px);
+      @include padding-vert(17px, 20px);
     }
     &--body {
       @include padding-vert(14px, 15px);
