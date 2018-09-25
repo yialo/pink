@@ -26,3 +26,15 @@
     overflow-x: visible;
   }
 }
+
+
+
+@media (min-width: $desktop) {
+  .price {
+    @include padding-vert(160px, 95px);
+  }
+
+  .price__wrapper {
+    @include padding-hor(10px);
+  }
+}

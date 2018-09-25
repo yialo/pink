@@ -24,6 +24,8 @@
     @include padding-vert(15px, 14px);
     padding-left: 22px;
     padding-right: 70px;
+    @include font;
+    color: $navy;
     background-color: white;
     border-bottom: 2px solid $darkgray;
   }
@@ -65,9 +67,7 @@
 }
 
 .table__cell-name {
-  @include font;
   text-transform: uppercase;
-  color: $navy;
 }
 
 .table__cell-value {
@@ -89,6 +89,8 @@
 .table__cell-icon {
   display: block;
 }
+
+
 
 @media (min-width: $tablet) {
   .table {
@@ -112,13 +114,11 @@
         left: 0;
         width: 57px;
         height: 57px;
-        transform: rotate(-45deg);
       }
     }
     &:first-child {
       display: table-cell;
       width: 154px;
-      @include padding-hor(15px);
     }
     &:empty {
       visibility: hidden;
@@ -149,6 +149,60 @@
     &--no {
       top: 9px;
       left: 62px;
+    }
+  }
+}
+
+
+
+@media (min-width: $desktop) {
+  .table {
+    width: 940px;
+  }
+
+  .table__cell {
+    width: 232px;
+    &--header {
+      @include padding-vert(17px, 18px);
+    }
+    &--body {
+      @include padding-vert(14px, 15px);
+      @include padding-hor(21px);
+      font-size: 18px;
+    }
+    &--best {
+      background-image: url("../img/bg-hit.svg");
+      background-size: 74px 73px;
+      &::before {
+        top: 8px;
+        left: 6px;
+        width: 57px;
+        height: 57px;
+      }
+    }
+    &:first-child {
+      width: 232px;
+    }
+  }
+
+  .table__column-title {
+    margin-bottom: 1px;
+    font-size: 18px;
+ }
+
+  .table__price-value {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .table__cell-value {
+    &--yes {
+      top: 22px;
+      left: 101px;
+    }
+    &--no {
+      top: 16px;
+      left: 103px;
     }
   }
 }
