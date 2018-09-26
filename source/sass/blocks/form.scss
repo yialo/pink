@@ -22,7 +22,8 @@
 }
 
 .form__label {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .form__field-wrapper {
@@ -261,7 +262,6 @@
 
   .form__group--select {
     margin-bottom: 57px;
-    @include padding-hor(58px);
     .form__item {
       padding-left: 60px;
     }
@@ -274,9 +274,6 @@
     @include padding-vert(71px, 58px);
     @include padding-hor(0);
     border-style: none;
-    .form__list {
-      @include padding-hor;
-    }
     .form__item {
       &:not(:last-child) {
         margin-bottom: 52px;
@@ -307,6 +304,7 @@
     }
     .form__item {
       flex-direction: column;
+      align-items: flex-start;
       &:not(:last-child) {
         margin-bottom: 29px;
       }
@@ -378,4 +376,10 @@
     margin-top: 18px;
     @include padding-hor(0);
   }
+}
+
+
+
+@media (min-width: $desktop) {
+
 }

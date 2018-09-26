@@ -64,7 +64,7 @@
         <p class="request__slogan aligner">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="request__slogan-tip"> Пожалуйста, заполните форму ниже:</span></p>
         <form class="form request__form" action="https://echo.htmlacademy.ru" method="POST" name="contest-data">
           <div class="form__wrapper form__wrapper--fullname">
-            <fieldset class="form__group form__group--text form__group--fullname aligner">
+            <fieldset class="form__group form__group--text form__group--fullname aligner aligner--form">
               <legend class="form__group-title">Как вас зовут</legend>
               <ul class="form__list">
                 <li class="form__item">
@@ -83,7 +83,7 @@
             </fieldset>
           </div>
           <div class="form__wrapper form__wrapper--gray form__wrapper--achievements">
-            <fieldset class="form__group form__group--select form__group--achievements aligner aligner--outlined">
+            <fieldset class="form__group form__group--select form__group--achievements aligner aligner--form">
               <legend class="form__group-title">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form__list">
                 <li class="form__item">
@@ -114,7 +114,7 @@
             </fieldset>
           </div>
           <div class="form__wrapper form__wrapper--contacts">
-            <fieldset class="form__group form__group--text form__group--contacts aligner aligner--outlined">
+            <fieldset class="form__group form__group--text form__group--contacts aligner aligner--form">
               <legend class="form__group-title">Контактная информация</legend>
               <ul class="form__list">
                 <li class="form__item">
@@ -133,7 +133,7 @@
             </fieldset>
           </div>
           <div class="form__wrapper form__wrapper--gray form__wrapper--application">
-            <fieldset class="form__group form__group--select form__group--application aligner aligner--outlined">
+            <fieldset class="form__group form__group--select form__group--application aligner aligner--form">
               <legend class="form__group-title">С каким приложением путешествовали?</legend>
               <ul class="form__list">
                 <li class="form__item">
@@ -152,9 +152,9 @@
             </fieldset>
           </div>
           <div class="form__wrapper form__wrapper--emotions">
-            <fieldset class="form__group form__group--text form__group--emotions aligner aligner--outlined">
-              <legend class="form__group-title" for="message">Опишите свои эмоции</legend>
-              <textarea class="form__field" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <fieldset class="form__group form__group--text form__group--emotions aligner aligner--form">
+              <legend class="form__group-title">Опишите свои эмоции</legend>
+              <textarea class="form__field" name="message" id="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
           </div>
           <div class="form__wrapper form__wrapper--button aligner">
