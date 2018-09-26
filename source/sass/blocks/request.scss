@@ -28,12 +28,14 @@
   }
 
   .request__slogan-tip {
-    display: block;
+    display: inline;
   }
 }
 
 
 
 @media (min-width: $desktop) {
-
+  .request__slogan {
+    @include padding-hor(90px);
+  }
 }
