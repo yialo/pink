@@ -36,6 +36,7 @@
 
 @media (min-width: $desktop) {
   .request__slogan {
+    margin-bottom: 84px;
     @include padding-hor(90px);
   }
 }

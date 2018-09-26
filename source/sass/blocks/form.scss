@@ -237,13 +237,12 @@
 
   .form__group {
     padding-top: 0;
-    @include padding-hor(58px);
+    @include padding-hor(0);
     border: 2px solid $darkgray;
   }
 
   .form__group-title {
     float: none;
-    @include padding-hor(29px);
   }
 
   .form__field {
@@ -272,7 +271,6 @@
 
   .form__group--fullname {
     @include padding-vert(71px, 58px);
-    @include padding-hor(0);
     border-style: none;
     .form__item {
       &:not(:last-child) {
@@ -290,6 +288,10 @@
     padding-bottom: 53px;
     .form__group-title {
       margin-bottom: 48px;
+      @include padding-hor(29px);
+    }
+    .form__list {
+      @include padding-hor(58px);
     }
     .form__field:checked + .form__label::after {
       left: -51px;
@@ -301,6 +303,10 @@
     padding-bottom: 26px;
     .form__group-title {
       display: block;
+      @include padding-hor(31px);
+    }
+    .form__list {
+      @include padding-hor(58px);
     }
     .form__item {
       flex-direction: column;
@@ -349,6 +355,10 @@
     padding-bottom: 59px;
     .form__group-title {
       margin-bottom: 48px;
+      @include padding-hor(25px);
+    }
+    .form__list {
+      @include padding-hor(58px);
     }
     .form__field:checked + .form__label::after {
       left: -48px;
@@ -360,6 +370,10 @@
     padding-bottom: 51px;
     .form__group-title {
       display: block;
+      @include padding-hor(37px);
+    }
+    .form__field-wrapper {
+      @include padding-hor(58px);
     }
     .form__field {
       height: 193px;
@@ -381,5 +395,49 @@
 
 
 @media (min-width: $desktop) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 960px;
+    @include margin-hor(auto);
+    @include padding-hor(10px);
+  }
 
+  .form__wrapper {
+    width: 100%;
+    &--fullname {
+      width: calc(100% / 2);
+    }
+    &--application {
+      width: calc(100% / 2);
+    }
+  }
+
+  .form__group {
+    margin-bottom: 0; //TODO: check this declaration
+  }
+
+  .form__group-title {
+    @include padding-hor(0);
+  }
+
+  .form__group--fullname {
+    @include padding-vert(0, 0);
+    padding-right: 35px;
+    .form__item {
+      &:not(:last-child) {
+        margin-bottom: 53px;
+      }
+    }
+  }
+
+  .form__group--application {
+    padding-bottom: 59px;
+    .form__group-title {
+      margin-bottom: 48px;
+    }
+    .form__field:checked + .form__label::after {
+      left: -48px;
+    }
+  }
 }

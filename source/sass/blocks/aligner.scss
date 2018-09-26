@@ -21,5 +21,8 @@
 @media (min-width: $desktop) {
   .aligner {
     width: 960px;
+    &--form {
+      width: 100%;
+    }
   }
 }
