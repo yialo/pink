@@ -407,9 +407,11 @@
     width: 100%;
     &--fullname {
       width: calc(100% / 2);
+      padding-right: 35px;
     }
     &--application {
       width: calc(100% / 2);
+      padding-left: 35px;
     }
   }
 
@@ -422,8 +424,7 @@
   }
 
   .form__group--fullname {
-    @include padding-vert(0, 0);
-    padding-right: 35px;
+    @include padding-vert(14px, 0);
     .form__item {
       &:not(:last-child) {
         margin-bottom: 53px;
@@ -431,13 +432,23 @@
     }
   }
 
+  .form__group--contacts {
+    margin-top: 57px;
+  }
+
   .form__group--application {
-    padding-bottom: 59px;
+    padding-bottom: 60px;
     .form__group-title {
-      margin-bottom: 48px;
+      margin-bottom: 51px;
+    }
+    .form__list {
+      padding-left: 74px;
     }
     .form__field:checked + .form__label::after {
       left: -48px;
+    }
+    .form__item:not(:last-child) {
+      margin-bottom: 44px;
     }
   }
 }
