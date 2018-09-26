@@ -16,9 +16,11 @@
   @include margin-hor(auto);
 }
 
-.page-footer__list {
+.page-footer__social {
   @include margin-vert(40px);
 }
+
+
 
 @media (min-width: $tablet) {
   .page-footer--index {
@@ -36,7 +38,7 @@
     margin-right: 74px;
   }
 
-  .page-footer__list {
+  .page-footer__social {
     margin-top: 3px;
     margin-bottom: 0;
   }
@@ -44,5 +46,22 @@
   .page-footer__copyright {
     margin-top: 14px;
     margin-left: auto;
+  }
+}
+
+
+
+@media (min-width: $desktop) {
+  .page-footer__wrapper {
+    @include padding-vert(69px, 72px);
+    @include padding-hor(10px);
+  }
+
+  .page-footer__logo {
+    margin-right: 234px;
+  }
+
+  .page-footer__social {
+    margin-top: 4px;
   }
 }

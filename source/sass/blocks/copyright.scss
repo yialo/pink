@@ -28,3 +28,12 @@
     padding-top: 6px;
   }
 }
+
+
+
+@media (min-width: $desktop) {
+  .copyright__legend {
+    margin-right: 13px;
+    font-size: 18px;
+  }
+}
