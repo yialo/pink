@@ -17,12 +17,12 @@
 
 .editor__inner-wrapper {
   @include padding-vert(20px, 41px);
-  @include padding-hor;
 }
 
 .editor__image {
   display: block;
   margin-bottom: 40px;
+  @include margin-hor(20px);
 }
 
 .editor__toggles {
@@ -30,7 +30,7 @@
   justify-content: center;
   @include list;
   margin-bottom: 28px;
-  @include padding-hor(2px);
+  @include padding-hor(20px);
 }
 
 .editor__toggles-item {
@@ -85,6 +85,7 @@
 
 .editor__item {
   padding-bottom: 18px;
+  @include padding-hor;
   border-bottom: 1px solid #dddfe0;
 }
 
@@ -133,6 +134,10 @@
   &::-ms-tooltip {
     display: none;
   }
+}
+
+.editor__button-wrapper {
+  @include padding-hor;
 }
 
 .editor__button {

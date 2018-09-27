@@ -1109,13 +1109,13 @@ a {
 
 .editor__inner-wrapper {
   padding-top: 20px;
-  padding-bottom: 41px;
-  padding-right: 20px;
-  padding-left: 20px; }
+  padding-bottom: 41px; }
 
 .editor__image {
   display: block;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  margin-right: 20px;
+  margin-left: 20px; }
 
 .editor__toggles {
   display: -webkit-box;
@@ -1129,8 +1129,8 @@ a {
   padding-left: 0;
   list-style-type: none;
   margin-bottom: 28px;
-  padding-right: 2px;
-  padding-left: 2px; }
+  padding-right: 20px;
+  padding-left: 20px; }
 
 .editor__toggles-item {
   width: 92px; }
@@ -1176,6 +1176,8 @@ a {
 
 .editor__item {
   padding-bottom: 18px;
+  padding-right: 20px;
+  padding-left: 20px;
   border-bottom: 1px solid #dddfe0; }
 
 .editor__scale {
@@ -1242,6 +1244,10 @@ a {
     background-color: #d22856; }
   .editor__scale::-ms-tooltip {
     display: none; }
+
+.editor__button-wrapper {
+  padding-right: 20px;
+  padding-left: 20px; }
 
 .editor__button {
   width: 280px; }
