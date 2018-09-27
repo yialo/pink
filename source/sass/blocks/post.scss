@@ -1,5 +1,10 @@
-.post--panorama {
-  position: relative;
+.post__link {
+  display: block;
+  &--panorama {
+    position: relative;
+    width: 320px;
+    @include margin-hor(auto);
+  }
 }
 
 .post__image {
@@ -23,6 +28,10 @@
 
 
 @media (min-width: $tablet) {
+  .post__link--panorama {
+    width: 660px;
+  }
+
   .post__image {
     width: 300px;
     height: 300px;
@@ -41,6 +50,10 @@
 
 
 @media (min-width: $desktop) {
+  .post__link--panorama {
+    width: 1200px;
+  }
+
   .post__image {
     height: 400px;
     &--panorama {

@@ -4,9 +4,6 @@
   @include padding-vert(18px, 20px);
   @include padding-hor(18px);
   background-color: $gray;
-  &--panorama {
-    @include margin-hor;
-  }
 }
 
 .caption__header {
