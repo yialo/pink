@@ -67,6 +67,11 @@
   }
 
   .feed__list {
+    margin-top: -54px;
     @include padding-hor(10px);
+  }
+
+  .feed__item {
+    margin-top: 54px;
   }
 }

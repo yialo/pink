@@ -1365,8 +1365,11 @@ a {
     padding-right: 170px;
     padding-left: 170px; }
   .feed__list {
+    margin-top: -54px;
     padding-right: 10px;
-    padding-left: 10px; } }
+    padding-left: 10px; }
+  .feed__item {
+    margin-top: 54px; } }
 
 .form__wrapper--gray {
   background-color: #f2f2f2; }
