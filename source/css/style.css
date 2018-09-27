@@ -1959,7 +1959,8 @@ a {
   background-color: #1d2631;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top; }
+  background-position: center top;
+  background-size: cover; }
 
 .intro__title {
   margin-top: 0;
@@ -2164,7 +2165,8 @@ a {
   position: absolute;
   padding: 0;
   background-color: transparent;
-  border-style: none; }
+  border-style: none;
+  cursor: pointer; }
   .page-header__button--open {
     top: 21px;
     right: 20px;
