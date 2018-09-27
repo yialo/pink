@@ -67,11 +67,12 @@
   }
 }
 
+.editor__label {
+  display: none;
+}
+
 .editor__icon {
   display: block;
-  &--scale {
-    display: none;
-  }
 }
 
 .editor__path {
@@ -175,20 +176,11 @@
     display: none;
   }
 
-  .editor__icon--scale {
-    position: absolute;
-    display: block;
-    .editor__path {
-      fill: $pink;
-    }
-  }
-
   .editor__list {
     margin-bottom: 66px;
   }
 
   .editor__item {
-    position: relative;
     @include padding-vert(23px, 18px);
     padding-left: 57px;
     padding-right: 18px;
@@ -216,6 +208,19 @@
         width: 16px;
         height: 16px;
       }
+    }
+  }
+
+  .editor__label {
+    position: relative;
+    display: block;
+  }
+
+  .editor__icon--scale {
+    position: absolute;
+    display: block;
+    .editor__path {
+      fill: $pink;
     }
   }
 
