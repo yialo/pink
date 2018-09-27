@@ -55,7 +55,8 @@
         padding-bottom: 100px;
       }
       &--gallery {
-        padding-bottom: 138px;
+        padding-bottom: 100px;
+        @include padding-hor(200px);
       }
     }
   }

@@ -20,6 +20,8 @@
   background-color: $pink;
 }
 
+
+
 @media (min-width: $tablet) {
   .post__image {
     width: 300px;
@@ -27,6 +29,23 @@
     &--panorama {
       width: 660px;
       height: 509px;
+    }
+  }
+
+  .post__legend {
+    top: 57px;
+    width: 140px;
+  }
+}
+
+
+
+@media (min-width: $desktop) {
+  .post__image {
+    height: 400px;
+    &--panorama {
+      width: 1200px;
+      height: 506px;
     }
   }
 

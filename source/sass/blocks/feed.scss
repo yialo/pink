@@ -57,3 +57,12 @@
     }
   }
 }
+
+
+
+@media (min-width: $desktop) {
+  .feed__slogan {
+    margin-bottom: 88px;
+    @include padding-hor(170px);
+  }
+}

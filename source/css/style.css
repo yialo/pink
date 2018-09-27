@@ -1350,6 +1350,12 @@ a {
     .feed__item:not(:last-child) {
       margin-bottom: 0; } }
 
+@media (min-width: 960px) {
+  .feed__slogan {
+    margin-bottom: 88px;
+    padding-right: 170px;
+    padding-left: 170px; } }
+
 .form__wrapper--gray {
   background-color: #f2f2f2; }
 
@@ -1889,7 +1895,9 @@ a {
       .intro .intro__title--contest {
         padding-bottom: 100px; }
       .intro .intro__title--gallery {
-        padding-bottom: 138px; } }
+        padding-bottom: 100px;
+        padding-right: 200px;
+        padding-left: 200px; } }
 
 .logo {
   display: block; }
@@ -2143,6 +2151,16 @@ a {
     .post__image--panorama {
       width: 660px;
       height: 509px; }
+  .post__legend {
+    top: 57px;
+    width: 140px; } }
+
+@media (min-width: 960px) {
+  .post__image {
+    height: 400px; }
+    .post__image--panorama {
+      width: 1200px;
+      height: 506px; }
   .post__legend {
     top: 57px;
     width: 140px; } }
