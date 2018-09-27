@@ -4,7 +4,7 @@
 
 .editor__slogan {
   @include margin-vert;
-  @include padding-vert(40px, 42px);
+  @include padding-vert(43px, 42px);
   @include padding-hor(30px);
   @include font;
   text-align: center;
@@ -22,14 +22,14 @@
 
 .editor__image {
   display: block;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .editor__toggles {
   display: flex;
   justify-content: center;
   @include list;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   @include padding-hor(2px);
 }
 
@@ -50,13 +50,14 @@
   &--color {
     width: 48px;
     height: 43px;
-    margin-left: 20px;
+    margin-top: 2px;
+    margin-left: 22px;
   }
   &--contrast {
     width: 32px;
     height: 32px;
-    margin-top: 6px;
-    margin-left: 16px;
+    margin-top: 8px;
+    margin-left: 18px;
   }
   &:hover .editor__path {
     fill: rgba(40, 54, 69, 0.5);
@@ -79,7 +80,12 @@
 
 .editor__list {
   @include list;
-  margin-bottom: 57px;
+  margin-bottom: 38px;
+}
+
+.editor__item {
+  padding-bottom: 18px;
+  border-bottom: 1px solid #dddfe0;
 }
 
 .editor__scale {
@@ -181,7 +187,6 @@
     @include padding-vert(23px, 18px);
     padding-left: 57px;
     padding-right: 18px;
-    border-bottom: 1px solid #dddfe0;
     &--crop {
       padding-top: 7px;
       .editor__icon--scale {
@@ -223,5 +228,22 @@
     &:first-of-type {
       margin-bottom: 24px;
     }
+  }
+}
+
+
+
+@media (min-width: $desktop) {
+  .editor__slogan {
+    @include padding-vert(59px, 66px);
+  }
+
+  .editor__outer-wrapper {
+    background-color: transparent;
+  }
+
+  .editor__inner-wrapper {
+    @include padding-hor(10px);
+    background-color: $gray;
   }
 }
