@@ -158,17 +158,19 @@
 
   .editor__inner-wrapper {
     display: flex;
-    @include padding-vert(57px, 53px);
+    @include padding-vert(57px, 54px);
+    @include padding-hor;
   }
 
   .editor__image {
     width: 300px;
     height: 400px;
     margin-bottom: 0;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 45px;
   }
 
-  .editor__controls-wrapper {
+  .editor__form {
     width: 275px;
   }
 
@@ -180,45 +182,56 @@
     margin-bottom: 66px;
   }
 
+  .editor__label {
+    position: absolute;
+    display: block;
+  }
+
   .editor__item {
+    position: relative;
     @include padding-vert(23px, 18px);
     padding-left: 57px;
     padding-right: 18px;
     &--crop {
       padding-top: 7px;
-      .editor__icon--scale {
+      .editor__label {
         top: 8px;
         left: 2px;
         width: 22px;
         height: 22px;
       }
+      .editor__icon--scale {
+        width: 22px;
+        height: 22px;
+      }
     }
     &--color {
-      .editor__icon--scale {
+      .editor__label {
         top: 27px;
         left: 3px;
         width: 24px;
         height: 22px;
       }
+      .editor__icon--scale {
+        width: 24px;
+        height: 22px;
+      }
     }
     &--contrast {
-      .editor__icon--scale {
+      .editor__label {
         top: 27px;
         left: 8px;
+        width: 16px;
+        height: 16px;
+      }
+      .editor__icon--scale {
         width: 16px;
         height: 16px;
       }
     }
   }
 
-  .editor__label {
-    position: relative;
-    display: block;
-  }
-
   .editor__icon--scale {
-    position: absolute;
-    display: block;
     .editor__path {
       fill: $pink;
     }
