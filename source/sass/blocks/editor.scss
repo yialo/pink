@@ -158,6 +158,7 @@
 
   .editor__inner-wrapper {
     display: flex;
+    justify-content: space-between;
     @include padding-vert(57px, 54px);
     @include padding-hor;
   }
@@ -166,8 +167,7 @@
     width: 300px;
     height: 400px;
     margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 45px;
+    @include margin-hor(0);
   }
 
   .editor__form {
@@ -243,7 +243,7 @@
   }
 
   .editor__button-wrapper {
-    padding-left: 2px;
+    @include padding-hor(0);
   }
 
   .editor__button {
@@ -257,6 +257,10 @@
 
 
 @media (min-width: $desktop) {
+  .editor {
+    padding-bottom: 29px;
+  }
+
   .editor__slogan {
     @include padding-vert(59px, 66px);
   }
@@ -266,7 +270,81 @@
   }
 
   .editor__inner-wrapper {
-    @include padding-hor(10px);
+    padding-bottom: 57px;
+    padding-left: 80px;
+    padding-right: 60px;
     background-color: $gray;
+  }
+
+  .editor__form {
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+  }
+
+  .editor__list {
+    margin-bottom: auto;
+  }
+
+  .editor__item {
+    display: flex;
+    padding-bottom: 28px;
+    padding-right: 30px;
+    &--crop {
+      padding-top: 13px;
+      .editor__label {
+        top: -4px;
+        left: -2px;
+        width: 44px;
+        height: 44px;
+      }
+      .editor__icon--scale {
+        width: 44px;
+        height: 44px;
+      }
+    }
+    &--color {
+      padding-top: 30px;
+      .editor__label {
+        top: 15px;
+        left: 0;
+        width: 48px;
+        height: 43px;
+      }
+      .editor__icon--scale {
+        width: 48px;
+        height: 43px;
+      }
+    }
+    &--contrast {
+      padding-top: 27px;
+      .editor__label {
+        top: 18px;
+        left: 6px;
+        width: 32px;
+        height: 32px;
+      }
+      .editor__icon--scale {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  .editor__scale {
+    width: 288px;
+    margin-left: auto;
+  }
+
+  .editor__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .editor__button {
+    width: 183px;
+    &:first-of-type {
+      margin-bottom: 0;
+    }
   }
 }

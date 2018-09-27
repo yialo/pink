@@ -48,7 +48,9 @@
 
 @media (min-width: $desktop) {
   .button {
-    @include padding-vert(13px, 15px);
-    @include font(700, 21px, 21px);
+    &--white {
+      @include padding-vert(13px, 15px);
+      @include font(700, 21px, 21px);
+    }
   }
 }
