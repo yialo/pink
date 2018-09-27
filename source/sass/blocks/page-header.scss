@@ -6,7 +6,7 @@
 
 .page-header__top-wrapper {
   position: relative;
-  @include padding-vert(22px, 25px);
+  @include padding-vert(22px, 26px);
 }
 
 .page-header__logo {
@@ -47,13 +47,15 @@
 
 @media (min-width: $tablet) {
   .page-header__top-wrapper {
-    @include padding-vert(27px, 42px);
+    @include padding-vert(27px, 43px);
   }
 
   .page-header__logo {
     width: 147px;
   }
 }
+
+
 
 @media (min-width: $desktop) {
   .page-header {
@@ -66,10 +68,6 @@
     flex-direction: row;
     justify-content: space-between;
     @include padding-hor(10px);
-  }
-
-  .page-header__top-wrapper {
-    padding-bottom: 43px;
   }
 
   .page-header__logo {

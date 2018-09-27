@@ -2,11 +2,11 @@
   padding-top: 396px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: calc(50% - 31px) 110px;
+  background-position: calc(50% - 31px) 109px;
 }
 
 .download__wrapper {
-  @include padding-vert(28px, 30px);
+  @include padding-vert(27px, 30px);
   @include padding-hor;
   text-align: center;
   background-color: #1d2631;
@@ -66,12 +66,14 @@
   color: white;
 }
 
+
+
 @media (min-width: $tablet) {
   .download {
     @include padding-vert(93px, 110px);
     padding-left: 20px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: 50% 74px;
+    background-position: 50% 73px;
   }
 
   .download__wrapper {
@@ -83,7 +85,7 @@
 
   .download__title {
     display: block;
-    @include margin-vert(31px);
+    @include margin-vert(30px);
     @include padding-hor(30px);
     @include font(300, 40px, 48px);
     color: white;

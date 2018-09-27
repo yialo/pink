@@ -1,5 +1,5 @@
 .price {
-  @include padding-vert(133px, 47px);
+  @include padding-vert(132px, 47px);
   background-color: $gray;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
 
 @media (min-width: $tablet) {
   .price {
-    @include padding-vert(109px, 68px);
+    @include padding-vert(108px, 68px);
   }
 
   .price__wrapper {
@@ -31,7 +31,7 @@
 
 @media (min-width: $desktop) {
   .price {
-    @include padding-vert(160px, 95px);
+    @include padding-vert(161px, 95px);
   }
 
   .price__wrapper {

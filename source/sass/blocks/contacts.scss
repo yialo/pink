@@ -9,7 +9,7 @@
 }
 
 .contacts__tip {
-  @include margin-vert(33px);
+  @include margin-vert(32px);
   @include padding-hor;
   @include font(300, 24px, 30px);
   color: $navy;
@@ -45,12 +45,14 @@
 .contacts__item {
   &--phone {
     margin-bottom: 21px;
+  }
+  &--email {
+    margin-bottom: 24px;
     .contacts__legend {
       margin-bottom: 2px;
     }
   }
-  &--email {
-    margin-bottom: 24px;
+  &--address {
     .contacts__legend {
       margin-bottom: 2px;
     }
@@ -59,7 +61,7 @@
 
 .contacts__map {
   position: relative;
-  // width: 100%;
+  width: 100%;
   height: 200px;
   margin: 0 auto;
   background-color: #eae7df;
@@ -190,7 +192,7 @@
   }
 
   .contacts__map {
-    height: 522px;
+    height: 521px;
     background-image:
       url("../img/icon-map-marker.svg"),
       url("../img/bg-map-desktop@1x.jpg");

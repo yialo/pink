@@ -2,8 +2,7 @@
   background-color: #1d2631;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  background-position: center -70px;
 }
 
 .intro__title {
@@ -27,7 +26,7 @@
 @media (min-width: $tablet) {
   .intro {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position-y: -110px;
+    background-position: calc(50% - 5px) -110px;
   }
 
   .intro__title {
@@ -48,6 +47,7 @@
     padding-top: 110px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: calc(50% + 1px) 0;
+    background-size: cover;
     .intro__title {
       padding-top: 62px;
       font-size: 50px;
