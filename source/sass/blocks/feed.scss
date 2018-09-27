@@ -65,4 +65,8 @@
     margin-bottom: 88px;
     @include padding-hor(170px);
   }
+
+  .feed__list {
+    @include padding-hor(10px);
+  }
 }

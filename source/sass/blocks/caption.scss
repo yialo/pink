@@ -108,3 +108,14 @@
     }
   }
 }
+
+
+
+@media (min-width: $desktop) {
+  .caption--panorama {
+    padding-bottom: 14px;
+    .caption__like {
+      margin-right: 3px;
+    }
+  }
+}
