@@ -1,8 +1,9 @@
 .intro {
+  padding-top: 70px;
   background-color: #1d2631;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center -70px;
+  background-position: center top;
 }
 
 .intro__title {
@@ -26,7 +27,7 @@
 @media (min-width: $tablet) {
   .intro {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: calc(50% - 5px) -110px;
+    background-position: calc(50% - 5px) 0;
   }
 
   .intro__title {
