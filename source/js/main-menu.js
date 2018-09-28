@@ -1,6 +1,11 @@
+var header = document.querySelector('.page-header');
 var menu = document.querySelector('.page-header__navigation');
 var menuOpen = document.querySelector('.page-header__button--open');
 var menuClose = document.querySelector('.page-header__button--close');
+var intro = document.querySelector('.intro');
+
+header.classList.remove('page-header--nojs');
+intro.classList.remove('intro--nojs');
 
 menuOpen.addEventListener('click', function(evt) {
   evt.preventDefault();

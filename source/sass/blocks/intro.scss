@@ -24,10 +24,22 @@
   }
 }
 
+
+
+@media (max-width: $mobile-max) {
+  .intro--nojs {
+    padding-top: 0;
+    background-position: center -70px;
+  }
+}
+
+
+
 @media (min-width: $tablet) {
   .intro {
+    padding-top: 110px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: calc(50% - 5px) 0;
+    background-position: center 0;
   }
 
   .intro__title {
@@ -43,9 +55,19 @@
   }
 }
 
+
+
+@media (min-width: $tablet) and (max-width: $tablet-max) {
+  .intro--nojs {
+    padding-top: 0;
+    background-position: center -110px;
+  }
+}
+
+
+
 @media (min-width: $desktop) {
   .intro {
-    padding-top: 110px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: calc(50% + 1px) 0;
     background-size: cover;
