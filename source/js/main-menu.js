@@ -5,7 +5,6 @@ var menuClose = document.querySelector('.page-header__button--close');
 var intro = document.querySelector('.intro');
 
 header.classList.remove('page-header--nojs');
-menu.classList.add('page-header__navigation--closed');
 intro.classList.remove('intro--nojs');
 
 menuOpen.addEventListener('click', function(evt) {
