@@ -2715,11 +2715,12 @@ a {
     left: 17px; }
 
 .table {
-  width: 836px;
+  width: 834px;
   border-collapse: collapse; }
 
 .table__cell {
-  width: 280px; }
+  width: calc(100% / 3);
+  vertical-align: top; }
   .table__cell--header {
     padding-top: 17px;
     padding-bottom: 20px;
@@ -2817,7 +2818,7 @@ a {
   .table {
     width: 620px; }
   .table__cell {
-    width: 152px; }
+    width: calc(100% / 4); }
     .table__cell--header {
       padding-top: 12px;
       padding-bottom: 4px; }
@@ -2835,8 +2836,7 @@ a {
         width: 57px;
         height: 57px; }
     .table__cell:first-child {
-      display: table-cell;
-      width: 154px; }
+      display: table-cell; }
     .table__cell:empty {
       visibility: hidden;
       border-right-color: #283645;
@@ -2878,8 +2878,6 @@ a {
         left: 6px;
         width: 57px;
         height: 57px; }
-    .table__cell:first-child {
-      width: 232px; }
   .table__column-title {
     margin-bottom: 1px;
     font-size: 18px; }

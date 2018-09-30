@@ -1,10 +1,11 @@
 .table {
-  width: 836px;
+  width: 834px;
   border-collapse: collapse;
 }
 
 .table__cell {
-  width: 280px;
+  width: calc(100% / 3);
+  vertical-align: top;
   &--header {
     @include padding-vert(17px, 20px);
     @include padding-hor;
@@ -101,7 +102,7 @@
   }
 
   .table__cell {
-    width: 152px;
+    width: calc(100% / 4);
     &--header {
       @include padding-vert(12px, 4px);
     }
@@ -121,7 +122,6 @@
     }
     &:first-child {
       display: table-cell;
-      width: 154px;
     }
     &:empty {
       visibility: hidden;
@@ -182,9 +182,6 @@
         width: 57px;
         height: 57px;
       }
-    }
-    &:first-child {
-      width: 232px;
     }
   }
 
