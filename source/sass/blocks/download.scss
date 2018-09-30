@@ -12,7 +12,7 @@
   background-color: #1d2631;
 }
 
-.download__title {
+.download__slogan {
   display: none;
 }
 
@@ -83,7 +83,7 @@
     background-color: transparent;
   }
 
-  .download__title {
+  .download__slogan {
     display: block;
     @include margin-vert(30px);
     @include padding-hor(30px);
@@ -112,7 +112,7 @@
     background-position: calc(50% + 71px) 99px;
   }
 
-  .download__title {
+  .download__slogan {
     margin-bottom: 51px;
     @include font(300, 50px, 61px);
   }

@@ -977,7 +977,7 @@ a {
   text-align: center;
   background-color: #1d2631; }
 
-.download__title {
+.download__slogan {
   display: none; }
 
 .download__main-link {
@@ -1051,7 +1051,7 @@ a {
     padding-right: 0;
     padding-left: 0;
     background-color: transparent; }
-  .download__title {
+  .download__slogan {
     display: block;
     margin-top: 0;
     margin-bottom: 30px;
@@ -1077,7 +1077,7 @@ a {
     padding-left: 10px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: calc(50% + 71px) 99px; }
-  .download__title {
+  .download__slogan {
     margin-bottom: 51px;
     font-weight: 300;
     font-style: normal;
