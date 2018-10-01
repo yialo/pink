@@ -2,13 +2,14 @@
   display: block;
   &--panorama {
     position: relative;
-    width: 320px;
+    width: 100%;
     @include margin-hor(auto);
   }
 }
 
 .post__image {
   display: block;
+  width: 100%;
 }
 
 .post__legend {

@@ -21,8 +21,9 @@
 
 .editor__image {
   display: block;
+  width: 280px;
   margin-bottom: 40px;
-  @include margin-hor(20px);
+  @include margin-hor(auto);
 }
 
 .editor__toggles {
@@ -87,6 +88,7 @@
 .editor__item {
   padding-bottom: 18px;
   @include padding-hor;
+  text-align: center;
   border-bottom: 1px solid #dddfe0;
 }
 
@@ -143,6 +145,7 @@
 
 .editor__button {
   width: 280px;
+  @include margin-hor(auto);
   &:first-of-type {
     margin-bottom: 12px;
   }

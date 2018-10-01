@@ -2,7 +2,7 @@
   width: 100%;
   @include margin-hor(auto);
   &--panorama {
-    width: 280px;
+    width: calc(100% - 40px);
   }
 }
 
