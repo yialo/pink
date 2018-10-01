@@ -2,19 +2,8 @@
   display: none;
 }
 
-@media (min-width: $tablet) {
-  .text-wrap--tablet {
-    display: inline;
-  }
-}
-
-@media (min-width: $desktop) {
+@media (min-width: $tablet) and (max-width: $tablet-max) {
   .text-wrap {
-    &--tablet {
-      display: none;
-    }
-    &--desktop {
-      display: inline;
-    }
+    display: inline;
   }
 }

@@ -177,6 +177,7 @@
   }
 
   .contacts__item {
+    width: calc(100% / 3 - 20px);
     &:not(:last-child) {
       margin-bottom: 0;
     }

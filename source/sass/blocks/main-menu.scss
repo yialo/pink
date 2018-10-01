@@ -21,6 +21,7 @@
 @media (min-width: $desktop) {
   .main-menu {
     display: flex;
+    flex-wrap: wrap;
     @include padding-vert(45px, 32px);
     @include font(400, 18px, 18px);
     text-transform: none;

@@ -114,13 +114,12 @@
   }
 
   .reviews__inner-wrapper {
-    order: 1;
-    width: 820px;
+    width: 100%;
     margin-bottom: 0;
   }
 
   .reviews__item {
-    width: 820px;
+    width: 100%;
     @include padding-hor;
   }
 
@@ -146,9 +145,6 @@
     padding: 0;
     background-color: transparent;
     border-style: none;
-    &--next {
-      order: 1;
-    }
     &:hover .reviews__button-icon {
       fill: rgba(40, 54, 69, 0.6);
     }

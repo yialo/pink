@@ -117,12 +117,12 @@
   }
 
   .advantages__item {
-    width: 300px;
+    width: 31.25%;
     padding-top: 361px;
     @include padding-hor(30px);
     text-align: center;
     background-repeat: no-repeat;
-    background-position: 7px 3px;
+    background-position: center 3px;
     &:not(:last-child) {
       margin-bottom: 0;
     }

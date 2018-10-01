@@ -159,18 +159,12 @@
 
 
 @media (min-width: $desktop) {
-  .table {
-    width: 940px;
-  }
-
   .table__cell {
-    width: 232px;
     &--header {
       @include padding-vert(17px, 20px);
     }
     &--body {
       @include padding-vert(14px, 15px);
-      @include padding-hor(21px);
       font-size: 18px;
     }
     &--best {
@@ -193,16 +187,5 @@
   .table__price-value {
     font-size: 24px;
     line-height: 30px;
-  }
-
-  .table__cell-value {
-    &--yes {
-      top: 22px;
-      left: 101px;
-    }
-    &--no {
-      top: 16px;
-      left: 103px;
-    }
   }
 }

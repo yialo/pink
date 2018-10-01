@@ -126,4 +126,8 @@
   .page-header__logo {
     margin-left: 0;
   }
+
+  .page-header__list {
+    max-width: calc(625% / 8);
+  }
 }
