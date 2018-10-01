@@ -545,10 +545,11 @@ input[type="radio"].visually-hidden {
 @media (min-width: 960px) {
   .aligner {
     max-width: 1200px; }
+    .aligner--panorama {
+      width: calc(100% - 20px);
+      max-width: 1180px; }
     .aligner--form {
       width: 100%; }
-    .aligner--panorama {
-      width: 940px; }
     .aligner--editor {
       width: 940px; } }
 
@@ -696,21 +697,17 @@ input[type="radio"].visually-hidden {
               flex-direction: row;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      padding-bottom: 15px; }
+      padding-bottom: 25px; }
       .caption--panorama .caption__header {
-        -webkit-box-ordinal-group: 0;
-            -ms-flex-order: -1;
-                order: -1;
         max-width: 400px;
         margin-right: auto; }
       .caption--panorama .caption__body {
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
-                order: 1; }
+                order: 1;
+        width: 100%;
+        margin-bottom: 0; }
       .caption--panorama .caption__footer {
-        -webkit-box-ordinal-group: 1;
-            -ms-flex-order: 0;
-                order: 0;
         max-width: 150px; }
       .caption--panorama .caption__like {
         margin-left: 18px;
@@ -1308,7 +1305,10 @@ input[type="radio"].visually-hidden {
     margin-right: 0;
     margin-left: 0; }
   .editor__form {
-    width: calc(1375% / 31); }
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-left: calc(225% / 31); }
   .editor__toggles {
     display: none; }
   .editor__list {
@@ -1351,7 +1351,7 @@ input[type="radio"].visually-hidden {
   .editor__icon--scale .editor__path {
     fill: #d22856; }
   .editor__scale {
-    width: 200px;
+    width: 100%;
     margin-right: 0;
     margin-left: 0; }
   .editor__button-wrapper {
@@ -1487,7 +1487,7 @@ input[type="radio"].visually-hidden {
     margin-top: -20px;
     margin-left: -20px; }
   .feed__item {
-    width: 300px;
+    width: 46.875%;
     margin-top: 20px;
     margin-left: 20px; }
     .feed__item:not(:last-child) {
@@ -2355,7 +2355,7 @@ input[type="radio"].visually-hidden {
   .post__link--panorama {
     width: 100%; }
   .post__image {
-    width: 300px;
+    width: 100%;
     height: 300px; }
     .post__image--panorama {
       width: 100%; }

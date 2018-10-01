@@ -21,11 +21,12 @@
 @media (min-width: $desktop) {
   .aligner {
     max-width: 1200px;
+    &--panorama {
+      width: calc(100% - 20px);
+      max-width: 1180px;
+    }
     &--form {
       width: 100%;
-    }
-    &--panorama {
-      width: 940px;
     }
     &--editor {
       width: 940px;

@@ -72,19 +72,19 @@
     &--panorama {
       flex-direction: row;
       flex-wrap: wrap;
-      padding-bottom: 15px;
+      padding-bottom: 25px;
       .caption__header {
-        order: -1;
         max-width: 400px;
         margin-right: auto;
       }
 
       .caption__body {
         order: 1;
+        width: 100%;
+        margin-bottom: 0;
       }
 
       .caption__footer {
-        order: 0;
         max-width: 150px;
       }
 

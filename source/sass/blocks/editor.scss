@@ -174,7 +174,8 @@
   }
 
   .editor__form {
-    width: calc(1375% / 31);
+    flex-grow: 1;
+    margin-left: calc(225% / 31);
   }
 
   .editor__toggles {
@@ -241,7 +242,7 @@
   }
 
   .editor__scale {
-    width: 200px;
+    width: 100%;
     @include margin-hor(0);
   }
 
