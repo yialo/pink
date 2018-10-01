@@ -10,6 +10,7 @@
 .post__image {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .post__legend {
@@ -30,15 +31,14 @@
 
 @media (min-width: $tablet) {
   .post__link--panorama {
-    width: 660px;
+    width: 100%;
   }
 
   .post__image {
     width: 300px;
     height: 300px;
     &--panorama {
-      width: 660px;
-      height: 509px;
+      width: 100%;
     }
   }
 

@@ -109,9 +109,13 @@
 @media (min-width: $desktop) {
   .download {
     @include padding-vert(106px, 122px);
-    padding-left: 10px;
+    @include padding-hor(calc(25% / 24));
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: calc(50% + 71px) 99px;
+  }
+
+  .download__wrapper {
+    width: calc(1500% / 47);
   }
 
   .download__slogan {

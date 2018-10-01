@@ -1,14 +1,17 @@
 @import "variables.scss";
 @import "mixins.scss";
 
-@import "global/normalize.scss";
-@import "global/fonts.scss";
-@import "global/animations.scss";
-@import "global/scaffolding.scss";
+@import "scaffolding/normalize.scss";
+@import "scaffolding/fonts.scss";
+@import "scaffolding/animations.scss";
+@import "scaffolding/global.scss";
+
+@import "auxiliary/button-fix.scss";
+@import "auxiliary/text-wrap.scss";
+@import "auxiliary/visually-hidden.scss";
 
 @import "blocks/advantages.scss";
 @import "blocks/aligner.scss";
-@import "blocks/button-fix.scss";
 @import "blocks/button.scss";
 @import "blocks/caption.scss";
 @import "blocks/contacts.scss";
@@ -31,7 +34,5 @@
 @import "blocks/reviews.scss";
 @import "blocks/social.scss";
 @import "blocks/table.scss";
-@import "blocks/text-wrap.scss";
-@import "blocks/visually-hidden.scss";
 
 @import "js-styles.scss";

@@ -163,7 +163,7 @@
     display: flex;
     justify-content: space-between;
     @include padding-vert(57px, 54px);
-    @include padding-hor;
+    @include padding-hor(calc(100% / 33));
   }
 
   .editor__image {
@@ -174,7 +174,7 @@
   }
 
   .editor__form {
-    width: 275px;
+    width: calc(1375% / 31);
   }
 
   .editor__toggles {
