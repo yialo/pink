@@ -114,7 +114,7 @@
   }
 
   .contacts__item {
-    width: 300px;
+    width: calc(500% / 11);
     &:not(:last-child) {
       margin-bottom: 47px;
     }

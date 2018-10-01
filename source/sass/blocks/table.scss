@@ -98,7 +98,7 @@
 
 @media (min-width: $tablet) {
   .table {
-    width: 620px;
+    width: 100%;
   }
 
   .table__cell {
@@ -108,7 +108,7 @@
     }
     &--body {
       @include padding-vert(7px, 8px);
-      @include padding-hor(15px);
+      @include padding-hor(calc(375% / 157));
     }
     &--best {
       background-image: url("../img/bg-hit-tablet.svg");
@@ -147,11 +147,11 @@
   .table__cell-value {
     &--yes {
       top: 13px;
-      left: 61px;
+      left: calc(50% - 31px/2);
     }
     &--no {
       top: 9px;
-      left: 62px;
+      left: calc(50% - 27px/2);
     }
   }
 }

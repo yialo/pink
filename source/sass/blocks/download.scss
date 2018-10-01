@@ -78,7 +78,7 @@
   }
 
   .download__wrapper {
-    width: 300px;
+    width: calc(500% / 11);
     @include padding-vert(0, 0);
     @include padding-hor(0);
     background-color: transparent;
@@ -93,6 +93,7 @@
   }
 
   .download__main-link {
+    width: 300px;
     margin-bottom: 46px;
   }
 

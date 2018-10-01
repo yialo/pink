@@ -822,7 +822,7 @@ a {
         -ms-flex-pack: center;
             justify-content: center; }
   .contacts__item {
-    width: 300px; }
+    width: calc(500% / 11); }
     .contacts__item:not(:last-child) {
       margin-bottom: 47px; }
     .contacts__item--phone {
@@ -1044,7 +1044,7 @@ a {
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-position: 50% 73px; }
   .download__wrapper {
-    width: 300px;
+    width: calc(500% / 11);
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 0;
@@ -1063,6 +1063,7 @@ a {
     font-family: "Open Sans", "Arial", sans-serif;
     color: white; }
   .download__main-link {
+    width: 300px;
     margin-bottom: 46px; }
   .download__list {
     margin-bottom: 35px; }
@@ -2131,7 +2132,7 @@ a {
   .page-footer__logo {
     margin-bottom: 0;
     margin-left: 0;
-    margin-right: 74px; }
+    margin-right: calc(370% / 33); }
   .page-footer__social {
     margin-top: 3px;
     margin-bottom: 0; }
@@ -2808,7 +2809,7 @@ a {
 
 @media (min-width: 660px) {
   .table {
-    width: 620px; }
+    width: 100%; }
   .table__cell {
     width: calc(100% / 4); }
     .table__cell--header {
@@ -2817,8 +2818,8 @@ a {
     .table__cell--body {
       padding-top: 7px;
       padding-bottom: 8px;
-      padding-right: 15px;
-      padding-left: 15px; }
+      padding-right: calc(375% / 157);
+      padding-left: calc(375% / 157); }
     .table__cell--best {
       background-image: url("../img/bg-hit-tablet.svg");
       background-size: 57px 57px; }
@@ -2843,10 +2844,10 @@ a {
     display: none; }
   .table__cell-value--yes {
     top: 13px;
-    left: 61px; }
+    left: calc(50% - 31px/2); }
   .table__cell-value--no {
     top: 9px;
-    left: 62px; } }
+    left: calc(50% - 27px/2); } }
 
 @media (min-width: 960px) {
   .table {
