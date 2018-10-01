@@ -52,7 +52,7 @@
 
 @media (min-width: $desktop) {
   .post__link--panorama {
-    width: 1200px;
+    max-width: 1200px;
   }
 
   .post__image {
@@ -65,6 +65,6 @@
 
   .post__legend {
     top: 54px;
-    right: 130px;
+    right: 10px;
   }
 }

@@ -29,7 +29,8 @@
       width: 100%;
     }
     &--editor {
-      width: 940px;
+      width: calc(100% - 20px);
+      max-width: 1180px;
     }
   }
 }
