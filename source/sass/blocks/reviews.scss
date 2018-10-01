@@ -25,10 +25,6 @@
 .reviews__item {
   width: calc(100% / 3);
   @include padding-hor;
-}
-
-.reviews__content {
-  margin: 0;
   text-align: center;
 }
 
@@ -49,7 +45,7 @@
 }
 
 .reviews__text {
-  @include margin-vert;
+  margin: 0;
   @include font;
   color: $navy;
 }
@@ -70,11 +66,6 @@
   }
 
   .reviews__item {
-    width: 660px;
-    @include padding-hor;
-  }
-
-  .reviews__content {
     display: flex;
     flex-direction: column;
   }

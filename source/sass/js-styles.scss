@@ -20,16 +20,10 @@
 
 .show-reviews-item-2 {
   transform: translateX(calc(-100% / 3));
-  @media (min-width: $tablet) {
-    transform: translateX(-660px);
-  }
 }
 
 .show-reviews-item-3 {
   transform: translateX(calc(-200% / 3));
-  @media (min-width: $tablet) {
-    transform: translateX(-1320px);
-  }
 }
 
 .show-price-item-1 {
