@@ -11,6 +11,7 @@
 }
 
 .reviews__inner-wrapper {
+  width: 100%;
   margin-bottom: 33px;
   overflow-x: hidden;
 }
@@ -22,7 +23,7 @@
 }
 
 .reviews__item {
-  width: 320px;
+  width: calc(100% / 3);
   @include padding-hor;
 }
 

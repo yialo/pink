@@ -1,5 +1,5 @@
 .table {
-  width: 834px;
+  width: calc(300% - 66px);
   border-collapse: collapse;
 }
 
@@ -24,8 +24,8 @@
   &--body {
     position: relative;
     @include padding-vert(15px, 14px);
-    padding-left: 22px;
-    padding-right: 70px;
+    padding-left: calc(20% / 7);
+    padding-right: calc(25% / 3);
     @include font;
     color: $navy;
     background-color: white;
@@ -78,13 +78,13 @@
   position: absolute;
   &--yes {
     top: 20px;
-    right: 17px;
+    right: calc(85% / 14);
     width: 31px;
     height: 21px;
   }
   &--no {
     top: 15px;
-    right: 19px;
+    right: calc(95% / 14);
     width: 27px;
     height: 27px;
   }

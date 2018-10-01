@@ -17,8 +17,9 @@
 }
 
 .download__main-link {
-  width: 100%;
+  width: 280px;
   margin-bottom: 32px;
+  @include margin-hor(auto);
 }
 
 .download__list {

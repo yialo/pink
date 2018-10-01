@@ -19,14 +19,14 @@
 }
 
 .show-reviews-item-2 {
-  transform: translateX(-320px);
+  transform: translateX(calc(-100% / 3));
   @media (min-width: $tablet) {
     transform: translateX(-660px);
   }
 }
 
 .show-reviews-item-3 {
-  transform: translateX(-640px);
+  transform: translateX(calc(-200% / 3));
   @media (min-width: $tablet) {
     transform: translateX(-1320px);
   }
@@ -37,14 +37,14 @@
 }
 
 .show-price-item-2 {
-  transform: translateX(-278px);
+  transform: translateX(calc(-100% / 3));
   @media (min-width: $tablet) {
     transform: translateX(0);
   }
 }
 
 .show-price-item-3 {
-  transform: translateX(-556px);
+  transform: translateX(calc(-200% / 3));
   @media (min-width: $tablet) {
     transform: translateX(0);
   }
