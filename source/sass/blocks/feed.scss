@@ -49,7 +49,7 @@
   }
 
   .feed__item {
-    width: calc((100% - 40px) / 2);
+    width: 300px;
     margin-top: 20px;
     margin-left: 20px;
     &:not(:last-child) {
@@ -72,7 +72,6 @@
   }
 
   .feed__item {
-    width: calc((100% - 60px) / 3);
     margin-top: 54px;
   }
 }

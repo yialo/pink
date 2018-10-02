@@ -1,17 +1,22 @@
 .aligner {
   width: 320px;
   @include margin-hor(auto);
+
   &--panorama {
-    width: calc(100% - 40px);
+    width: 280px;
   }
 }
 
 
 
 @media (min-width: $tablet) {
-  width: 660px;
   .aligner {
+    width: 660px;
+
     &--form {
+      width: 620px;
+    }
+    &--panorama {
       width: 620px;
     }
   }
@@ -22,16 +27,15 @@
 @media (min-width: $desktop) {
   .aligner {
     width: 960px;
-    &--panorama {
-      width: calc(100% - 20px);
-      max-width: 1180px;
-    }
+
     &--form {
       width: 100%;
     }
+    &--panorama {
+      width: 940px;
+    }
     &--editor {
-      width: calc(100% - 20px);
-      max-width: 1180px;
+      width: 940px;
     }
   }
 }

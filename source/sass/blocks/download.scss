@@ -38,6 +38,7 @@
 
 .download__link {
   display: block;
+
   &--apple {
     width: 47px;
     height: 57px;
@@ -78,7 +79,7 @@
   }
 
   .download__wrapper {
-    width: calc(500% / 11);
+    width: 300px;
     @include padding-vert(0, 0);
     @include padding-hor(0);
     background-color: transparent;
@@ -106,16 +107,18 @@
   }
 }
 
+
+
 @media (min-width: $desktop) {
   .download {
     @include padding-vert(106px, 122px);
-    @include padding-hor(calc(25% / 24));
+    @include padding-hor(10px);
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: calc(50% + 71px) 99px;
   }
 
   .download__wrapper {
-    width: calc(1500% / 47);
+    width: 300px;
   }
 
   .download__slogan {

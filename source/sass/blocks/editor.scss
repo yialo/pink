@@ -30,7 +30,7 @@
   display: flex;
   justify-content: center;
   @include list;
-  margin-bottom: 28px;
+  margin-bottom: 34px;
   @include padding-hor(20px);
 }
 
@@ -86,14 +86,14 @@
 }
 
 .editor__item {
-  padding-bottom: 18px;
+  padding-bottom: 28px;
   @include padding-hor;
-  text-align: center;
   border-bottom: 1px solid #dddfe0;
 }
 
 .editor__scale {
   -webkit-appearance: none;
+  display: block;
   width: 240px;
   height: 14px;
   @include margin-hor(20px);
@@ -167,17 +167,16 @@
   }
 
   .editor__image {
-    width: calc(1500% / 31);
+    width: 300px;
     height: 400px;
     margin-bottom: 0;
     @include margin-hor(0);
   }
 
   .editor__form {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    margin-left: calc(225% / 31);
+    width: 275px;
   }
 
   .editor__toggles {
@@ -195,11 +194,11 @@
 
   .editor__item {
     position: relative;
-    @include padding-vert(23px, 18px);
-    padding-left: calc(228% / 11);
-    padding-right: calc(72% / 11);
+    @include padding-vert(29px, 28px);
+    padding-left: 57px;
+    padding-right: 18px;
     &--crop {
-      padding-top: 7px;
+      padding-top: 13px;
       .editor__label {
         top: 8px;
         left: 2px;
@@ -244,7 +243,7 @@
   }
 
   .editor__scale {
-    width: 100%;
+    width: 200px;
     @include margin-hor(0);
   }
 
@@ -260,7 +259,7 @@
   }
 }
 
-//FIXME: исправить кривую резину в этом блоке на десктопе
+
 
 @media (min-width: $desktop) {
   .editor {
@@ -277,14 +276,12 @@
 
   .editor__inner-wrapper {
     padding-bottom: 57px;
-    padding-left: calc(25% / 3);
-    padding-right: 6.25%;
+    padding-left: 80px;
+    padding-right: 60px;
     background-color: $gray;
   }
 
   .editor__form {
-    display: flex;
-    flex-direction: column;
     width: 410px;
   }
 

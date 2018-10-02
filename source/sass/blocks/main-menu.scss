@@ -22,7 +22,6 @@
   .main-menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     @include padding-vert(45px, 32px);
     @include font(400, 18px, 18px);
     text-transform: none;
@@ -33,6 +32,10 @@
     padding: 0;
     background-color: transparent;
     box-shadow: none;
+    &:not(:last-child) {
+      margin-right: 80px;
+    }
+
     &--current {
       background-image: linear-gradient(to top, white 0, white 2px, transparent 2px);
     }
