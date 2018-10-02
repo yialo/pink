@@ -96,6 +96,15 @@
     }
   }
 
+  .page-header__button {
+    &--open {
+      top: 44px;
+    }
+    &--close {
+      top: 45px;
+    }
+  }
+
   .page-header--nojs {
     position: static;
     .page-header__top-wrapper {
