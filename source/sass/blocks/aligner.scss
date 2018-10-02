@@ -1,5 +1,5 @@
 .aligner {
-  width: 100%;
+  width: 320px;
   @include margin-hor(auto);
   &--panorama {
     width: calc(100% - 40px);
@@ -9,6 +9,7 @@
 
 
 @media (min-width: $tablet) {
+  width: 660px;
   .aligner {
     &--form {
       width: 620px;
@@ -20,7 +21,7 @@
 
 @media (min-width: $desktop) {
   .aligner {
-    max-width: 1200px;
+    width: 960px;
     &--panorama {
       width: calc(100% - 20px);
       max-width: 1180px;

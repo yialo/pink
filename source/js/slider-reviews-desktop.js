@@ -10,6 +10,9 @@ reviewButtonDesktopPrevious.addEventListener('click', function(evt) {
   } else if (reviewListDesktop.classList.contains('show-reviews-item-2')) {
     reviewListDesktop.classList.remove('show-reviews-item-2');
     reviewListDesktop.classList.add('show-reviews-item-1');
+  } else if (reviewListDesktop.classList.contains('show-reviews-item-1')) {
+    reviewListDesktop.classList.remove('show-reviews-item-1');
+    reviewListDesktop.classList.add('show-reviews-item-3');
   }
 });
 
@@ -21,5 +24,8 @@ reviewButtonDesktopNext.addEventListener('click', function(evt) {
   } else if (reviewListDesktop.classList.contains('show-reviews-item-2')) {
     reviewListDesktop.classList.remove('show-reviews-item-2');
     reviewListDesktop.classList.add('show-reviews-item-3');
+  } else if (reviewListDesktop.classList.contains('show-reviews-item-3')) {
+    reviewListDesktop.classList.remove('show-reviews-item-3');
+    reviewListDesktop.classList.add('show-reviews-item-1');
   }
 });
