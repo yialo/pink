@@ -1,11 +1,12 @@
 .table {
-  width: calc(300% - 66px);
+  width: 834px;
   border-collapse: collapse;
 }
 
 .table__cell {
   width: calc(100% / 3);
   vertical-align: top;
+
   &--header {
     @include padding-vert(17px, 20px);
     @include padding-hor;
@@ -21,6 +22,7 @@
       border-bottom-right-radius: 3px;
     }
   }
+
   &--body {
     position: relative;
     @include padding-vert(15px, 14px);
@@ -33,6 +35,7 @@
     border-right: 2px solid $darkgray;
     border-bottom: 2px solid $darkgray;
   }
+
   &--best {
     position: relative;
     background-image: url("../img/bg-hit.svg");
@@ -50,6 +53,7 @@
       transform: rotate(-45deg);
     }
   }
+
   &:first-child {
     display: none;
   }

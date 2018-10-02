@@ -9,8 +9,11 @@
 
 .price__wrapper {
   margin-bottom: 40px;
-  padding-left: 20px;
   overflow-x: hidden;
+}
+
+.price__table {
+  margin-left:  calc(50% - 139px);
 }
 
 
@@ -22,8 +25,12 @@
 
   .price__wrapper {
     margin-bottom: 0;
-    padding-right: 20px;
+    @include padding-hor;
     overflow-x: visible;
+  }
+
+  .price__table {
+    margin-left: 0;
   }
 }
 

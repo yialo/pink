@@ -535,12 +535,16 @@ input[type="radio"].visually-hidden {
   width: 320px;
   margin-right: auto;
   margin-left: auto; }
+  .aligner--price {
+    width: 100%; }
   .aligner--panorama {
     width: 280px; }
 
 @media (min-width: 660px) {
   .aligner {
     width: 660px; }
+    .aligner--price {
+      width: 660px; }
     .aligner--form {
       width: 620px; }
     .aligner--panorama {
@@ -2376,8 +2380,10 @@ input[type="radio"].visually-hidden {
 
 .price__wrapper {
   margin-bottom: 40px;
-  padding-left: 20px;
   overflow-x: hidden; }
+
+.price__table {
+  margin-left: calc(50% - 139px); }
 
 @media (min-width: 660px) {
   .price {
@@ -2386,7 +2392,10 @@ input[type="radio"].visually-hidden {
   .price__wrapper {
     margin-bottom: 0;
     padding-right: 20px;
-    overflow-x: visible; } }
+    padding-left: 20px;
+    overflow-x: visible; }
+  .price__table {
+    margin-left: 0; } }
 
 @media (min-width: 980px) {
   .price {
@@ -2722,7 +2731,7 @@ input[type="radio"].visually-hidden {
     left: 17px; }
 
 .table {
-  width: calc(300% - 66px);
+  width: 834px;
   border-collapse: collapse; }
 
 .table__cell {
@@ -2919,16 +2928,16 @@ input[type="radio"].visually-hidden {
           transform: translateX(0); }
 
 .show-price-item-2 {
-  -webkit-transform: translateX(calc(-100% / 3));
-          transform: translateX(calc(-100% / 3)); }
+  -webkit-transform: translateX(-278px);
+          transform: translateX(-278px); }
   @media (min-width: 660px) {
     .show-price-item-2 {
       -webkit-transform: translateX(0);
               transform: translateX(0); } }
 
 .show-price-item-3 {
-  -webkit-transform: translateX(calc(-200% / 3));
-          transform: translateX(calc(-200% / 3)); }
+  -webkit-transform: translateX(-556px);
+          transform: translateX(-556px); }
   @media (min-width: 660px) {
     .show-price-item-3 {
       -webkit-transform: translateX(0);
