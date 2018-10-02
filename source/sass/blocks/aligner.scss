@@ -2,7 +2,10 @@
   width: 320px;
   @include margin-hor(auto);
 
-  &--price {
+  &--header {
+    width: 100%;
+  }
+  &--flexible {
     width: 100%;
   }
   &--panorama {
@@ -16,7 +19,10 @@
   .aligner {
     width: 660px;
 
-    &--price {
+    &--header {
+      width: 100%;
+    }
+    &--flexible {
       width: 660px;
     }
     &--form {

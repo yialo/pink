@@ -7,7 +7,7 @@
 
 .download__wrapper {
   @include padding-vert(27px, 30px);
-  @include padding-hor;
+  @include padding-hor(calc((100% - 280px) / 2));
   text-align: center;
   background-color: #1d2631;
 }

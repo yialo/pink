@@ -535,7 +535,9 @@ input[type="radio"].visually-hidden {
   width: 320px;
   margin-right: auto;
   margin-left: auto; }
-  .aligner--price {
+  .aligner--header {
+    width: 100%; }
+  .aligner--flexible {
     width: 100%; }
   .aligner--panorama {
     width: 280px; }
@@ -543,7 +545,9 @@ input[type="radio"].visually-hidden {
 @media (min-width: 660px) {
   .aligner {
     width: 660px; }
-    .aligner--price {
+    .aligner--header {
+      width: 100%; }
+    .aligner--flexible {
       width: 660px; }
     .aligner--form {
       width: 620px; }
@@ -989,8 +993,8 @@ input[type="radio"].visually-hidden {
 .download__wrapper {
   padding-top: 27px;
   padding-bottom: 30px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: calc((100% - 280px) / 2);
+  padding-left: calc((100% - 280px) / 2);
   text-align: center;
   background-color: #1d2631; }
 
@@ -2283,36 +2287,6 @@ input[type="radio"].visually-hidden {
   .page-header__logo {
     margin-left: 0; } }
 
-.page-main__title {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 30px;
-  padding-right: 20px;
-  padding-left: 20px;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  text-align: center;
-  color: white; }
-  .page-main__title--index {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-            clip-path: inset(100%); }
-  .page-main__title--contest {
-    padding-bottom: 51px; }
-  .page-main__title--gallery {
-    padding-bottom: 81px; }
-
 .post__link {
   display: block; }
   .post__link--panorama {
@@ -2896,9 +2870,6 @@ input[type="radio"].visually-hidden {
   .table__price-value {
     font-size: 24px;
     line-height: 30px; } }
-
-.hidden {
-  display: none; }
 
 .range-hidden {
   display: none; }
