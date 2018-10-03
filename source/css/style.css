@@ -804,7 +804,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   height: 200px;
   margin: 0 auto;
-  background-color: #eae7df;
+  background-color: white;
   background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 95px, 50% 0; }
@@ -1990,7 +1990,11 @@ input[type="radio"].visually-hidden {
   background-color: #1d2631;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top; }
+  background-position: center top;
+  background-size: 700px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .intro {
+      background-image: url("../img/bg-back-mobile@2x.jpg"); } }
 
 .intro__title {
   margin-top: 0;
@@ -2031,7 +2035,13 @@ input[type="radio"].visually-hidden {
   .intro {
     padding-top: 110px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center 0; }
+    background-position: center 0;
+    background-size: 1200px; } }
+  @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+    .intro {
+      background-image: url("../img/bg-back-tablet@2x.jpg"); } }
+
+@media (min-width: 660px) {
   .intro__title {
     padding-top: 70px;
     font-size: 50px;
@@ -2050,7 +2060,12 @@ input[type="radio"].visually-hidden {
   .intro {
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: calc(50% + 1px) 0;
-    background-size: cover; }
+    background-size: cover; } }
+  @media (min-width: 980px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 980px) and (min-resolution: 144dpi), (min-width: 980px) and (min-resolution: 1.5dppx) {
+    .intro {
+      background-image: url("../img/bg-back-desktop@2x.jpg"); } }
+
+@media (min-width: 980px) {
   .intro__title {
     padding-top: 62px;
     font-size: 50px;
