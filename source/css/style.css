@@ -833,7 +833,11 @@ input[type="radio"].visually-hidden {
   background-color: white;
   background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 50% 95px, 50% 0; }
+  background-position: 50% 95px, 50% 0;
+  background-size: 320px, auto; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .contacts__map {
+      background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@2x.jpg"); } }
   .contacts__map::before {
     content: "";
     position: absolute;
@@ -885,7 +889,13 @@ input[type="radio"].visually-hidden {
   .contacts__map {
     height: 372px;
     background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@1x.jpg");
-    background-position: 50% 193px, 50% -133px; }
+    background-position: 50% 193px, 50% -133px;
+    background-size: 700px, auto; } }
+  @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+    .contacts__map {
+      background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@2x.jpg"); } }
+
+@media (min-width: 660px) {
     .contacts__map::before {
       height: 68px; } }
 
@@ -921,7 +931,13 @@ input[type="radio"].visually-hidden {
   .contacts__map {
     height: 521px;
     background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-desktop@1x.jpg");
-    background-position: 50% 283px, 50% -45px; }
+    background-position: 50% 283px, 50% -45px;
+    background-size: 1200px, auto; } }
+  @media (min-width: 980px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 980px) and (min-resolution: 144dpi), (min-width: 980px) and (min-resolution: 1.5dppx) {
+    .contacts__map {
+      background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-desktop@2x.jpg"); } }
+
+@media (min-width: 980px) {
     .contacts__map::before {
       height: 123px; } }
 
@@ -2033,7 +2049,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 700px auto; }
+  background-size: 700px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .intro {
       background-image: url("../img/bg-back-mobile@2x.jpg"); } }
@@ -2078,7 +2094,7 @@ input[type="radio"].visually-hidden {
     padding-top: 110px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: center 0;
-    background-size: 1200px auto; } }
+    background-size: 1200px; } }
   @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
     .intro {
       background-image: url("../img/bg-back-tablet@2x.jpg"); } }
@@ -2156,6 +2172,8 @@ input[type="radio"].visually-hidden {
   background-color: #283645;
   -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 0 #000000;
           box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 0 #000000; }
+  .main-menu__item--current {
+    color: #d22856; }
 
 @media (min-width: 980px) {
   .main-menu {
@@ -2181,6 +2199,7 @@ input[type="radio"].visually-hidden {
     .main-menu__item:not(:last-child) {
       margin-right: 80px; }
     .main-menu__item--current {
+      color: white;
       background-image: linear-gradient(to top, white 0, white 2px, transparent 2px); }
   .main-menu__link[href]:hover {
     color: #d22856; }
@@ -2293,7 +2312,11 @@ input[type="radio"].visually-hidden {
     padding-top: 27px;
     padding-bottom: 43px; }
   .page-header__logo {
-    width: 147px; } }
+    width: 147px; }
+  .page-header__button--open {
+    top: 44px; }
+  .page-header__button--close {
+    top: 45px; } }
 
 @media (max-width: 979px) {
   .page-header__navigation--opened .page-header__top-wrapper {
@@ -2315,10 +2338,6 @@ input[type="radio"].visually-hidden {
     display: none; }
   .page-header__navigation--closed .page-header__list {
     display: none; }
-  .page-header__button--open {
-    top: 44px; }
-  .page-header__button--close {
-    top: 45px; }
   .page-header--nojs {
     position: static; }
     .page-header--nojs .page-header__top-wrapper {

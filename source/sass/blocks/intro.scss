@@ -4,7 +4,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 700px auto;
+  background-size: 700px;
 
   @media (min-resolution: $retina-i), (min-resolution: $retina-x) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -46,7 +46,7 @@
     padding-top: 110px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: center 0;
-    background-size: 1200px auto;
+    background-size: 1200px;
 
     @media (min-resolution: $retina-i), (min-resolution: $retina-x) {
       background-image: url("../img/bg-back-tablet@2x.jpg");

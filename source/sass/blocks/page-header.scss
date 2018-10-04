@@ -60,6 +60,15 @@
   .page-header__logo {
     width: 147px;
   }
+
+  .page-header__button {
+    &--open {
+      top: 44px;
+    }
+    &--close {
+      top: 45px;
+    }
+  }
 }
 
 
@@ -93,15 +102,6 @@
     }
     .page-header__list {
       display: none;
-    }
-  }
-
-  .page-header__button {
-    &--open {
-      top: 44px;
-    }
-    &--close {
-      top: 45px;
     }
   }
 
