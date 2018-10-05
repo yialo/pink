@@ -23,7 +23,7 @@
 
 
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet-min) {
   .copyright__legend {
     padding-top: 6px;
   }
@@ -31,7 +31,7 @@
 
 
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-min) {
   .copyright__legend {
     margin-right: 13px;
     font-size: 18px;

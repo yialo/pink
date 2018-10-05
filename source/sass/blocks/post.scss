@@ -27,18 +27,9 @@
 
 
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet-min) {
   .post__link--panorama {
     width: 660px;
-  }
-
-  .post__image {
-    width: 300px;
-    height: 300px;
-    &--panorama {
-      width: 660px;
-      height: 509px;
-    }
   }
 
   .post__legend {
@@ -49,22 +40,25 @@
 
 
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-min) {
   .post__link--panorama {
-    width: 100%;
+    width: auto;
     max-width: 1200px;
+    overflow-x: hidden;
   }
 
   .post__image {
-    height: 400px;
     &--panorama {
-      width: 100%;
-      height: 506px;
+      width: 900px;
+      min-width: 1200px;
+      margin-left: 50%;
+      transform: translateX(-50%);
     }
   }
 
   .post__legend {
     top: 54px;
     right: calc((100% - 940px) / 2);
+    z-index: 1;
   }
 }

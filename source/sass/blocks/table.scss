@@ -100,7 +100,7 @@
 
 
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet-min) {
   .table {
     width: 100%;
   }
@@ -162,7 +162,7 @@
 
 
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-min) {
   .table__cell {
     &--header {
       @include padding-vert(17px, 20px);

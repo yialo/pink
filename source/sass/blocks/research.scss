@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet-min) {
   .research {
     display: block;
   }
@@ -66,7 +66,7 @@
 
 
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-min) {
   .research {
     background-color: $gray;
   }

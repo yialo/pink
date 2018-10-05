@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (min-width: $tablet) and (max-width: $tablet-max) {
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
   .text-wrap {
     display: inline;
   }

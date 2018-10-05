@@ -75,7 +75,7 @@
 
 
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet-min) {
   .download {
     @include padding-vert(93px, 110px);
     padding-left: 20px;
@@ -119,7 +119,7 @@
 
 
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-min) {
   .download {
     @include padding-vert(106px, 122px);
     @include padding-hor(10px);

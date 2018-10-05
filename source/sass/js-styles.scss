@@ -1,11 +1,11 @@
 .range-hidden {
   display: none;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-min) {
     display: block;
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-min) {
     display: flex;
   }
 }
@@ -29,7 +29,7 @@
 .show-price-item-2 {
   transform: translateX(-278px);
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-min) {
     transform: translateX(0);
   }
 }
@@ -37,7 +37,7 @@
 .show-price-item-3 {
   transform: translateX(-556px);
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-min) {
     transform: translateX(0);
   }
 }

@@ -214,7 +214,7 @@
 
 
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet-min) {
   .form {
     display: flex;
     flex-direction: column;
@@ -398,7 +398,7 @@
 
 
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-min) {
   .form {
     flex-direction: row;
     flex-wrap: wrap;

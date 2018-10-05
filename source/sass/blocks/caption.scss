@@ -54,7 +54,7 @@
 
 
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet-min) {
   .caption {
     padding-top: 24px;
     @include padding-hor(28px);
@@ -107,7 +107,7 @@
 
 
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-min) {
   .caption--panorama {
     padding-bottom: 14px;
     .caption__like {

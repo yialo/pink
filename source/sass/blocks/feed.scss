@@ -26,7 +26,7 @@
 
 
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet-min) {
   .feed {
     padding-top: 92px;
   }
@@ -60,7 +60,7 @@
 
 
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-min) {
   .feed__slogan {
     margin-bottom: 88px;
     @include padding-hor(170px);

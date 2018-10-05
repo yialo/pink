@@ -52,7 +52,7 @@
 
 
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet-min) {
   .page-header__top-wrapper {
     @include padding-vert(27px, 43px);
   }
@@ -125,7 +125,7 @@
 
 
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-min) {
   .page-header__navigation {
     flex-direction: row;
     justify-content: space-between;

@@ -47,7 +47,7 @@
 
 
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-min) {
   .button {
     &--white {
       @include padding-vert(13px, 15px);

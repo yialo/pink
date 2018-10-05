@@ -55,7 +55,7 @@
 
 
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet-min) {
   .reviews__wrapper {
     padding-top: 75px;
   }
@@ -92,7 +92,7 @@
 
 
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-min) {
   .reviews__wrapper {
     position: relative;
     display: flex;

@@ -18,7 +18,7 @@
 
 
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet-min) {
   .price {
     @include padding-vert(108px, 68px);
   }
@@ -36,7 +36,7 @@
 
 
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-min) {
   .price {
     @include padding-vert(161px, 95px);
   }

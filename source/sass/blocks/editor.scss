@@ -153,7 +153,7 @@
 
 
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet-min) {
   .editor__slogan {
     @include padding-vert(65px, 69px);
     font-size: 18px;
@@ -261,7 +261,7 @@
 
 
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-min) {
   .editor {
     padding-bottom: 29px;
   }

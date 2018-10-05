@@ -17,7 +17,7 @@
 
 
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet-min) {
   .request {
     @include padding-vert(92px, 49px);
   }
@@ -34,7 +34,7 @@
 
 
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-min) {
   .request {
     padding-bottom: 1px;
   }
