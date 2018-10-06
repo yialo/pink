@@ -118,9 +118,73 @@
   color: $pink;
 }
 
-.caption--card {
-  @media (min-width: $tablet-min) {
-    min-height: 155px;
-    padding-bottom: 23px;
+
+
+@media (min-width: $tablet-min) {
+  .caption {
+    padding-top: 24px;
+    @include padding-hor(28px);
+
+    &--panorama {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-bottom: 25px;
+    }
+
+    &--card {
+      min-height: 155px;
+      padding-bottom: 23px;
+    }
+  }
+}
+
+.caption__header--panorama {
+  max-width: 400px;
+  margin-right: auto;
+}
+
+.caption__body {
+  &--panorama {
+    order: 1;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  &--card {
+    flex-grow: 1;
+    margin-bottom: 12px;
+  }
+}
+
+.caption__footer {
+  &--panorama {
+    max-width: 150px;
+  }
+
+  &--card {
+    padding-right: 4px;
+  }
+}
+
+.caption__like {
+  order: 1;
+  margin-left: auto;
+  margin-right: 0;
+
+  &--panorama {
+    margin-left: 18px;
+    margin-right: 1px;
+  }
+}
+
+
+
+@media (min-width: $desktop-min) {
+  .caption--panorama {
+    padding-bottom: 14px;
+  }
+
+  .caption__like--panorama {
+    margin-right: 3px;
   }
 }
