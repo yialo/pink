@@ -1,6 +1,14 @@
 .advantages {
   padding-top: 41px;
   background-color: white;
+
+  @media (min-width: $tablet-min) {
+    padding-top: 49px;
+  }
+
+  @media (min-width: $desktop-min) {
+    padding-top: 67px;
+  }
 }
 
 .advantages__lead {
@@ -8,12 +16,39 @@
   @include font(300, 24px, 29px);
   text-align: center;
   color: $navy;
+
+  @media (min-width: $tablet-min) {
+    @include font(300, 40px, 48px);
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-min) {
+    @include font(300, 50px, 60px);
+    margin-bottom: 72px;
+  }
 }
 
 .advantages__lead-item {
   @include margin-vert;
+
   &:not(:last-child) {
     margin-bottom: 29px;
+  }
+
+  @media (min-width: $tablet-min) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      @include padding-hor(120px);
+    }
+  }
+
+  @media (min-width: $desktop-min) {
+    &:last-child {
+      @include padding-hor(200px);
+    }
   }
 }
 
@@ -24,6 +59,10 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center top;
+
+  @media (min-width: $tablet-min) {
+    padding-top: 0;
+  }
 }
 
 .advantages__list {
@@ -38,53 +77,8 @@
   @media (min-resolution: $retina-i), (min-resolution: $retina-x) {
     background-image: url("../img/iphone-screen-3-mobile@2x.png");
   }
-}
 
-.advantages__item {
-  text-align: center;
-  &:not(:last-child) {
-    margin-bottom: 32px;
-  }
-}
-
-.advantages__title {
-  @include margin-vert(11px);
-  @include font(700, 18px, 24px);
-  color: black;
-}
-
-.advantages__description {
-  @include margin-vert;
-  @include font(400, 14px, 24px);
-  color: $navy;
-}
-
-
-
-@media (min-width: $tablet-min) {
-  .advantages {
-    padding-top: 49px;
-  }
-
-  .advantages__lead {
-    @include font(300, 40px, 48px);
-    margin-bottom: 20px;
-  }
-
-  .advantages__lead-item {
-    &:not(:last-child) {
-      margin-bottom: 0;
-    }
-    &:last-child {
-      @include padding-hor(120px);
-    }
-  }
-
-  .advantages__wrapper {
-    padding-top: 0;
-  }
-
-  .advantages__list {
+  @media (min-width: $tablet-min) {
     @include padding-vert(102px, 43px);
     padding-left: 330px;
     padding-right: 20px;
@@ -97,27 +91,7 @@
     }
   }
 
-  .advantages__item {
-    text-align: left;
-    &:not(:last-child) {
-      margin-bottom: 35px;
-    }
-  }
-}
-
-
-
-@media (min-width: $desktop-min) {
-  .advantages {
-    padding-top: 67px;
-  }
-
-  .advantages__lead {
-    @include font(300, 50px, 60px);
-    margin-bottom: 72px;
-  }
-
-  .advantages__list {
+  @media (min-width: $desktop-min) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -125,8 +99,24 @@
     @include padding-hor(10px);
     background-image: none;
   }
+}
 
-  .advantages__item {
+.advantages__item {
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $tablet-min) {
+    text-align: left;
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+
+  @media (min-width: $desktop-min) {
     width: 300px;
     padding-top: 361px;
     @include padding-hor(30px);
@@ -134,9 +124,11 @@
     background-repeat: no-repeat;
     background-position: center 3px;
     background-size: 292px;
+
     &:not(:last-child) {
       margin-bottom: 0;
     }
+
     &--mood {
       background-image: url("../img/iphone-screen-1-desktop@1x.png");
 
@@ -144,6 +136,7 @@
         background-image: url("../img/iphone-screen-1-desktop@2x.png");
       }
     }
+
     &--change {
       background-image: url("../img/iphone-screen-2-desktop@1x.png");
 
@@ -151,6 +144,7 @@
         background-image: url("../img/iphone-screen-2-desktop@2x.png");
       }
     }
+
     &--friends {
       background-image: url("../img/iphone-screen-3-desktop@1x.png");
 
@@ -159,13 +153,25 @@
       }
     }
   }
+}
 
-  .advantages__title {
+.advantages__title {
+  @include margin-vert(11px);
+  @include font(700, 18px, 24px);
+  color: black;
+
+  @media (min-width: $desktop-min) {
     @include margin-vert(24px);
     @include font(700, 30px, 30px);
   }
+}
 
-  .advantages__description {
+.advantages__description {
+  @include margin-vert;
+  @include font(400, 14px, 24px);
+  color: $navy;
+
+  @media (min-width: $desktop-min) {
     @include font(400, 18px, 30px);
   }
 }

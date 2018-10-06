@@ -9,46 +9,50 @@
   &--white {
     color: white;
     border: 3px solid white;
-    &:hover {
-      color: $pink;
-      background-color: white;
-    }
-    &:active {
-      color: rgba(210, 40, 86, 0.3);
-      background-color: white;
-    }
   }
+
+  &--white:hover {
+    color: $pink;
+    background-color: white;
+  }
+
+  &--white:active {
+    color: rgba(210, 40, 86, 0.3);
+    background-color: white;
+  }
+
   &--send {
     color: $pink;
     border: 3px solid $pink;
-    &:hover {
-      color: white;
-      background-color: $pink;
-    }
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-      background-color: $pink;
-    }
   }
+
+  &--send:hover {
+    color: white;
+    background-color: $pink;
+  }
+
+  &--send:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $pink;
+  }
+
   &--cancel {
     color: rgba(40, 54, 69, 0.1);
     border: 3px solid rgba(40, 54, 69, 0.1);
-    &:hover {
-      color: rgba(40, 54, 69, 0.3);
-      border: 3px solid rgba(40, 54, 69, 0.3);
-    }
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-      background-color: rgba(40, 54, 69, 0.3);
-      border: 3px solid transparent;
-    }
   }
-}
 
+  &--cancel:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0.3);
+  }
 
+  &--cancel:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(40, 54, 69, 0.3);
+    border: 3px solid transparent;
+  }
 
-@media (min-width: $desktop-min) {
-  .button {
+  @media (min-width: $desktop-min) {
     &--white {
       @include padding-vert(13px, 15px);
       @include font(700, 21px, 21px);
