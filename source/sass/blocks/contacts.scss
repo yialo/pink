@@ -75,8 +75,8 @@
     50% 95px,
     50% 0;
   background-size:
-    320px,
-    auto;
+    auto,
+    320px;
 
   @media (min-resolution: $retina-i), (min-resolution: $retina-x) {
     background-image:
@@ -158,8 +158,8 @@
       50% 193px,
       50% -133px;
     background-size:
-      700px,
-      auto;
+      auto,
+      700px;
 
     @media (min-resolution: $retina-i), (min-resolution: $retina-x) {
       background-image:
@@ -221,8 +221,8 @@
       50% 283px,
       50% -45px;
     background-size:
-      1200px,
-      auto;
+      auto,
+      1200px;
 
   @media (min-resolution: $retina-i), (min-resolution: $retina-x) {
     background-image:
