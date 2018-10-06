@@ -1,9 +1,8 @@
 .text-wrap {
   display: none;
-}
 
-@media (min-width: $tablet-min) and (max-width: $tablet-max) {
-  .text-wrap {
+  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
     display: inline;
   }
 }
+
