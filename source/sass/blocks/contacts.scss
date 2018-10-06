@@ -2,10 +2,26 @@
   @include padding-vert(42px, 0);
   text-align: center;
   background-color: white;
+
+  @media (min-width: $tablet-min) {
+    padding-top: 46px;
+  }
+
+  @media (min-width: $desktop-min) {
+    padding-top: 64px;
+  }
 }
 
 .contacts__wrapper {
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-min) {
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-min) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__tip {
@@ -13,50 +29,134 @@
   @include padding-hor;
   @include font(300, 24px, 30px);
   color: $navy;
+
+  @media (min-width: $tablet-min) {
+    margin-bottom: 44px;
+    @include padding-hor(50px);
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: $desktop-min) {
+    margin-bottom: 57px;
+    @include padding-hor(120px);
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
 .contacts__list {
   @include list;
   @include padding-hor;
+
+  @media (min-width: $tablet-min) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-min) {
+    justify-content: space-between;
+    @include padding-hor(10px);
+  }
+}
+
+.contacts__item {
+  @media (min-width: $tablet-min) {
+    width: calc(500% / 11);
+  }
+
+  @media (min-width: $desktop-min) {
+    width: calc(100% / 3 - 20px)
+  }
+}
+
+.contacts__item:not(:last-child) {
+  @media (min-width: $tablet-min) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-min) {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__item--phone {
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-min) {
+    margin-right: 20px;
+  }
+}
+
+.contacts__item--email {
+  margin-bottom: 24px;
+
+  @media (min-width: $desktop-min) {
+    order: 1;
+  }
+}
+
+.contacts__item--address {
+  @media (min-width: $desktop-min) {
+    margin-right: 20px;
+  }
 }
 
 .contacts__legend {
   display: block;
   @include font(700, 18px, 24px);
+
+  @media (min-width: $desktop-min) {
+    margin-bottom: 22px;
+  }
+
+  .contacts__item--phone & {
+    @media (min-width: $tablet-min) {
+      margin-bottom: 3px;
+    }
+  }
+
+  .contacts__item--email & {
+    margin-bottom: 2px;
+
+    @media (min-width: $tablet-min) {
+      margin-bottom: 3px;
+    }
+  }
+
+  .contacts__item--address & {
+    margin-bottom: 2px;
+
+    @media (min-width: $tablet-min) {
+      margin-bottom: 5px;
+    }
+  }
 }
 
 .contacts__value {
   display: block;
   @include font(300, 24px, 30px);
   color: $pink;
+
+  .contacts__item--address & {
+    @media (min-width: $tablet-min) {
+      @include padding-hor(20px);
+    }
+  }
 }
 
 .contacts__link {
   display: block;
-  &:hover {
-    text-decoration: underline;
-    color: $navy;
-  }
-  &:active {
-    color: rgba(40, 54, 69, 0.3);
-  }
 }
 
-.contacts__item {
-  &--phone {
-    margin-bottom: 21px;
-  }
-  &--email {
-    margin-bottom: 24px;
-    .contacts__legend {
-      margin-bottom: 2px;
-    }
-  }
-  &--address {
-    .contacts__legend {
-      margin-bottom: 2px;
-    }
-  }
+.contacts__link:hover {
+  text-decoration: underline;
+  color: $navy;
+}
+
+.contacts__link:active {
+  color: rgba(40, 54, 69, 0.3);
 }
 
 .contacts__map {
@@ -84,72 +184,7 @@
       url("../img/bg-map-mobile@2x.jpg");
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 33px;
-    background-image: url("../img/bg-triangle-white-footer.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 100% 100%;
-  }
-}
-
-
-
-@media (min-width: $tablet-min) {
-  .contacts {
-    padding-top: 46px;
-  }
-
-  .contacts__tip {
-    margin-bottom: 44px;
-    @include padding-hor(50px);
-    font-size: 40px;
-    line-height: 48px;
-  }
-
-  .contacts__wrapper {
-    margin-bottom: 27px;
-  }
-
-  .contacts__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .contacts__item {
-    width: calc(500% / 11);
-    &:not(:last-child) {
-      margin-bottom: 47px;
-    }
-    &--phone {
-      margin-right: 20px;
-      .contacts__legend {
-        margin-bottom: 3px;
-      }
-    }
-    &--email {
-      .contacts__legend {
-        margin-bottom: 3px;
-      }
-    }
-    &--address {
-      .contacts__legend {
-        margin-bottom: 5px;
-      }
-      .contacts__value {
-        @include padding-hor(20px);
-      }
-    }
-  }
-
-  .contacts__map {
+  @media (min-width: $tablet-min) {
     height: 372px;
     background-image:
       url("../img/icon-map-marker.svg"),
@@ -166,53 +201,9 @@
         url("../img/icon-map-marker.svg"),
         url("../img/bg-map-tablet@2x.jpg");
     }
-
-    &::before {
-      height: 68px;
-    }
-  }
-}
-
-
-
-@media (min-width: $desktop-min) {
-  .contacts {
-    padding-top: 64px;
   }
 
-  .contacts__wrapper {
-    margin-bottom: 0;
-  }
-
-  .contacts__tip {
-    margin-bottom: 57px;
-    @include padding-hor(120px);
-    font-size: 50px;
-    line-height: 60px;
-  }
-
-  .contacts__list {
-    justify-content: space-between;
-    @include padding-hor(10px);
-  }
-
-  .contacts__item {
-    width: calc(100% / 3 - 20px);
-    &:not(:last-child) {
-      margin-bottom: 0;
-    }
-    &--address {
-      margin-right: 20px;
-    }
-    &--email {
-      order: 1;
-    }
-    .contacts__legend {
-      margin-bottom: 22px;
-    }
-  }
-
-  .contacts__map {
+  @media (min-width: $desktop-min) {
     height: 521px;
     background-image:
       url("../img/icon-map-marker.svg"),
@@ -224,14 +215,32 @@
       auto,
       1200px;
 
-  @media (min-resolution: $retina-i), (min-resolution: $retina-x) {
-    background-image:
-      url("../img/icon-map-marker.svg"),
-      url("../img/bg-map-desktop@2x.jpg");
+    @media (min-resolution: $retina-i), (min-resolution: $retina-x) {
+      background-image:
+        url("../img/icon-map-marker.svg"),
+        url("../img/bg-map-desktop@2x.jpg");
+    }
+  }
+}
+
+.contacts__map::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 33px;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+
+  @media (min-width: $tablet-min) {
+    height: 68px;
   }
 
-    &::before {
-      height: 123px;
-    }
+  @media (min-width: $desktop-min) {
+    height: 123px;
   }
 }

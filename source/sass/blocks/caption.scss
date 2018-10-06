@@ -4,11 +4,35 @@
   @include padding-vert(18px, 20px);
   @include padding-hor(18px);
   background-color: $gray;
+
+  @media (min-width: $tablet-min) {
+    padding-top: 24px;
+    @include padding-hor(28px);
+  }
+}
+
+.caption--panorama {
+  @media (min-width: $tablet-min) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-min) {
+    padding-bottom: 14px;
+  }
 }
 
 .caption__header {
   line-height: 24px;
   color: $navy;
+
+  @media (min-width: $tablet-min) {
+    .caption--panorama & {
+      max-width: 400px;
+      margin-right: auto;
+    }
+  }
 }
 
 .caption__author {
@@ -24,6 +48,21 @@
   margin-bottom: 10px;
   @include font(400, 14px, 24px);
   color: $navy;
+
+  .caption--panorama & {
+    @media (min-width: $tablet-min) {
+      order: 1;
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
+
+  .caption--card & {
+    @media (min-width: $tablet-min) {
+      flex-grow: 1;
+      margin-bottom: 12px;
+    }
+  }
 }
 
 .caption__text {
@@ -32,11 +71,38 @@
 
 .caption__footer {
   display: flex;
+
+  .caption--panorama & {
+    @media (min-width: $tablet-min) {
+      max-width: 150px;
+    }
+  }
+
+  .caption--card & {
+    padding-right: 4px;
+  }
 }
 
 .caption__like {
   display: block;
   margin-right: 20px;
+
+  @media (min-width: $tablet-min) {
+    order: 1;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .caption--panorama & {
+    @media (min-width: $tablet-min) {
+      margin-left: 18px;
+      margin-right: 1px;
+    }
+
+    @media (min-width: $desktop-min) {
+      margin-right: 3px;
+    }
+  }
 }
 
 .caption__icon {
@@ -52,66 +118,9 @@
   color: $pink;
 }
 
-
-
-@media (min-width: $tablet-min) {
-  .caption {
-    padding-top: 24px;
-    @include padding-hor(28px);
-
-    .caption__like {
-      order: 1;
-      margin-left: auto;
-      margin-right: 0;
-    }
-
-    &--panorama {
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding-bottom: 25px;
-      .caption__header {
-        max-width: 400px;
-        margin-right: auto;
-      }
-
-      .caption__body {
-        order: 1;
-        width: 100%;
-        margin-bottom: 0;
-      }
-
-      .caption__footer {
-        max-width: 150px;
-      }
-
-      .caption__like {
-        margin-left: 18px;
-        margin-right: 1px;
-      }
-    }
-
-    &--card {
-      min-height: 155px;
-      padding-bottom: 23px;
-      .caption__body {
-        flex-grow: 1;
-        margin-bottom: 12px;
-      }
-
-      .caption__footer {
-        padding-right: 4px;
-      }
-    }
-  }
-}
-
-
-
-@media (min-width: $desktop-min) {
-  .caption--panorama {
-    padding-bottom: 14px;
-    .caption__like {
-      margin-right: 3px;
-    }
+.caption--card {
+  @media (min-width: $tablet-min) {
+    min-height: 155px;
+    padding-bottom: 23px;
   }
 }
