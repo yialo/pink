@@ -1200,6 +1200,7 @@ input[type="radio"].visually-hidden {
 .editor__image-wrapper {
   width: 280px;
   height: 374px;
+  overflow: hidden;
   margin-bottom: 40px;
   margin-right: auto;
   margin-left: auto; }
@@ -2203,7 +2204,7 @@ input[type="radio"].visually-hidden {
       margin-right: 80px; }
     .main-menu__item--current {
       color: white;
-      background-image: linear-gradient(to top, white 0, white 2px, transparent 2px); }
+      background-image: linear-gradient(to top, #d22856 0, #d22856 2px, transparent 2px); }
   .main-menu__link[href]:hover {
     color: #d22856; }
   .main-menu__link[href]:active {
