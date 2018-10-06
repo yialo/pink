@@ -1,21 +1,19 @@
 .post__link {
   display: block;
+  width: 280px;
+  height: 180px;
+  overflow: hidden;
+
   &--panorama {
     position: relative;
     width: 320px;
+    height: 137px;
     @include margin-hor(auto);
   }
 }
 
 .post__image {
   display: block;
-  width: 280px;
-  height: 180px;
-
-  &--panorama {
-    width: 320px;
-    height: 137px;
-  }
 }
 
 .post__legend {
@@ -35,10 +33,15 @@
 
 
 @media (min-width: $tablet-min) {
-  .post__link--panorama {
-    width: auto;
-    max-width: 700px;
-    overflow-x: hidden;
+  .post__link {
+    width: 300px;
+    height: 300px;
+
+    &--panorama {
+      width: auto;
+      max-width: 700px;
+      height: 509px;
+    }
   }
 
   .post__legend {
@@ -46,36 +49,28 @@
     width: 140px;
   }
 
-  .post__image {
-    width: 300px;
-    height: 300px;
-
-    &--panorama {
-      width: 700px;
-      min-width: 700px;
-      height: 509px;
-      margin-left: 50%;
-      transform: translateX(-50%);
-    }
+  .post__image--panorama {
+    min-width: 700px;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
 }
 
 
 
 @media (min-width: $desktop-min) {
-  .post__link--panorama {
-    width: auto;
-    max-width: 1200px;
-  }
-
-  .post__image {
+  .post__link {
     height: 400px;
 
     &--panorama {
-      width: 1200px;
-      min-width: 1200px;
+      width: auto;
+      max-width: 1200px;
       height: 506px;
     }
+  }
+
+  .post__image--panorama {
+    min-width: 1200px;
   }
 
   .post__legend {

@@ -1197,12 +1197,15 @@ input[type="radio"].visually-hidden {
   padding-top: 20px;
   padding-bottom: 41px; }
 
-.editor__image {
-  display: block;
+.editor__image-wrapper {
   width: 280px;
+  height: 374px;
   margin-bottom: 40px;
   margin-right: auto;
   margin-left: auto; }
+
+.editor__image {
+  display: block; }
 
 .editor__toggles {
   display: -webkit-box;
@@ -1361,7 +1364,7 @@ input[type="radio"].visually-hidden {
     padding-bottom: 54px;
     padding-right: 20px;
     padding-left: 20px; }
-  .editor__image {
+  .editor__image-wrapper {
     width: 300px;
     height: 400px;
     margin-bottom: 0;
@@ -2366,20 +2369,19 @@ input[type="radio"].visually-hidden {
     margin-left: 0; } }
 
 .post__link {
-  display: block; }
+  display: block;
+  width: 280px;
+  height: 180px;
+  overflow: hidden; }
   .post__link--panorama {
     position: relative;
     width: 320px;
+    height: 137px;
     margin-right: auto;
     margin-left: auto; }
 
 .post__image {
-  display: block;
-  width: 280px;
-  height: 180px; }
-  .post__image--panorama {
-    width: 320px;
-    height: 137px; }
+  display: block; }
 
 .post__legend {
   position: absolute;
@@ -2401,34 +2403,31 @@ input[type="radio"].visually-hidden {
   background-color: #d22856; }
 
 @media (min-width: 660px) {
-  .post__link--panorama {
-    width: auto;
-    max-width: 700px;
-    overflow-x: hidden; }
+  .post__link {
+    width: 300px;
+    height: 300px; }
+    .post__link--panorama {
+      width: auto;
+      max-width: 700px;
+      height: 509px; }
   .post__legend {
     top: 57px;
     width: 140px; }
-  .post__image {
-    width: 300px;
-    height: 300px; }
-    .post__image--panorama {
-      width: 700px;
-      min-width: 700px;
-      height: 509px;
-      margin-left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); } }
+  .post__image--panorama {
+    min-width: 700px;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); } }
 
 @media (min-width: 980px) {
-  .post__link--panorama {
-    width: auto;
-    max-width: 1200px; }
-  .post__image {
+  .post__link {
     height: 400px; }
-    .post__image--panorama {
-      width: 1200px;
-      min-width: 1200px;
+    .post__link--panorama {
+      width: auto;
+      max-width: 1200px;
       height: 506px; }
+  .post__image--panorama {
+    min-width: 1200px; }
   .post__legend {
     top: 54px;
     right: calc((100% - 940px) / 2);

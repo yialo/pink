@@ -19,11 +19,15 @@
   @include padding-vert(20px, 41px);
 }
 
-.editor__image {
-  display: block;
+.editor__image-wrapper {
   width: 280px;
+  height: 374px;
   margin-bottom: 40px;
   @include margin-hor(auto);
+}
+
+.editor__image {
+  display: block;
 }
 
 .editor__toggles {
@@ -166,7 +170,7 @@
     @include padding-hor;
   }
 
-  .editor__image {
+  .editor__image-wrapper {
     width: 300px;
     height: 400px;
     margin-bottom: 0;
