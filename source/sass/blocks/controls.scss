@@ -15,12 +15,6 @@
   }
 }
 
-.controls--price {
-  @media (min-width: $tablet-min) {
-    display: none;
-  }
-}
-
 .controls__item:not(:last-child) {
   margin-right: 13px;
 }
