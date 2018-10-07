@@ -1,67 +1,64 @@
 .page-footer {
   background-color: white;
+
   &--index {
     display: none;
+  }
+
+  @media (min-width: $tablet-min) {
+    &--index {
+      display: block;
+    }
   }
 }
 
 .page-footer__wrapper {
   @include padding-vert(40px, 40px);
   @include padding-hor;
+
+  @media (min-width: $tablet-min) {
+    display: flex;
+    @include padding-vert(37px, 37px);
+  }
+
+  @media (min-width: $desktop-min) {
+    @include padding-vert(69px, 72px);
+    @include padding-hor(10px);
+  }
 }
 
 .page-footer__logo {
   width: 147px;
   margin-bottom: 40px;
   @include margin-hor(auto);
-}
 
-.page-footer__social {
-  @include margin-vert(40px);
-}
-
-
-
-@media (min-width: $tablet-min) {
-  .page-footer--index {
-    display: block;
-  }
-
-  .page-footer__wrapper {
-    display: flex;
-    @include padding-vert(37px, 37px);
-  }
-
-  .page-footer__logo {
+  @media (min-width: $tablet-min) {
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 74px;
   }
 
-  .page-footer__social {
+  @media (min-width: $desktop-min) {
+    margin-right: 234px;
+  }
+}
+
+.page-footer__social {
+  @include margin-vert(40px);
+
+  @media (min-width: $tablet-min) {
     margin-top: 3px;
     margin-bottom: 0;
   }
 
-  .page-footer__copyright {
-    margin-top: 14px;
-    margin-left: auto;
+  @media (min-width: $desktop-min) {
+    margin-top: 4px;
   }
 }
 
-
-
-@media (min-width: $desktop-min) {
-  .page-footer__wrapper {
-    @include padding-vert(69px, 72px);
-    @include padding-hor(10px);
-  }
-
-  .page-footer__logo {
-    margin-right: 234px;
-  }
-
-  .page-footer__social {
-    margin-top: 4px;
+.page-footer__copyright {
+  @media (min-width: $tablet-min) {
+    margin-top: 14px;
+    margin-left: auto;
   }
 }

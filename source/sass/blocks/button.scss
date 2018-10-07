@@ -5,55 +5,57 @@
   @include font(700, 18px, 18px);
   background-color: transparent;
   border-radius: 27px;
-}
 
-.button--white {
-  color: white;
-  border: 3px solid white;
+  &--white {
+    color: white;
+    border: 3px solid white;
+  }
+
+  &--white:hover {
+    color: $pink;
+    background-color: white;
+  }
+
+  &--white:active {
+    color: rgba(210, 40, 86, 0.3);
+    background-color: white;
+  }
+
+  &--send {
+    color: $pink;
+    border: 3px solid $pink;
+  }
+
+  &--send:hover {
+    color: white;
+    background-color: $pink;
+  }
+
+  &--send:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $pink;
+  }
+
+  &--cancel {
+    color: rgba(40, 54, 69, 0.1);
+    border: 3px solid rgba(40, 54, 69, 0.1);
+  }
+
+  &--cancel:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0.3);
+  }
+
+  &--cancel:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(40, 54, 69, 0.3);
+    border: 3px solid transparent;
+  }
 
   @media (min-width: $desktop-min) {
-    @include padding-vert(13px, 15px);
-    @include font(700, 21px, 21px);
+    &--white {
+      @include padding-vert(13px, 15px);
+      @include font(700, 21px, 21px);
+    }
   }
-}
-
-.button--white:hover {
-  color: $pink;
-  background-color: white;
-}
-
-.button--white:active {
-  color: rgba(210, 40, 86, 0.3);
-  background-color: white;
-}
-
-.button--send {
-  color: $pink;
-  border: 3px solid $pink;
-}
-
-.button--send:hover {
-  color: white;
-  background-color: $pink;
-}
-
-.button--send:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: $pink;
-}
-
-.button--cancel {
-  color: rgba(40, 54, 69, 0.1);
-  border: 3px solid rgba(40, 54, 69, 0.1);
-}
-
-.button--cancel:hover {
-  color: rgba(40, 54, 69, 0.3);
-  border: 3px solid rgba(40, 54, 69, 0.3);
-}
-
-.button--cancel:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: rgba(40, 54, 69, 0.3);
-  border: 3px solid transparent;
 }

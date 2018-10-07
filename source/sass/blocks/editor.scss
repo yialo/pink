@@ -1,5 +1,9 @@
 .editor {
   background-color: white;
+
+  @media (min-width: $desktop-min) {
+    padding-bottom: 29px;
+  }
 }
 
 .editor__slogan {
@@ -9,14 +13,41 @@
   @include font;
   text-align: center;
   color: $navy;
+
+  @media (min-width: $tablet-min) {
+    @include padding-vert(65px, 69px);
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-min) {
+    @include padding-vert(59px, 66px);
+  }
 }
 
 .editor__outer-wrapper {
   background-color: $gray;
+
+  @media (min-width: $desktop-min) {
+    background-color: transparent;
+  }
 }
 
 .editor__inner-wrapper {
   @include padding-vert(20px, 41px);
+
+  @media (min-width: $tablet-min) {
+    display: flex;
+    justify-content: space-between;
+    @include padding-vert(57px, 54px);
+    @include padding-hor;
+  }
+
+  @media (min-width: $desktop-min) {
+    padding-bottom: 57px;
+    padding-left: 80px;
+    padding-right: 60px;
+    background-color: $gray;
+  }
 }
 
 .editor__image-wrapper {
@@ -25,10 +56,29 @@
   overflow: hidden;
   margin-bottom: 40px;
   @include margin-hor(auto);
+
+  @media (min-width: $tablet-min) {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 0;
+    @include margin-hor(0);
+  }
 }
 
 .editor__image {
   display: block;
+}
+
+.editor__form {
+  @media (min-width: $tablet-min) {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+  }
+
+  @media (min-width: $desktop-min) {
+    width: 410px;
+  }
 }
 
 .editor__toggles {
@@ -37,6 +87,10 @@
   @include list;
   margin-bottom: 34px;
   @include padding-hor(20px);
+
+  @media (min-width: $tablet-min) {
+    display: none;
+  }
 }
 
 .editor__toggles-item {
@@ -48,33 +102,26 @@
   padding: 0;
   background-color: transparent;
   border-style: none;
+
   &--crop {
     width: 44px;
     height: 44px;
     margin-left: 34px;
   }
+
   &--color {
     width: 48px;
     height: 43px;
     margin-top: 2px;
     margin-left: 22px;
   }
+
   &--contrast {
     width: 32px;
     height: 32px;
     margin-top: 8px;
     margin-left: 18px;
   }
-  &:hover .editor__path {
-    fill: rgba(40, 54, 69, 0.5);
-  }
-  &:active .editor__path {
-    fill: $pink;
-  }
-}
-
-.editor__label {
-  display: none;
 }
 
 .editor__icon {
@@ -83,17 +130,120 @@
 
 .editor__path {
   fill: rgba(40, 54, 69, 0.3);
+
+  .editor__toggle-button:hover & {
+    fill: rgba(40, 54, 69, 0.5);
+  }
+
+  .editor__toggle-button:active & {
+    fill: $pink;
+  }
 }
 
 .editor__list {
   @include list;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-min) {
+    margin-bottom: auto;
+  }
 }
 
 .editor__item {
   padding-bottom: 28px;
   @include padding-hor;
   border-bottom: 1px solid #dddfe0;
+
+  @media (min-width: $tablet-min) {
+    position: relative;
+    @include padding-vert(29px, 28px);
+    padding-left: 57px;
+    padding-right: 18px;
+
+    &--crop {
+      padding-top: 13px;
+    }
+  }
+
+  @media (min-width: $desktop-min) {
+    display: flex;
+    padding-bottom: 28px;
+    padding-right: 30px;
+
+    &--crop {
+      padding-top: 13px;
+    }
+
+    &--color {
+      padding-top: 30px;
+    }
+
+    &--contrast {
+      padding-top: 27px;
+    }
+  }
+}
+
+.editor__label {
+  display: none;
+
+  @media (min-width: $tablet-min) {
+    position: absolute;
+    display: block;
+    background-repeat: no-repeat;
+
+    &--crop {
+      top: 8px;
+      left: 2px;
+      width: 22px;
+      height: 22px;
+      background-image: url("../img/icon-editor-crop.svg");
+      background-size: 22px 22px;
+    }
+
+    &--color {
+      top: 27px;
+      left: 3px;
+      width: 24px;
+      height: 22px;
+      background-image: url("../img/icon-editor-color.svg");
+      background-size: 24px 22px;
+    }
+
+    &--contrast {
+      top: 27px;
+      left: 8px;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icon-editor-contrast.svg");
+      background-size: 16px 16px;
+    }
+  }
+
+  @media (min-width: $desktop-min) {
+    background-size: auto;
+
+    &--crop {
+      top: -4px;
+      left: -2px;
+      width: 44px;
+      height: 44px;
+    }
+
+    &--color {
+      top: 15px;
+      left: 0;
+      width: 48px;
+      height: 43px;
+    }
+
+    &--contrast {
+      top: 18px;
+      left: 6px;
+      width: 32px;
+      height: 32px;
+    }
+  }
 }
 
 .editor__scale {
@@ -104,253 +254,101 @@
   @include margin-hor(20px);
   padding: 0;
   background: transparent;
+
   &::-webkit-slider-runnable-track {
     @include range-track;
   }
+
   &::-moz-range-track {
     @include range-track;
   }
+
   &::-ms-track {
     @include range-track;
   }
+
   &::-ms-fill-lower {
     @include range-track;
   }
+
   &::-ms-fill-upper {
     @include range-track;
   }
+
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
     @include range-thumb;
     margin-top: -6px;
   }
+
   &::-moz-range-thumb {
     @include range-thumb;
   }
+
   &::-ms-thumb {
     @include range-thumb;
   }
+
   &:active::-webkit-slider-thumb {
     background-color: $pink;
   }
+
   &:active::-moz-range-thumb {
     background-color: $pink;
   }
+
   &:active::-ms-thumb {
     background-color: $pink;
   }
+
   &::-ms-tooltip {
     display: none;
+  }
+
+  @media (min-width: $tablet-min) {
+    width: 200px;
+    @include margin-hor(0);
+  }
+
+  @media (min-width: $desktop-min) {
+    width: 288px;
+    margin-left: auto;
   }
 }
 
 .editor__button-wrapper {
   @include padding-hor;
+
+  @media (min-width: $tablet-min) {
+    @include padding-hor(0);
+  }
+
+  @media (min-width: $desktop-min) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .editor__button {
   width: 280px;
   @include margin-hor(auto);
+
   &:first-of-type {
     margin-bottom: 12px;
   }
-}
 
-
-
-@media (min-width: $tablet-min) {
-  .editor__slogan {
-    @include padding-vert(65px, 69px);
-    font-size: 18px;
-  }
-
-  .editor__inner-wrapper {
-    display: flex;
-    justify-content: space-between;
-    @include padding-vert(57px, 54px);
-    @include padding-hor;
-  }
-
-  .editor__image-wrapper {
-    width: 300px;
-    height: 400px;
-    margin-bottom: 0;
-    @include margin-hor(0);
-  }
-
-  .editor__form {
-    display: flex;
-    flex-direction: column;
-    width: 275px;
-  }
-
-  .editor__toggles {
-    display: none;
-  }
-
-  .editor__list {
-    margin-bottom: auto;
-  }
-
-  .editor__label {
-    position: absolute;
-    display: block;
-  }
-
-  .editor__item {
-    position: relative;
-    @include padding-vert(29px, 28px);
-    padding-left: 57px;
-    padding-right: 18px;
-    &--crop {
-      padding-top: 13px;
-      .editor__label {
-        top: 8px;
-        left: 2px;
-        width: 22px;
-        height: 22px;
-      }
-      .editor__icon--scale {
-        width: 22px;
-        height: 22px;
-      }
-    }
-    &--color {
-      .editor__label {
-        top: 27px;
-        left: 3px;
-        width: 24px;
-        height: 22px;
-      }
-      .editor__icon--scale {
-        width: 24px;
-        height: 22px;
-      }
-    }
-    &--contrast {
-      .editor__label {
-        top: 27px;
-        left: 8px;
-        width: 16px;
-        height: 16px;
-      }
-      .editor__icon--scale {
-        width: 16px;
-        height: 16px;
-      }
-    }
-  }
-
-  .editor__icon--scale {
-    .editor__path {
-      fill: $pink;
-    }
-  }
-
-  .editor__scale {
-    width: 200px;
-    @include margin-hor(0);
-  }
-
-  .editor__button-wrapper {
-    @include padding-hor(0);
-  }
-
-  .editor__button {
+  @media (min-width: $tablet-min) {
     width: 260px;
+
     &:first-of-type {
       margin-bottom: 24px;
     }
   }
-}
 
-
-
-@media (min-width: $desktop-min) {
-  .editor {
-    padding-bottom: 29px;
-  }
-
-  .editor__slogan {
-    @include padding-vert(59px, 66px);
-  }
-
-  .editor__outer-wrapper {
-    background-color: transparent;
-  }
-
-  .editor__inner-wrapper {
-    padding-bottom: 57px;
-    padding-left: 80px;
-    padding-right: 60px;
-    background-color: $gray;
-  }
-
-  .editor__form {
-    width: 410px;
-  }
-
-  .editor__list {
-    margin-bottom: auto;
-  }
-
-  .editor__item {
-    display: flex;
-    padding-bottom: 28px;
-    padding-right: 30px;
-    &--crop {
-      padding-top: 13px;
-      .editor__label {
-        top: -4px;
-        left: -2px;
-        width: 44px;
-        height: 44px;
-      }
-      .editor__icon--scale {
-        width: 44px;
-        height: 44px;
-      }
-    }
-    &--color {
-      padding-top: 30px;
-      .editor__label {
-        top: 15px;
-        left: 0;
-        width: 48px;
-        height: 43px;
-      }
-      .editor__icon--scale {
-        width: 48px;
-        height: 43px;
-      }
-    }
-    &--contrast {
-      padding-top: 27px;
-      .editor__label {
-        top: 18px;
-        left: 6px;
-        width: 32px;
-        height: 32px;
-      }
-      .editor__icon--scale {
-        width: 32px;
-        height: 32px;
-      }
-    }
-  }
-
-  .editor__scale {
-    width: 288px;
-    margin-left: auto;
-  }
-
-  .editor__button-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .editor__button {
+  @media (min-width: $desktop-min) {
     width: 183px;
+    @include margin-hor(0);
+
     &:first-of-type {
       margin-bottom: 0;
     }

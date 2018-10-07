@@ -4,6 +4,12 @@
   @include list;
   padding-bottom: 1px;
 
+  @media (min-width: $tablet-min) {
+    &--price {
+      display: none;
+    }
+  }
+
   @media (min-width: $desktop-min) {
     display: none;
   }
@@ -28,23 +34,23 @@
   background-color: transparent;
   border-style: none;
   border-radius: 50%;
-}
 
-.controls__button::before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 6px;
-  height: 6px;
-  background-color: rgba(40, 54, 69, 0.3);
-  border-radius: 50%;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(40, 54, 69, 0.3);
+    border-radius: 50%;
+  }
 
-.controls__button:hover::before {
-  background-color: rgba(40, 54, 69, 0.6);
-}
+  &:hover::before {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
 
-.controls__button:active::before {
-  background-color: rgba(40, 54, 69, 0.1);
+  &:active::before {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
 }

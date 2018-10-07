@@ -2,52 +2,47 @@
   width: 320px;
   @include margin-hor(auto);
 
+  &--header {
+    width: 100%;
+  }
+
+  &--flexible {
+    width: 100%;
+  }
+
+  &--panorama {
+    width: 280px;
+  }
+
   @media (min-width: $tablet-min) {
     width: 660px;
+
+    &--header {
+      width: 100%;
+    }
+
+    &--form {
+      width: 620px;
+    }
+
+    &--panorama {
+      width: 620px;
+    }
   }
 
   @media (min-width: $desktop-min) {
     width: 960px;
-  }
-}
 
+    &--form {
+      width: 100%;
+    }
 
-.aligner--editor {
-  @media (min-width: $desktop-min) {
-    width: 940px;
-  }
-}
+    &--panorama {
+      width: 940px;
+    }
 
-.aligner--flexible {
-  width: 100%;
-}
-
-.aligner--form {
-  @media (min-width: $tablet-min) {
-    width: 620px;
-  }
-
-  @media (min-width: $desktop-min) {
-    width: 100%;
-  }
-}
-
-.aligner--header {
-  width: 100%;
-
-  @media (min-width: $tablet-min) {
-    width: 100%;
-  }
-}
-
-.aligner--panorama {
-  width: 280px;
-
-  @media (min-width: $tablet-min) {
-    width: 620px;
-  }
-
-  @media (min-width: $desktop-min) {
-    width: 940px;
+    &--editor {
+      width: 940px;
+    }
   }
 }
