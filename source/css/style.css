@@ -987,6 +987,19 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   border-style: none;
   border-radius: 50%; }
+  .controls__button::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(40, 54, 69, 0.3);
+    border-radius: 50%; }
+  .controls__button:hover::before {
+    background-color: rgba(40, 54, 69, 0.6); }
+  .controls__button:active::before {
+    background-color: rgba(40, 54, 69, 0.1); }
 
 .copyright {
   display: -webkit-box;
@@ -3061,13 +3074,13 @@ input[type="radio"].visually-hidden {
 
 .slider-active-toggle {
   background-color: #283645; }
-  .slider-active-toggle::before {
-    background-color: white; }
   .slider-active-toggle:hover {
     background-color: rgba(40, 54, 69, 0.6); }
-    .slider-active-toggle:hover::before {
-      background-color: white; }
   .slider-active-toggle:active {
     background-color: rgba(40, 54, 69, 0.1); }
-    .slider-active-toggle:active::before {
-      background-color: white; }
+  .slider-active-toggle::before {
+    background-color: white; }
+  .slider-active-toggle:hover::before {
+    background-color: white; }
+  .slider-active-toggle:active::before {
+    background-color: white; }

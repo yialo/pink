@@ -49,23 +49,23 @@
 .slider-active-toggle {
   background-color: $navy;
 
-  &::before {
-    background-color: white;
-  }
-
   &:hover {
     background-color: rgba(40, 54, 69, 0.6);
-
-    &::before {
-      background-color: white;
-    }
   }
 
   &:active {
     background-color: rgba(40, 54, 69, 0.1);
+  }
 
-    &::before {
-      background-color: white;
-    }
+  &::before {
+    background-color: white;
+  }
+
+  &:hover::before {
+    background-color: white;
+  }
+
+  &:active::before {
+    background-color: white;
   }
 }
