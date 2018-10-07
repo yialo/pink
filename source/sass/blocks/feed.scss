@@ -1,6 +1,10 @@
 .feed {
   padding-top: 45px;
   background-color: white;
+
+  @media (min-width: $tablet-min) {
+    padding-top: 92px;
+  }
 }
 
 .feed__slogan {
@@ -9,69 +13,60 @@
   @include font;
   text-align: center;
   color: $navy;
-}
 
-.feed__post--panorama {
-  margin-bottom: 20px;
-}
-
-.feed__list {
-  @include list;
-  @include padding-hor;
-}
-
-.feed__item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-
-
-@media (min-width: $tablet-min) {
-  .feed {
-    padding-top: 92px;
-  }
-
-  .feed__slogan {
+  @media (min-width: $tablet-min) {
     margin-bottom: 76px;
     @include padding-hor(80px);
     font-size: 18px;
   }
 
-  .feed__post--panorama {
+  @media (min-width: $desktop-min) {
+    margin-bottom: 88px;
+    @include padding-hor(170px);
+  }
+}
+
+.feed__post--panorama {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-min) {
     margin-bottom: 50px;
   }
+}
 
-  .feed__list {
+.feed__list {
+  @include list;
+  @include padding-hor;
+
+  @media (min-width: $tablet-min) {
     display: flex;
     flex-wrap: wrap;
     margin-top: -20px;
     margin-left: -20px;
   }
 
-  .feed__item {
+  @media (min-width: $desktop-min) {
+    margin-top: -54px;
+    @include padding-hor(10px);
+  }
+}
+
+.feed__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-min) {
     width: 300px;
     margin-top: 20px;
     margin-left: 20px;
+
     &:not(:last-child) {
       margin-bottom: 0;
     }
   }
-}
 
-
-
-@media (min-width: $desktop-min) {
-  .feed__slogan {
-    margin-bottom: 88px;
-    @include padding-hor(170px);
-  }
-
-  .feed__list {
-    margin-top: -54px;
-    @include padding-hor(10px);
-  }
-
-  .feed__item {
+  @media (min-width: $desktop-min) {
     margin-top: 54px;
   }
 }
