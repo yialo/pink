@@ -144,6 +144,15 @@
 
 .contacts__link {
   display: block;
+
+  &:hover {
+    text-decoration: underline;
+    color: $navy;
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+  }
 }
 
 .contacts__map {
