@@ -1,5 +1,9 @@
 .editor {
   background-color: white;
+
+  @media (min-width: $desktop-min) {
+    padding-bottom: 29px;
+  }
 }
 
 .editor__slogan {
@@ -9,14 +13,41 @@
   @include font;
   text-align: center;
   color: $navy;
+
+  @media (min-width: $tablet-min) {
+    @include padding-vert(65px, 69px);
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-min) {
+    @include padding-vert(59px, 66px);
+  }
 }
 
 .editor__outer-wrapper {
   background-color: $gray;
+
+  @media (min-width: $desktop-min) {
+    background-color: transparent;
+  }
 }
 
 .editor__inner-wrapper {
   @include padding-vert(20px, 41px);
+
+  @media (min-width: $tablet-min) {
+    display: flex;
+    justify-content: space-between;
+    @include padding-vert(57px, 54px);
+    @include padding-hor;
+  }
+
+  @media (min-width: $desktop-min) {
+    padding-bottom: 57px;
+    padding-left: 80px;
+    padding-right: 60px;
+    background-color: $gray;
+  }
 }
 
 .editor__image-wrapper {
@@ -25,10 +56,29 @@
   overflow: hidden;
   margin-bottom: 40px;
   @include margin-hor(auto);
+
+  @media (min-width: $tablet-min) {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 0;
+    @include margin-hor(0);
+  }
 }
 
 .editor__image {
   display: block;
+}
+
+.editor__form {
+  @media (min-width: $tablet-min) {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+  }
+
+  @media (min-width: $desktop-min) {
+    width: 410px;
+  }
 }
 
 .editor__toggles {
@@ -37,6 +87,10 @@
   @include list;
   margin-bottom: 34px;
   @include padding-hor(20px);
+
+  @media (min-width: $tablet-min) {
+    display: none;
+  }
 }
 
 .editor__toggles-item {
@@ -75,6 +129,11 @@
 
 .editor__label {
   display: none;
+
+  @media (min-width: $tablet-min) {
+    position: absolute;
+    display: block;
+  }
 }
 
 .editor__icon {
@@ -88,6 +147,10 @@
 .editor__list {
   @include list;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-min) {
+    margin-bottom: auto;
+  }
 }
 
 .editor__item {
@@ -146,57 +209,48 @@
 
 .editor__button-wrapper {
   @include padding-hor;
+
+  @media (min-width: $tablet-min) {
+    @include padding-hor(0);
+  }
+
+  @media (min-width: $desktop-min) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .editor__button {
   width: 280px;
   @include margin-hor(auto);
+
   &:first-of-type {
     margin-bottom: 12px;
+  }
+
+  @media (min-width: $tablet-min) {
+    width: 260px;
+
+    &:first-of-type {
+      margin-bottom: 24px;
+    }
+  }
+
+  @media (min-width: $desktop-min) {
+    width: 183px;
+    @include margin-hor(0);
+
+    &:first-of-type {
+      margin-bottom: 0;
+    }
   }
 }
 
 
 
+
+
 @media (min-width: $tablet-min) {
-  .editor__slogan {
-    @include padding-vert(65px, 69px);
-    font-size: 18px;
-  }
-
-  .editor__inner-wrapper {
-    display: flex;
-    justify-content: space-between;
-    @include padding-vert(57px, 54px);
-    @include padding-hor;
-  }
-
-  .editor__image-wrapper {
-    width: 300px;
-    height: 400px;
-    margin-bottom: 0;
-    @include margin-hor(0);
-  }
-
-  .editor__form {
-    display: flex;
-    flex-direction: column;
-    width: 275px;
-  }
-
-  .editor__toggles {
-    display: none;
-  }
-
-  .editor__list {
-    margin-bottom: auto;
-  }
-
-  .editor__label {
-    position: absolute;
-    display: block;
-  }
-
   .editor__item {
     position: relative;
     @include padding-vert(29px, 28px);
@@ -251,49 +305,11 @@
     width: 200px;
     @include margin-hor(0);
   }
-
-  .editor__button-wrapper {
-    @include padding-hor(0);
-  }
-
-  .editor__button {
-    width: 260px;
-    &:first-of-type {
-      margin-bottom: 24px;
-    }
-  }
 }
 
 
 
 @media (min-width: $desktop-min) {
-  .editor {
-    padding-bottom: 29px;
-  }
-
-  .editor__slogan {
-    @include padding-vert(59px, 66px);
-  }
-
-  .editor__outer-wrapper {
-    background-color: transparent;
-  }
-
-  .editor__inner-wrapper {
-    padding-bottom: 57px;
-    padding-left: 80px;
-    padding-right: 60px;
-    background-color: $gray;
-  }
-
-  .editor__form {
-    width: 410px;
-  }
-
-  .editor__list {
-    margin-bottom: auto;
-  }
-
   .editor__item {
     display: flex;
     padding-bottom: 28px;
@@ -342,17 +358,5 @@
   .editor__scale {
     width: 288px;
     margin-left: auto;
-  }
-
-  .editor__button-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .editor__button {
-    width: 183px;
-    &:first-of-type {
-      margin-bottom: 0;
-    }
   }
 }

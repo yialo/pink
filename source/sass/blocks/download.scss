@@ -8,6 +8,30 @@
   @media (min-resolution: $retina-i), (min-resolution: $retina-x) {
     background-image: url("../img/iphone-hand-mobile@2x.png");
   }
+
+  @media (min-width: $tablet-min) {
+    @include padding-vert(93px, 110px);
+    padding-left: 20px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: 50% 100%;
+    background-size: 700px;
+
+    @media (min-resolution: $retina-i), (min-resolution: $retina-x) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-min) {
+    @include padding-vert(106px, 122px);
+    @include padding-hor(10px);
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: calc(50% + 71px) 99px;
+    background-size: 1050px;
+
+    @media (min-resolution: $retina-i), (min-resolution: $retina-x) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+    }
+  }
 }
 
 .download__wrapper {
@@ -15,16 +39,49 @@
   @include padding-hor(calc((100% - 280px) / 2));
   text-align: center;
   background-color: #1d2631;
+
+  @media (min-width: $tablet-min) {
+    width: 300px;
+    @include padding-vert(0, 0);
+    @include padding-hor(0);
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-min) {
+    width: 300px;
+  }
 }
 
 .download__slogan {
   display: none;
+
+  @media (min-width: $tablet-min) {
+    display: block;
+    @include margin-vert(30px);
+    @include padding-hor(30px);
+    @include font(300, 40px, 48px);
+    color: white;
+  }
+
+  @media (min-width: $desktop-min) {
+    margin-bottom: 51px;
+    @include font(300, 50px, 61px);
+  }
 }
 
 .download__main-link {
   width: 280px;
   margin-bottom: 32px;
   @include margin-hor(auto);
+
+  @media (min-width: $tablet-min) {
+    width: 300px;
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-min) {
+    margin-bottom: 66px;
+  }
 }
 
 .download__list {
@@ -34,6 +91,14 @@
   @include list;
   margin-bottom: 21px;
   @include padding-hor(2px);
+
+  @media (min-width: $tablet-min) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-min) {
+    margin-bottom: 55px;
+  }
 }
 
 .download__item {
@@ -49,12 +114,14 @@
     height: 57px;
     margin-left: 35px;
   }
+
   &--android {
     width: 43px;
     height: 47px;
     margin-top: 8px;
     margin-left: 24px;
   }
+
   &--windows {
     width: 44px;
     height: 42px;
@@ -63,89 +130,16 @@
   }
 }
 
- .download__icon {
-   display: block;
- }
+.download__icon {
+  display: block;
+}
 
 .download__annotation {
   @include margin-vert;
   @include font(300, 14px, 24px);
   color: white;
-}
 
-
-
-@media (min-width: $tablet-min) {
-  .download {
-    @include padding-vert(93px, 110px);
-    padding-left: 20px;
-    background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: 50% 100%;
-    background-size: 700px;
-
-    @media (min-resolution: $retina-i), (min-resolution: $retina-x) {
-      background-image: url("../img/iphone-hand-tablet@2x.png");
-    }
-  }
-
-  .download__wrapper {
-    width: 300px;
-    @include padding-vert(0, 0);
-    @include padding-hor(0);
-    background-color: transparent;
-  }
-
-  .download__slogan {
-    display: block;
-    @include margin-vert(30px);
-    @include padding-hor(30px);
-    @include font(300, 40px, 48px);
-    color: white;
-  }
-
-  .download__main-link {
-    width: 300px;
-    margin-bottom: 46px;
-  }
-
-  .download__list {
-    margin-bottom: 35px;
-  }
-
-  .download__annotation {
+  @media (min-width: $tablet-min) {
     font-size: 18px;
-  }
-}
-
-
-
-@media (min-width: $desktop-min) {
-  .download {
-    @include padding-vert(106px, 122px);
-    @include padding-hor(10px);
-    background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: calc(50% + 71px) 99px;
-    background-size: 1050px;
-
-    @media (min-resolution: $retina-i), (min-resolution: $retina-x) {
-      background-image: url("../img/iphone-hand-desktop@2x.png");
-    }
-  }
-
-  .download__wrapper {
-    width: 300px;
-  }
-
-  .download__slogan {
-    margin-bottom: 51px;
-    @include font(300, 50px, 61px);
-  }
-
-  .download__main-link {
-    margin-bottom: 66px;
-  }
-
-  .download__list {
-    margin-bottom: 55px;
   }
 }

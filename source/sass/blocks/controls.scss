@@ -3,6 +3,16 @@
   justify-content: center;
   @include list;
   padding-bottom: 1px;
+
+  @media (min-width: $tablet-min) {
+    &--price {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-min) {
+    display: none;
+  }
 }
 
 .controls__item {
@@ -20,6 +30,7 @@
   background-color: transparent;
   border-style: none;
   border-radius: 50%;
+
   &::before {
     content: "";
     position: absolute;
@@ -30,26 +41,12 @@
     background-color: rgba(40, 54, 69, 0.3);
     border-radius: 50%;
   }
+
   &:hover::before {
     background-color: rgba(40, 54, 69, 0.6);
   }
+
   &:active::before {
     background-color: rgba(40, 54, 69, 0.1);
-  }
-}
-
-
-
-@media (min-width: $tablet-min) {
-  .controls--price {
-    display: none;
-  }
-}
-
-
-
-@media (min-width: $desktop-min) {
-  .controls {
-    display: none;
   }
 }

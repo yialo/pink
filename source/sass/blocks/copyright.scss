@@ -9,6 +9,15 @@
   padding-top: 5px;
   @include font(400, 14px, 18px);
   color: $navy;
+
+  @media (min-width: $tablet-min) {
+    padding-top: 6px;
+  }
+
+  @media (min-width: $desktop-min) {
+    margin-right: 13px;
+    font-size: 18px;
+  }
 }
 
 .copyright__link {
@@ -19,21 +28,4 @@
   display: block;
   width: 27px;
   height: 34px;
-}
-
-
-
-@media (min-width: $tablet-min) {
-  .copyright__legend {
-    padding-top: 6px;
-  }
-}
-
-
-
-@media (min-width: $desktop-min) {
-  .copyright__legend {
-    margin-right: 13px;
-    font-size: 18px;
-  }
 }
