@@ -16,14 +16,13 @@
   height: 51px;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
+
   &:hover {
     border-color: $navy;
   }
+
   &:active {
     border-color: rgba(40, 54, 69, 0.1);
-    .social__icon {
-      opacity: 0.3;
-    }
   }
 }
 
@@ -35,12 +34,18 @@
     top: 15.7px;
     left: 14px;
   }
+
   &--facebook {
     top: 11.5px;
     left: 18px;
   }
+
   &--youtube {
     top: 14.5px;
     left: 17px;
+  }
+
+  .social__link:active & {
+    opacity: 0.3;
   }
 }

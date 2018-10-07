@@ -5,43 +5,35 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center top;
+
+  @media (min-width: $tablet-min) {
+    @include padding-vert(108px, 68px);
+  }
+
+  @media (min-width: $desktop-min) {
+    @include padding-vert(161px, 95px);
+  }
 }
 
 .price__wrapper {
   margin-bottom: 40px;
   overflow-x: hidden;
-}
 
-.price__table {
-  margin-left:  calc(50% - 139px);
-}
-
-
-
-@media (min-width: $tablet-min) {
-  .price {
-    @include padding-vert(108px, 68px);
-  }
-
-  .price__wrapper {
+  @media (min-width: $tablet-min) {
     margin-bottom: 0;
     @include padding-hor;
     overflow-x: visible;
   }
 
-  .price__table {
-    margin-left: 0;
+  @media (min-width: $desktop-min) {
+    @include padding-hor(10px);
   }
 }
 
+.price__table {
+  margin-left:  calc(50% - 139px);
 
-
-@media (min-width: $desktop-min) {
-  .price {
-    @include padding-vert(161px, 95px);
-  }
-
-  .price__wrapper {
-    @include padding-hor(10px);
+  @media (min-width: $tablet-min) {
+    margin-left: 0;
   }
 }

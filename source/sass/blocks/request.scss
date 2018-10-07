@@ -1,6 +1,14 @@
 .request {
   @include padding-vert(45px, 15px);
   background-color: white;
+
+  @media (min-width: $tablet-min) {
+    @include padding-vert(92px, 49px);
+  }
+
+  @media (min-width: $desktop-min) {
+    padding-bottom: 1px;
+  }
 }
 
 .request__slogan {
@@ -9,38 +17,22 @@
   @include font;
   text-align: center;
   color: $navy;
-}
 
-.request__slogan-tip {
-  display: none;
-}
-
-
-
-@media (min-width: $tablet-min) {
-  .request {
-    @include padding-vert(92px, 49px);
-  }
-
-  .request__slogan {
+  @media (min-width: $tablet-min) {
     @include padding-hor(60px);
     font-size: 18px;
   }
 
-  .request__slogan-tip {
-    display: inline;
+  @media (min-width: $desktop-min) {
+    margin-bottom: 70px;
+    @include padding-hor(90px);
   }
 }
 
+.request__slogan-tip {
+  display: none;
 
-
-@media (min-width: $desktop-min) {
-  .request {
-    padding-bottom: 1px;
-  }
-
-  .request__slogan {
-    margin-bottom: 70px;
-    @include padding-hor(90px);
+  @media (min-width: $tablet-min) {
+    display: inline;
   }
 }
