@@ -102,37 +102,25 @@
   padding: 0;
   background-color: transparent;
   border-style: none;
+
   &--crop {
     width: 44px;
     height: 44px;
     margin-left: 34px;
   }
+
   &--color {
     width: 48px;
     height: 43px;
     margin-top: 2px;
     margin-left: 22px;
   }
+
   &--contrast {
     width: 32px;
     height: 32px;
     margin-top: 8px;
     margin-left: 18px;
-  }
-  &:hover .editor__path {
-    fill: rgba(40, 54, 69, 0.5);
-  }
-  &:active .editor__path {
-    fill: $pink;
-  }
-}
-
-.editor__label {
-  display: none;
-
-  @media (min-width: $tablet-min) {
-    position: absolute;
-    display: block;
   }
 }
 
@@ -142,6 +130,14 @@
 
 .editor__path {
   fill: rgba(40, 54, 69, 0.3);
+
+  .editor__toggle-button:hover & {
+    fill: rgba(40, 54, 69, 0.5);
+  }
+
+  .editor__toggle-button:active & {
+    fill: $pink;
+  }
 }
 
 .editor__list {
@@ -157,6 +153,97 @@
   padding-bottom: 28px;
   @include padding-hor;
   border-bottom: 1px solid #dddfe0;
+
+  @media (min-width: $tablet-min) {
+    position: relative;
+    @include padding-vert(29px, 28px);
+    padding-left: 57px;
+    padding-right: 18px;
+
+    &--crop {
+      padding-top: 13px;
+    }
+  }
+
+  @media (min-width: $desktop-min) {
+    display: flex;
+    padding-bottom: 28px;
+    padding-right: 30px;
+
+    &--crop {
+      padding-top: 13px;
+    }
+
+    &--color {
+      padding-top: 30px;
+    }
+
+    &--contrast {
+      padding-top: 27px;
+    }
+  }
+}
+
+.editor__label {
+  display: none;
+
+  @media (min-width: $tablet-min) {
+    position: absolute;
+    display: block;
+    background-repeat: no-repeat;
+
+    &--crop {
+      top: 8px;
+      left: 2px;
+      width: 22px;
+      height: 22px;
+      background-image: url("../img/icon-editor-crop.svg");
+      background-size: 22px 22px;
+    }
+
+    &--color {
+      top: 27px;
+      left: 3px;
+      width: 24px;
+      height: 22px;
+      background-image: url("../img/icon-editor-color.svg");
+      background-size: 24px 22px;
+    }
+
+    &--contrast {
+      top: 27px;
+      left: 8px;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icon-editor-contrast.svg");
+      background-size: 16px 16px;
+    }
+  }
+
+  @media (min-width: $desktop-min) {
+    background-size: auto;
+
+    &--crop {
+      top: -4px;
+      left: -2px;
+      width: 44px;
+      height: 44px;
+    }
+
+    &--color {
+      top: 15px;
+      left: 0;
+      width: 48px;
+      height: 43px;
+    }
+
+    &--contrast {
+      top: 18px;
+      left: 6px;
+      width: 32px;
+      height: 32px;
+    }
+  }
 }
 
 .editor__scale {
@@ -167,43 +254,65 @@
   @include margin-hor(20px);
   padding: 0;
   background: transparent;
+
   &::-webkit-slider-runnable-track {
     @include range-track;
   }
+
   &::-moz-range-track {
     @include range-track;
   }
+
   &::-ms-track {
     @include range-track;
   }
+
   &::-ms-fill-lower {
     @include range-track;
   }
+
   &::-ms-fill-upper {
     @include range-track;
   }
+
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
     @include range-thumb;
     margin-top: -6px;
   }
+
   &::-moz-range-thumb {
     @include range-thumb;
   }
+
   &::-ms-thumb {
     @include range-thumb;
   }
+
   &:active::-webkit-slider-thumb {
     background-color: $pink;
   }
+
   &:active::-moz-range-thumb {
     background-color: $pink;
   }
+
   &:active::-ms-thumb {
     background-color: $pink;
   }
+
   &::-ms-tooltip {
     display: none;
+  }
+
+  @media (min-width: $tablet-min) {
+    width: 200px;
+    @include margin-hor(0);
+  }
+
+  @media (min-width: $desktop-min) {
+    width: 288px;
+    margin-left: auto;
   }
 }
 
@@ -243,120 +352,5 @@
     &:first-of-type {
       margin-bottom: 0;
     }
-  }
-}
-
-
-
-
-
-@media (min-width: $tablet-min) {
-  .editor__item {
-    position: relative;
-    @include padding-vert(29px, 28px);
-    padding-left: 57px;
-    padding-right: 18px;
-    &--crop {
-      padding-top: 13px;
-      .editor__label {
-        top: 8px;
-        left: 2px;
-        width: 22px;
-        height: 22px;
-      }
-      .editor__icon--scale {
-        width: 22px;
-        height: 22px;
-      }
-    }
-    &--color {
-      .editor__label {
-        top: 27px;
-        left: 3px;
-        width: 24px;
-        height: 22px;
-      }
-      .editor__icon--scale {
-        width: 24px;
-        height: 22px;
-      }
-    }
-    &--contrast {
-      .editor__label {
-        top: 27px;
-        left: 8px;
-        width: 16px;
-        height: 16px;
-      }
-      .editor__icon--scale {
-        width: 16px;
-        height: 16px;
-      }
-    }
-  }
-
-  .editor__icon--scale {
-    .editor__path {
-      fill: $pink;
-    }
-  }
-
-  .editor__scale {
-    width: 200px;
-    @include margin-hor(0);
-  }
-}
-
-
-
-@media (min-width: $desktop-min) {
-  .editor__item {
-    display: flex;
-    padding-bottom: 28px;
-    padding-right: 30px;
-    &--crop {
-      padding-top: 13px;
-      .editor__label {
-        top: -4px;
-        left: -2px;
-        width: 44px;
-        height: 44px;
-      }
-      .editor__icon--scale {
-        width: 44px;
-        height: 44px;
-      }
-    }
-    &--color {
-      padding-top: 30px;
-      .editor__label {
-        top: 15px;
-        left: 0;
-        width: 48px;
-        height: 43px;
-      }
-      .editor__icon--scale {
-        width: 48px;
-        height: 43px;
-      }
-    }
-    &--contrast {
-      padding-top: 27px;
-      .editor__label {
-        top: 18px;
-        left: 6px;
-        width: 32px;
-        height: 32px;
-      }
-      .editor__icon--scale {
-        width: 32px;
-        height: 32px;
-      }
-    }
-  }
-
-  .editor__scale {
-    width: 288px;
-    margin-left: auto;
   }
 }
