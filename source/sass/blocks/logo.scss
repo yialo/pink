@@ -9,16 +9,13 @@
     width: 75px;
     height: 22px;
   }
+
   &--footer {
     width: 147px;
     height: 40px;
   }
-}
 
-
-
-@media (min-width: $tablet-min) {
-  .logo__image {
+  @media (min-width: $tablet-min) {
     &--header {
       width: 147px;
       height: 40px;

@@ -9,6 +9,41 @@
   @media (min-resolution: $retina-i), (min-resolution: $retina-x) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
+
+  @media (max-width: $mobile-max) {
+    &--nojs {
+      padding-top: 0;
+      background-position: center -70px;
+    }
+  }
+
+  @media (min-width: $tablet-min) {
+    padding-top: 110px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center 0;
+    background-size: 1200px;
+
+    @media (min-resolution: $retina-i), (min-resolution: $retina-x) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    &--nojs {
+      padding-top: 0;
+      background-position: center -110px;
+    }
+  }
+
+  @media (min-width: $desktop-min) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: calc(50% + 1px) 0;
+    background-size: cover;
+
+    @media (min-resolution: $retina-i), (min-resolution: $retina-x) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
 }
 
 .intro__title {
@@ -22,38 +57,16 @@
   &--index {
     @include visually-hider;
   }
+
   &--contest {
     padding-bottom: 51px;
   }
+
   &--gallery {
     padding-bottom: 81px;
   }
-}
 
-
-
-@media (max-width: $mobile-max) {
-  .intro--nojs {
-    padding-top: 0;
-    background-position: center -70px;
-  }
-}
-
-
-
-@media (min-width: $tablet-min) {
-  .intro {
-    padding-top: 110px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center 0;
-    background-size: 1200px;
-
-    @media (min-resolution: $retina-i), (min-resolution: $retina-x) {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-    }
-  }
-
-  .intro__title {
+  @media (min-width: $tablet-min) {
     padding-top: 70px;
     font-size: 50px;
     line-height: 60px;
@@ -61,35 +74,13 @@
     &--contest {
       padding-bottom: 80px;
     }
+
     &--gallery {
       padding-bottom: 140px;
     }
   }
-}
 
-
-
-@media (min-width: $tablet-min) and (max-width: $tablet-max) {
-  .intro--nojs {
-    padding-top: 0;
-    background-position: center -110px;
-  }
-}
-
-
-
-@media (min-width: $desktop-min) {
-  .intro {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: calc(50% + 1px) 0;
-    background-size: cover;
-
-    @media (min-resolution: $retina-i), (min-resolution: $retina-x) {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-    }
-  }
-
-  .intro__title {
+  @media (min-width: $desktop-min) {
     padding-top: 62px;
     font-size: 50px;
     line-height: 61px;
@@ -97,6 +88,7 @@
     &--contest {
       padding-bottom: 100px;
     }
+
     &--gallery {
       padding-bottom: 100px;
       @include padding-hor(200px);

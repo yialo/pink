@@ -5,6 +5,14 @@
   text-align: center;
   text-transform: uppercase;
   color: white;
+
+  @media (min-width: $desktop-min) {
+    display: flex;
+    flex-wrap: wrap;
+    @include padding-vert(45px, 32px);
+    @include font(400, 18px, 18px);
+    text-transform: none;
+  }
 }
 
 .main-menu__item {
@@ -18,24 +26,13 @@
   &--current {
     color: $pink;
   }
-}
 
-
-
-@media (min-width: $desktop-min) {
-  .main-menu {
-    display: flex;
-    flex-wrap: wrap;
-    @include padding-vert(45px, 32px);
-    @include font(400, 18px, 18px);
-    text-transform: none;
-  }
-
-  .main-menu__item {
+  @media (min-width: $desktop-min) {
     margin-bottom: 0;
     padding: 0;
     background-color: transparent;
     box-shadow: none;
+
     &:not(:last-child) {
       margin-right: 80px;
     }
@@ -45,11 +42,14 @@
       background-image: linear-gradient(to top, $pink 0, $pink 2px, transparent 2px);
     }
   }
+}
 
-  .main-menu__link[href] {
+.main-menu__link[href] {
+  @media (min-width: $desktop-min) {
     &:hover {
       color: $pink;
     }
+
     &:active {
       color: rgba(255, 255, 255, 0.3);
     }
