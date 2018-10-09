@@ -5,8 +5,10 @@
   list-style-type: none;
 }
 
-.social__item:not(:last-child) {
-  margin-right: 12px;
+.social__item {
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
 }
 
 .social__link {

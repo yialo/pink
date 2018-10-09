@@ -15,8 +15,10 @@
   }
 }
 
-.controls__item:not(:last-child) {
-  margin-right: 13px;
+.controls__item {
+  &:not(:last-child) {
+    margin-right: 13px;
+  }
 }
 
 .controls__button {

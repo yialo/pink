@@ -1962,10 +1962,10 @@ input[type="radio"].visually-hidden {
       background-repeat: no-repeat;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px; }
-    .form__field-wrapper--phone::after {
+    .form__field-wrapper--contacts-phone::after {
       background-image: url("../img/icon-phone.svg");
       background-position: 18px 21px; }
-    .form__field-wrapper--email::after {
+    .form__field-wrapper--contacts-email::after {
       background-image: url("../img/icon-mail.svg");
       background-position: 19px 24px; }
     .form__field-wrapper--emotions {

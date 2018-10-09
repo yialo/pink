@@ -451,12 +451,12 @@
       border-bottom-right-radius: 3px;
     }
 
-    &--phone::after {
+    &--contacts-phone::after {
       background-image: url("../img/icon-phone.svg");
       background-position: 18px 21px;
     }
 
-    &--email::after {
+    &--contacts-email::after {
       background-image: url("../img/icon-mail.svg");
       background-position: 19px 24px;
     }

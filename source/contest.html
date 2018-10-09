@@ -11,7 +11,11 @@
       <nav class="page-header__navigation page-header__navigation--closed aligner aligner--header">
         <div class="page-header__top-wrapper">
           <a class="logo page-header__logo" href="index.html">
-            <img class="logo__image logo__image--header" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Pink">
+            <picture>
+              <source media="(min-width: 980px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="logo__image logo__image--header" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+            </picture>
           </a>
         </div>
         <ul class="main-menu page-header__list">
@@ -119,13 +123,13 @@
               <ul class="form__list form__list--contacts">
                 <li class="form__item form__item--text form__item--contacts">
                   <label class="form__label form__label--text form__label--contacts" for="phone-number">Номер телефона</label>
-                  <div class="form__field-wrapper form__field-wrapper--contacts form__field-wrapper--phone">
+                  <div class="form__field-wrapper form__field-wrapper--contacts form__field-wrapper--contacts-phone">
                     <input class="form__field form__field--text form__field--contacts" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
                   </div>
                 </li>
                 <li class="form__item form__item--text form__item--contacts">
                   <label class="form__label form__label--text form__label--contacts" for="email">Адрес почты</label>
-                  <div class="form__field-wrapper form__field-wrapper--contacts form__field-wrapper--email">
+                  <div class="form__field-wrapper form__field-wrapper--contacts form__field-wrapper--contacts-email">
                     <input class="form__field form__field--text form__field--contacts" type="email" name="email" id="email" placeholder="Введите почту *" required>
                   </div>
                 </li>
@@ -172,7 +176,10 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper aligner">
         <a class="logo page-footer__logo" href="index.html">
-          <img class="logo__image logo__image--footer" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Pink">
+          <picture>
+            <source media="(min-width: 980px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="logo__image logo__image--footer" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+          </picture>
         </a>
         <ul class="social page-footer__social">
           <li class="social__item">
@@ -207,7 +214,7 @@
         <div class="copyright page-footer__copyright">
           <span class="copyright__legend">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            <img class="copyright__icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy">
+            <img class="copyright__icon" src="img/logo-copyright.svg" width="27" height="34" alt="HTML Academy">
           </a>
         </div>
       </div>

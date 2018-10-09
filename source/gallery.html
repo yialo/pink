@@ -11,7 +11,11 @@
       <nav class="page-header__navigation page-header__navigation--closed aligner aligner--header">
         <div class="page-header__top-wrapper">
           <a class="logo page-header__logo" href="index.html">
-            <img class="logo__image logo__image--header" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Pink">
+            <picture>
+              <source media="(min-width: 980px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="logo__image logo__image--header" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+            </picture>
           </a>
         </div>
         <ul class="main-menu page-header__list">
@@ -341,28 +345,24 @@
               <ul class="editor__toggles">
                 <li class="editor__toggles-item">
                   <button class="editor__toggle-button editor__toggle-button--crop" type="button">
-                    <svg class="editor__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="44" height="44" viewBox="0 0 44 44" enable-background="new 0 0 48 48" xml:space="preserve">
-                      <path fill="none" d="M0,0h48v48H0V0z"/>
-                      <path class="editor__path editor__path--crop editor-active-toggle" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                    <svg class="editor__icon" width="44" height="44">
+                      <use class="editor__path editor__path--crop editor-active-toggle" xlink:href="img/svg-sprite.svg#icon-crop"></use>
                     </svg>
                     <span class="visually-hidden">Режим кадрирования</span>
                   </button>
                 </li>
                 <li class="editor__toggles-item">
                   <button class="editor__toggle-button editor__toggle-button--color" type="button">
-                    <svg class="editor__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="48" height="43" viewBox="0 0 48 43" enable-background="new 0 0 48 48" xml:space="preserve">
-                      <path fill="none" d="M0,0h48v48H0V0z"/>
-                      <path class="editor__path editor__path--color" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
-                      <rect class="editor__path editor__path--color" y="40" width="48" height="3"/>
+                    <svg class="editor__icon" width="48" height="43" viewBox="0 0 48 43">
+                      <use class="editor__path editor__path--color" xlink:href="img/svg-sprite.svg#icon-color"></use>
                     </svg>
                     <span class="visually-hidden">Режим настройки цвета</span>
                   </button>
                 </li>
                 <li class="editor__toggles-item">
                   <button class="editor__toggle-button editor__toggle-button--contrast" type="button">
-                    <svg class="editor__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="32" height="32" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-                      <path class="editor__path editor__path--contrast" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
-                      <path class="editor__path editor__path--contrast" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                    <svg class="editor__icon" width="32" height="32">
+                      <use class="editor__path editor__path--contrast" xlink:href="img/svg-sprite.svg#icon-contrast"></use>
                     </svg>
                     <span class="visually-hidden">Режим смены контрастности</span>
                   </button>
@@ -405,7 +405,10 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper aligner">
         <a class="logo page-footer__logo" href="index.html">
-          <img class="logo__image logo__image--footer" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Pink">
+          <picture>
+            <source media="(min-width: 980px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="logo__image logo__image--footer" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+          </picture>
         </a>
         <ul class="social page-footer__social">
           <li class="social__item">
@@ -440,7 +443,7 @@
         <div class="copyright page-footer__copyright">
           <span class="copyright__legend">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            <img class="copyright__icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy">
+            <img class="copyright__icon" src="img/logo-copyright.svg" width="27" height="34" alt="HTML Academy">
           </a>
         </div>
       </div>
