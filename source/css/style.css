@@ -1154,24 +1154,28 @@ input[type="radio"].visually-hidden {
   width: 92px; }
 
 .download__link {
-  display: block; }
+  display: block;
+  background-repeat: no-repeat; }
   .download__link--apple {
     width: 47px;
     height: 57px;
-    margin-left: 35px; }
+    margin-left: 35px;
+    background-image: url("../img/icon-download-apple.svg");
+    background-size: 47px 57px; }
   .download__link--android {
     width: 43px;
     height: 47px;
     margin-top: 8px;
-    margin-left: 24px; }
+    margin-left: 24px;
+    background-image: url("../img/icon-download-android.svg");
+    background-size: 43px 47px; }
   .download__link--windows {
     width: 44px;
     height: 42px;
     margin-top: 12px;
-    margin-left: 12px; }
-
-.download__icon {
-  display: block; }
+    margin-left: 12px;
+    background-image: url("../img/icon-download-windows.svg");
+    background-size: 44px 42px; }
 
 .download__annotation {
   margin-top: 0;
@@ -2359,18 +2363,23 @@ input[type="radio"].visually-hidden {
   display: none;
   padding: 0;
   background-color: transparent;
+  background-repeat: no-repeat;
   border-style: none;
   cursor: pointer; }
   .page-header__button--open {
     top: 21px;
     right: 20px;
     width: 50px;
-    height: 24px; }
+    height: 24px;
+    background-image: url("../img/icon-menu-open.svg");
+    background-size: 50px 24px; }
   .page-header__button--close {
     top: 21px;
     right: 19px;
     width: 24px;
-    height: 24px; }
+    height: 24px;
+    background-image: url("../img/icon-menu-close.svg");
+    background-size: 24px 24px; }
   @media (min-width: 660px) {
     .page-header__button--open {
       top: 44px; }
@@ -2389,9 +2398,6 @@ input[type="radio"].visually-hidden {
       display: none; }
     .page-header--nojs .page-header__button--close {
       display: none; } }
-
-.page-header__icon {
-  display: block; }
 
 .page-header__list {
   margin-top: 0;
@@ -2674,7 +2680,6 @@ input[type="radio"].visually-hidden {
       padding-top: 75px; } }
   @media (min-width: 980px) {
     .reviews__wrapper {
-      position: relative;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -2684,19 +2689,33 @@ input[type="radio"].visually-hidden {
       padding-top: 185px;
       padding-bottom: 29px;
       padding-right: 10px;
-      padding-left: 10px; } }
+      padding-left: 10px;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-position: calc(50% + 2px) 73px;
+      background-size: 79px 63px; } }
 
-.reviews__icon {
+.reviews__button {
   display: none; }
   @media (min-width: 980px) {
-    .reviews__icon {
-      position: absolute;
-      top: 73px;
-      left: calc(50% - 37px);
+    .reviews__button {
       display: block;
-      width: 79px;
-      height: 63px;
-      fill: #efefef; } }
+      width: 22px;
+      height: 41px;
+      margin-top: 28px;
+      padding: 0;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border-style: none;
+      opacity: 0.3; }
+      .reviews__button--previous {
+        background-image: url("../img/icon-review-arrow-left.svg"); }
+      .reviews__button--next {
+        background-image: url("../img/icon-review-arrow-right.svg"); }
+      .reviews__button:hover {
+        opacity: 0.6; }
+      .reviews__button:active {
+        opacity: 0.1; } }
 
 .reviews__inner-wrapper {
   margin-bottom: 33px;
@@ -2792,27 +2811,6 @@ input[type="radio"].visually-hidden {
     .reviews__text {
       margin-bottom: 35px;
       font-size: 18px; } }
-
-.reviews__button {
-  display: none; }
-  @media (min-width: 980px) {
-    .reviews__button {
-      display: block;
-      width: 22px;
-      height: 41px;
-      margin-top: 28px;
-      padding: 0;
-      background-color: transparent;
-      border-style: none; } }
-
-@media (min-width: 980px) {
-  .reviews__button-icon {
-    display: block;
-    fill: rgba(40, 54, 69, 0.3); }
-    .reviews__button:hover .reviews__button-icon {
-      fill: rgba(40, 54, 69, 0.6); }
-    .reviews__button:active .reviews__button-icon {
-      fill: rgba(40, 54, 69, 0.1); } }
 
 .social {
   display: -webkit-box;

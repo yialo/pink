@@ -10,25 +10,46 @@
   }
 
   @media (min-width: $desktop-min) {
-    position: relative;
     display: flex;
     justify-content: space-between;
     @include padding-vert(185px, 29px);
     @include padding-hor(10px);
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 2px) 73px;
+    background-size: 79px 63px;
   }
 }
 
-.reviews__icon {
+.reviews__button {
   display: none;
 
   @media (min-width: $desktop-min) {
-    position: absolute;
-    top: 73px;
-    left: calc(50% - 37px);
     display: block;
-    width: 79px;
-    height: 63px;
-    fill: #efefef;
+    width: 22px;
+    height: 41px;
+    margin-top: 28px;
+    padding: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+    opacity: 0.3;
+
+    &--previous {
+      background-image: url("../img/icon-review-arrow-left.svg");
+    }
+
+    &--next {
+      background-image: url("../img/icon-review-arrow-right.svg");
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 }
 
@@ -115,34 +136,5 @@
   @media (min-width: $tablet-min) {
     margin-bottom: 35px;
     font-size: 18px;
-  }
-}
-
-.reviews__button {
-  display: none;
-
-  @media (min-width: $desktop-min) {
-    display: block;
-    width: 22px;
-    height: 41px;
-    margin-top: 28px;
-    padding: 0;
-    background-color: transparent;
-    border-style: none;
-  }
-}
-
-.reviews__button-icon {
-  @media (min-width: $desktop-min) {
-    display: block;
-    fill: rgba(40, 54, 69, 0.3);
-
-    .reviews__button:hover & {
-      fill: rgba(40, 54, 69, 0.6);
-    }
-
-    .reviews__button:active & {
-      fill: rgba(40, 54, 69, 0.1);
-    }
   }
 }
