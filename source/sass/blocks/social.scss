@@ -24,30 +24,40 @@
   }
 
   &:active {
-    border-color: rgba(40, 54, 69, 0.1);
-  }
-}
-
-.social__icon {
-  position: absolute;
-  fill: $pink;
-
-  &--twitter {
-    top: 15.7px;
-    left: 14px;
+    border: 3px solid rgba(40, 54, 69, 0.1);
   }
 
-  &--facebook {
-    top: 11.5px;
-    left: 18px;
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
   }
 
-  &--youtube {
-    top: 14.5px;
-    left: 17px;
-  }
-
-  .social__link:active & {
+  &:active::before {
     opacity: 0.3;
+  }
+
+  &--twitter::before {
+    top: 15px;
+    left: 14px;
+    width: 17.5px;
+    height: 14.66px;
+    background-image: url("../img/icon-social-twitter.svg");
+  }
+
+  &--facebook::before {
+    top: 12px;
+    left: 18px;
+    width: 8.673px;
+    height: 18.944px;
+    background-image: url("../img/icon-social-facebook.svg");
+  }
+
+  &--youtube::before {
+    top: 15px;
+    left: 17px;
+    width: 14.64px;
+    height: 13.96px;
+    background-image: url("../img/icon-social-youtube.svg");
   }
 }

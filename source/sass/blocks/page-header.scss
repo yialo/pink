@@ -61,7 +61,6 @@
   display: none;
   padding: 0;
   background-color: transparent;
-  background-repeat: no-repeat;
   border-style: none;
   cursor: pointer;
 
@@ -70,8 +69,6 @@
     right: 20px;
     width: 50px;
     height: 24px;
-    background-image: url("../img/icon-menu-open.svg");
-    background-size: 50px 24px;
   }
 
   &--close {
@@ -79,8 +76,6 @@
     right: 19px;
     width: 24px;
     height: 24px;
-    background-image: url("../img/icon-menu-close.svg");
-    background-size: 24px 24px;
   }
 
   @media (min-width: $tablet-min) {
@@ -117,6 +112,20 @@
     .page-header--nojs &--close {
       display: none;
     }
+  }
+}
+
+.page-header__button-icon {
+  display: block;
+}
+
+.page-header__button-path {
+  .page-header__button:hover & {
+    fill: $pink;
+  }
+
+  .page-header__button:active & {
+    opacity: 0.3;
   }
 }
 

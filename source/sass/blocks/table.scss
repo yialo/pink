@@ -170,12 +170,15 @@
 
 .table__cell-value {
   position: absolute;
+  background-repeat: no-repeat;
 
   &--yes {
     top: 20px;
     right: calc(85% / 14);
     width: 31px;
     height: 21px;
+    background-image: url("../img/icon-yes.svg");
+    background-size: 31px 21px;
   }
 
   &--no {
@@ -183,6 +186,8 @@
     right: calc(95% / 14);
     width: 27px;
     height: 27px;
+    background-image: url("../img/icon-no.svg");
+    background-size: 27px 27px;
   }
 
   @media (min-width: $tablet-min) {
@@ -196,8 +201,4 @@
       left: calc(50% - 27px/2);
     }
   }
-}
-
-.table__cell-icon {
-  display: block;
 }
