@@ -2177,18 +2177,69 @@ input[type="radio"].visually-hidden {
 .logo {
   display: block; }
 
-.logo__image {
+.logo__icon-wrapper {
   display: block; }
-  .logo__image--header {
+  .logo__icon-wrapper--header {
     width: 75px;
     height: 22px; }
-  .logo__image--footer {
+  .logo__icon-wrapper--footer {
     width: 147px;
     height: 40px; }
   @media (min-width: 660px) {
-    .logo__image--header {
+    .logo__icon-wrapper--header {
       width: 147px;
       height: 40px; } }
+
+.logo[href]:active .logo__icon {
+  opacity: 0.3; }
+
+.logo__icon--tablet {
+  display: none; }
+
+.logo__icon--desktop {
+  display: none; }
+
+.logo__icon--white-pink {
+  fill: white; }
+  .logo[href]:hover .logo__icon--white-pink {
+    fill: #d22856; }
+  .logo[href]:active .logo__icon--white-pink {
+    fill: white; }
+
+.logo__icon--pink-white {
+  fill: #d22856; }
+  .logo[href]:hover .logo__icon--pink-white {
+    fill: white; }
+  .logo[href]:active .logo__icon--pink-white {
+    fill: #d22856; }
+
+.logo__icon--pink-navy {
+  fill: #d22856; }
+  .logo[href]:hover .logo__icon--pink-navy {
+    fill: #283645; }
+  .logo[href]:active .logo__icon--pink-navy {
+    fill: #d22856; }
+
+.logo__icon--navy-pink {
+  fill: #283645; }
+  .logo[href]:hover .logo__icon--navy-pink {
+    fill: #d22856; }
+  .logo[href]:active .logo__icon--navy-pink {
+    fill: #283645; }
+
+@media (min-width: 660px) {
+  .logo__icon--mobile {
+    display: none; }
+  .logo__icon--tablet {
+    display: inline; } }
+
+@media (min-width: 980px) {
+  .logo__icon--tablet {
+    display: none; }
+  .logo__icon--portable {
+    display: none; }
+  .logo__icon--desktop {
+    display: inline; } }
 
 .main-menu {
   padding-left: 0;

@@ -2,7 +2,7 @@
   display: block;
 }
 
-.logo__image {
+.logo__icon-wrapper {
   display: block;
 
   &--header {
@@ -19,6 +19,92 @@
     &--header {
       width: 147px;
       height: 40px;
+    }
+  }
+}
+
+.logo__icon {
+  .logo[href]:active & {
+    opacity: 0.3;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  &--white-pink {
+    fill: white;
+
+    .logo[href]:hover & {
+      fill: $pink;
+    }
+
+    .logo[href]:active & {
+      fill: white;
+    }
+  }
+
+  &--pink-white {
+    fill: $pink;
+
+    .logo[href]:hover & {
+      fill: white;
+    }
+
+    .logo[href]:active & {
+      fill: $pink;
+    }
+  }
+
+  &--pink-navy {
+    fill: $pink;
+
+    .logo[href]:hover & {
+      fill: $navy;
+    }
+
+    .logo[href]:active & {
+      fill: $pink;
+    }
+  }
+
+  &--navy-pink {
+    fill: $navy;
+
+    .logo[href]:hover & {
+      fill: $pink;
+    }
+
+    .logo[href]:active & {
+      fill: $navy;
+    }
+  }
+
+  @media (min-width: $tablet-min) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $desktop-min) {
+    &--tablet {
+      display: none;
+    }
+
+    &--portable {
+      display: none;
+    }
+
+    &--desktop {
+      display: inline;
     }
   }
 }

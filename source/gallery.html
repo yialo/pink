@@ -10,12 +10,13 @@
     <header class="page-header page-header--nojs page-header--gallery">
       <nav class="page-header__navigation page-header__navigation--closed aligner aligner--header">
         <div class="page-header__top-wrapper">
-          <a class="logo page-header__logo" href="index.html">
-            <picture>
-              <source media="(min-width: 980px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img class="logo__image logo__image--header" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
-            </picture>
+          <a class="logo page-header__logo" href="index.html" aria-label="Перейти на главную страницу сайта">
+            <svg class="logo__icon-wrapper logo__icon-wrapper--header" width="75" height="22" role="img">
+              <use class="logo__icon logo__icon--mobile logo__icon--white-pink" xlink:href="img/svg-sprite.svg#logo-header-mobile" width="75" height="22"></use>
+              <use class="logo__icon logo__icon--tablet logo__icon--white-pink" xlink:href="img/svg-sprite.svg#logo-header-tablet" width="146.3" height="40.375"></use>
+              <use class="logo__icon logo__icon--desktop logo__icon--white-pink" xlink:href="img/svg-sprite.svg#logo-header-desktop-base" width="146.3" height="40.375"></use>
+              <use class="logo__icon logo__icon--desktop logo__icon--pink-white" xlink:href="img/svg-sprite.svg#logo-header-desktop-sparks" width="146.3" height="40.375"></use>
+            </svg>
           </a>
         </div>
         <ul class="main-menu page-header__list">
@@ -395,11 +396,15 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper aligner">
-        <a class="logo page-footer__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 980px)" srcset="img/logo-pink-blue-desktop.svg">
-            <img class="logo__image logo__image--footer" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
-          </picture>
+        <a class="logo page-footer__logo" href="index.html" aria-label="Перейти на главную страницу сайта">
+          <svg class="logo__icon-wrapper logo__icon-wrapper--footer" width="146.3" height="40.375" role="img">
+            <use class="logo__icon logo__icon--portable logo__icon--pink-navy" xlink:href="img/svg-sprite.svg#logo-footer-portable-glasses" width="146.3" height="40.375"></use>
+            <use class="logo__icon logo__icon--portable logo__icon--navy-pink" xlink:href="img/svg-sprite.svg#logo-footer-portable-text" width="146.3" height="40.375"></use>
+            <use class="logo__icon logo__icon--desktop logo__icon--pink-navy" xlink:href="img/svg-sprite.svg#logo-footer-desktop-glasses" width="146.3" height="40.375"></use>
+            <use class="logo__icon logo__icon--desktop logo__icon--navy-pink" xlink:href="img/svg-sprite.svg#logo-footer-desktop-text" width="146.3" height="40.375"></use>
+            <use class="logo__icon logo__icon--desktop logo__icon--navy-pink" xlink:href="img/svg-sprite.svg#logo-footer-desktop-sparks-navy" width="146.3" height="40.375"></use>
+            <use class="logo__icon logo__icon--desktop logo__icon--pink-navy" xlink:href="img/svg-sprite.svg#logo-footer-desktop-sparks-pink" width="146.3" height="40.375"></use>
+          </svg>
         </a>
         <ul class="social page-footer__social">
           <li class="social__item">
