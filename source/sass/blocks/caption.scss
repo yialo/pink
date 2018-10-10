@@ -23,7 +23,7 @@
 
   @media (min-width: $desktop-min) {
     &--panorama {
-      padding-bottom: 14px;
+      padding-bottom: 24px;
     }
   }
 }
@@ -88,7 +88,12 @@
 
 .caption__like {
   display: block;
+  width: 13px;
+  margin-top: 5px;
   margin-right: 20px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 12px;
 
   @media (min-width: $tablet-min) {
     order: 1;
@@ -106,12 +111,6 @@
       margin-right: 3px;
     }
   }
-}
-
-.caption__icon {
-  display: block;
-  margin-top: 6px;
-  fill: $pink;
 }
 
 .caption__counter {

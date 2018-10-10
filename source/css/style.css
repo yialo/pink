@@ -673,7 +673,7 @@ input[type="radio"].visually-hidden {
         padding-bottom: 23px; } }
   @media (min-width: 980px) {
     .caption--panorama {
-      padding-bottom: 14px; } }
+      padding-bottom: 24px; } }
 
 .caption__header {
   line-height: 24px;
@@ -735,7 +735,12 @@ input[type="radio"].visually-hidden {
 
 .caption__like {
   display: block;
-  margin-right: 20px; }
+  width: 13px;
+  margin-top: 5px;
+  margin-right: 20px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 12px; }
   @media (min-width: 660px) {
     .caption__like {
       -webkit-box-ordinal-group: 2;
@@ -749,11 +754,6 @@ input[type="radio"].visually-hidden {
   @media (min-width: 980px) {
     .caption__like--panorama {
       margin-right: 3px; } }
-
-.caption__icon {
-  display: block;
-  margin-top: 6px;
-  fill: #d22856; }
 
 .caption__counter {
   display: block;
