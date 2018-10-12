@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Конкурс | HTML Academy: Pink</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div class="visually-hidden">
+      <include src="build/img/svg-sprite.svg"></include>
+    </div>
+
     <header class="page-header page-header--nojs page-header--contest">
       <nav class="page-header__navigation page-header__navigation--closed aligner aligner--header">
         <div class="page-header__top-wrapper">
@@ -206,5 +210,6 @@
     <!-- TODO: Поставить ссылки на минимизировынные версии JS -->
 
     <script src="js/main-menu.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>

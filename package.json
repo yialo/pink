@@ -6,7 +6,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^9.1.2",
-    "browser-sync": "^2.24.6",
+    "browser-sync": "^2.26.0",
     "css-mqpacker": "^7.0.0",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
@@ -19,7 +19,6 @@
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
-    "gulp-svgstore": "^6.1.1",
     "gulp-uglify": "^3.0.1",
     "gulp-webp": "^3.0.0",
     "postcss-reporter": "^6.0.0",
