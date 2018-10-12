@@ -16,10 +16,10 @@
         <div class="page-header__top-wrapper">
           <a class="logo page-header__logo" href="index.html" aria-label="Перейти на главную страницу сайта">
             <svg class="logo__icon-wrapper logo__icon-wrapper--header" width="75" height="22" role="img">
-              <use class="logo__icon logo__icon--mobile logo__icon--white-pink" xlink:href="img/svg-sprite.svg#logo-header-mobile" width="75" height="22"></use>
-              <use class="logo__icon logo__icon--tablet logo__icon--white-pink" xlink:href="img/svg-sprite.svg#logo-header-tablet" width="146.3" height="40.375"></use>
-              <use class="logo__icon logo__icon--desktop logo__icon--white-pink" xlink:href="img/svg-sprite.svg#logo-header-desktop-base" width="146.3" height="40.375"></use>
-              <use class="logo__icon logo__icon--desktop logo__icon--pink-white" xlink:href="img/svg-sprite.svg#logo-header-desktop-sparks" width="146.3" height="40.375"></use>
+              <use class="logo__icon logo__icon--mobile logo__icon--white-pink" xlink:href="#logo-header-mobile" width="75" height="22"></use>
+              <use class="logo__icon logo__icon--tablet logo__icon--white-pink" xlink:href="#logo-header-tablet" width="146.3" height="40.375"></use>
+              <use class="logo__icon logo__icon--desktop logo__icon--white-pink" xlink:href="#logo-header-desktop-base" width="146.3" height="40.375"></use>
+              <use class="logo__icon logo__icon--desktop logo__icon--pink-white" xlink:href="#logo-header-desktop-sparks" width="146.3" height="40.375"></use>
             </svg>
           </a>
         </div>
@@ -39,13 +39,13 @@
         </ul>
         <button class="page-header__button page-header__button--open" type="button">
           <svg class="page-header__button-icon" width="50" height="24">
-            <use class="page-header__button-path" xlink:href="img/svg-sprite.svg#icon-menu-open" fill="#ffffff"></use>
+            <use class="page-header__button-path" xlink:href="#icon-menu-open" fill="#ffffff"></use>
           </svg>
           <span class="visually-hidden">Показать меню</span>
         </button>
         <button class="page-header__button page-header__button--close" type="button">
           <svg class="page-header__button-icon" width="24" height="24">
-            <use class="page-header__button-path" xlink:href="img/svg-sprite.svg#icon-menu-close" fill="#ffffff"></use>
+            <use class="page-header__button-path" xlink:href="#icon-menu-close" fill="#ffffff"></use>
           </svg>
           <span class="visually-hidden">Скрыть меню</span>
         </button>
@@ -173,12 +173,12 @@
       <div class="page-footer__wrapper aligner">
         <a class="logo page-footer__logo" href="index.html" aria-label="Перейти на главную страницу сайта">
           <svg class="logo__icon-wrapper logo__icon-wrapper--footer" width="146.3" height="40.375" role="img">
-            <use class="logo__icon logo__icon--portable logo__icon--pink-navy" xlink:href="img/svg-sprite.svg#logo-footer-portable-glasses" width="146.3" height="40.375"></use>
-            <use class="logo__icon logo__icon--portable logo__icon--navy-pink" xlink:href="img/svg-sprite.svg#logo-footer-portable-text" width="146.3" height="40.375"></use>
-            <use class="logo__icon logo__icon--desktop logo__icon--pink-navy" xlink:href="img/svg-sprite.svg#logo-footer-desktop-glasses" width="146.3" height="40.375"></use>
-            <use class="logo__icon logo__icon--desktop logo__icon--navy-pink" xlink:href="img/svg-sprite.svg#logo-footer-desktop-text" width="146.3" height="40.375"></use>
-            <use class="logo__icon logo__icon--desktop logo__icon--navy-pink" xlink:href="img/svg-sprite.svg#logo-footer-desktop-sparks-navy" width="146.3" height="40.375"></use>
-            <use class="logo__icon logo__icon--desktop logo__icon--pink-navy" xlink:href="img/svg-sprite.svg#logo-footer-desktop-sparks-pink" width="146.3" height="40.375"></use>
+            <use class="logo__icon logo__icon--portable logo__icon--pink-navy" xlink:href="#logo-footer-portable-glasses" width="146.3" height="40.375"></use>
+            <use class="logo__icon logo__icon--portable logo__icon--navy-pink" xlink:href="#logo-footer-portable-text" width="146.3" height="40.375"></use>
+            <use class="logo__icon logo__icon--desktop logo__icon--pink-navy" xlink:href="#logo-footer-desktop-glasses" width="146.3" height="40.375"></use>
+            <use class="logo__icon logo__icon--desktop logo__icon--navy-pink" xlink:href="#logo-footer-desktop-text" width="146.3" height="40.375"></use>
+            <use class="logo__icon logo__icon--desktop logo__icon--navy-pink" xlink:href="#logo-footer-desktop-sparks-navy" width="146.3" height="40.375"></use>
+            <use class="logo__icon logo__icon--desktop logo__icon--pink-navy" xlink:href="#logo-footer-desktop-sparks-pink" width="146.3" height="40.375"></use>
           </svg>
         </a>
         <ul class="social page-footer__social">
@@ -200,8 +200,10 @@
         </ul>
         <div class="copyright page-footer__copyright">
           <span class="copyright__legend">Разработано</span>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            <img class="copyright__icon" src="img/logo-copyright.svg" width="27" height="34" alt="HTML Academy">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на сайт HTML Academy">
+            <svg class="copyright__icon-wrapper" width="27" height="34" role="img">
+              <use class="copyright__icon" xlink:href="#icon-copyright"></use>
+            </svg>
           </a>
         </div>
       </div>

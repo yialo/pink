@@ -8,19 +8,17 @@ var autoprefixer = require('autoprefixer');
 var browserSync = require('browser-sync').create();
 var del = require('del');
 var gulp = require('gulp');
-var htmlmin = require('gulp-htmlmin');
 var include = require('posthtml-include');
 var minify = require('gulp-csso');
 var plumber = require('gulp-plumber');
 var postcss = require('gulp-postcss');
 var posthtml = require('gulp-posthtml');
 var rename = require('gulp-rename');
-var webp = require('gulp-webp');
 var sass = require('gulp-sass');
 
 // Task functions
 
-var del = function () {
+var clean = function () {
   return del('build');
 }
 
@@ -29,9 +27,9 @@ var copy = function () {
     'source/fonts/**/*.{woff,woff2}',
     'source/img/**',
     'source/js/**'
-  ]), {
+  ], {
     base: 'source'
-  }
+  })
     .pipe(gulp.dest('build'));
 }
 
@@ -44,7 +42,7 @@ var style = function () {
     ]))
     .pipe(gulp.dest('build/css/'))
     .pipe(minify())
-    .pipe(remane('style.min.css'))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css/'))
     .pipe(browserSync.stream());
 }
@@ -73,5 +71,5 @@ var serve = function () {
 
 // Gulp tasks
 
-gulp.task('build', gulp.series(del, copy, style, html));
+gulp.task('build', gulp.series(clean, copy, style, html));
 gulp.task('serve', serve);
