@@ -2,8 +2,6 @@
 
 // Variables
 
-// TODO: подумать, все ли опции нужны
-
 var autoprefixer = require('autoprefixer');
 var browserSync = require('browser-sync').create();
 var del = require('del');
