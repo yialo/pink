@@ -7,6 +7,7 @@ var browserSync = require('browser-sync').create();
 var del = require('del');
 var gulp = require('gulp');
 var include = require('posthtml-include');
+var htmlmin = require('gulp-htmlmin');
 var minCss = require('gulp-csso');
 var minJs = require('gulp-uglify');
 var plumber = require('gulp-plumber');
@@ -61,6 +62,7 @@ var html = function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin())
     .pipe(gulp.dest('build'));
 }
 
