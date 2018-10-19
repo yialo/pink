@@ -10,6 +10,7 @@ html {
 
 body {
   min-width: 320px;
+
   @include font;
   color: $navy;
   background-color: white;

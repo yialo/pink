@@ -68,6 +68,7 @@
 .advantages__list {
   @include list;
   padding-bottom: 319px;
+
   @include padding-hor;
   background-image: url("../img/iphone-screen-3-mobile@1x.png");
   background-repeat: no-repeat;
@@ -95,6 +96,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     @include padding-vert(0, 49px);
     @include padding-hor(10px);
     background-image: none;
@@ -119,6 +121,7 @@
   @media (min-width: $desktop-min) {
     width: 300px;
     padding-top: 361px;
+
     @include padding-hor(30px);
     text-align: center;
     background-repeat: no-repeat;

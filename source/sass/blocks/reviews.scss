@@ -12,6 +12,7 @@
   @media (min-width: $desktop-min) {
     display: flex;
     justify-content: space-between;
+
     @include padding-vert(185px, 29px);
     @include padding-hor(10px);
     background-image: url("../img/icon-quotes.svg");
@@ -70,11 +71,13 @@
 .reviews__list {
   display: flex;
   width: 300%;
+
   @include list;
 }
 
 .reviews__item {
   width: calc(100% / 3);
+
   @include padding-hor;
   text-align: center;
 
@@ -101,6 +104,7 @@
 
 .reviews__author-name {
   display: block;
+
   @include font(700, 18px, 30px);
   color: black;
 
@@ -120,6 +124,7 @@
 
   @media (min-width: $tablet-min) {
     display: block;
+
     @include font;
   }
 
@@ -130,6 +135,7 @@
 
 .reviews__text {
   margin: 0;
+
   @include font;
   color: $navy;
 

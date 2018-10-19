@@ -1,6 +1,7 @@
 .controls {
   display: flex;
   justify-content: center;
+
   @include list;
   padding-bottom: 1px;
 

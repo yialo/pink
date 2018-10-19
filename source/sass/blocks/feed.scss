@@ -16,12 +16,14 @@
 
   @media (min-width: $tablet-min) {
     margin-bottom: 76px;
+
     @include padding-hor(80px);
     font-size: 18px;
   }
 
   @media (min-width: $desktop-min) {
     margin-bottom: 88px;
+
     @include padding-hor(170px);
   }
 }
@@ -47,6 +49,7 @@
 
   @media (min-width: $desktop-min) {
     margin-top: -54px;
+
     @include padding-hor(10px);
   }
 }

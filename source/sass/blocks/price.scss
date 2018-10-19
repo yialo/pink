@@ -21,6 +21,7 @@
 
   @media (min-width: $tablet-min) {
     margin-bottom: 0;
+
     @include padding-hor;
     overflow-x: visible;
   }
@@ -31,7 +32,7 @@
 }
 
 .price__table {
-  margin-left:  calc(50% - 139px);
+  margin-left: calc(50% - 139px);
 
   @media (min-width: $tablet-min) {
     margin-left: 0;

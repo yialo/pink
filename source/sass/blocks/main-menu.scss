@@ -1,6 +1,7 @@
 .main-menu {
   padding-left: 0;
   list-style-type: none;
+
   @include font(700, 18px, 32px);
   text-align: center;
   text-transform: uppercase;
@@ -9,6 +10,7 @@
   @media (min-width: $desktop-min) {
     display: flex;
     flex-wrap: wrap;
+
     @include padding-vert(45px, 32px);
     @include font(400, 18px, 18px);
     text-transform: none;

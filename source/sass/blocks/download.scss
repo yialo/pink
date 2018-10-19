@@ -42,6 +42,7 @@
 
   @media (min-width: $tablet-min) {
     width: 300px;
+
     @include padding-vert(0, 0);
     @include padding-hor(0);
     background-color: transparent;
@@ -57,6 +58,7 @@
 
   @media (min-width: $tablet-min) {
     display: block;
+
     @include margin-vert(30px);
     @include padding-hor(30px);
     @include font(300, 40px, 48px);
@@ -65,6 +67,7 @@
 
   @media (min-width: $desktop-min) {
     margin-bottom: 51px;
+
     @include font(300, 50px, 61px);
   }
 }
@@ -72,6 +75,7 @@
 .download__main-link {
   width: 280px;
   margin-bottom: 32px;
+
   @include margin-hor(auto);
 
   @media (min-width: $tablet-min) {
@@ -88,8 +92,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   @include list;
   margin-bottom: 21px;
+
   @include padding-hor(2px);
 
   @media (min-width: $tablet-min) {

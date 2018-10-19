@@ -8,6 +8,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 960px;
+
     @include margin-hor(auto);
     @include padding-hor(10px);
   }
@@ -27,7 +28,7 @@
       background-color: transparent;
     }
 
-    &--achievements  {
+    &--achievements {
       order: 2;
     }
 
@@ -100,6 +101,7 @@
 
   @media (min-width: $tablet-min) {
     padding-top: 0;
+
     @include padding-hor(0);
     border: 2px solid $darkgray;
 
@@ -158,6 +160,7 @@
 
 .form__group-title {
   float: left;
+
   @include font(400, 14px, 18px);
   text-align: center;
   text-transform: uppercase;
@@ -191,21 +194,25 @@
 
     &--achievements {
       margin-bottom: 48px;
+
       @include padding-hor(29px);
     }
 
     &--contacts {
       display: block;
+
       @include padding-hor(31px);
     }
 
     &--application {
       margin-bottom: 48px;
+
       @include padding-hor(25px);
     }
 
     &--emotions {
       display: block;
+
       @include padding-hor(37px);
     }
   }
@@ -340,6 +347,7 @@
   &--text {
     margin-bottom: 5px;
     padding-left: 23px;
+
     @include font;
     text-transform: uppercase;
     color: $pink;
@@ -347,6 +355,7 @@
 
   &--select {
     position: relative;
+
     @include font(400, 18px, 30px);
     color: $navy;
   }
@@ -413,7 +422,7 @@
       padding-left: 0;
     }
 
-    .form__field:checked +  &--achievements::after {
+    .form__field:checked + &--achievements::after {
       left: -51px;
     }
 
@@ -481,6 +490,7 @@
   &--text {
     width: 100%;
     min-width: 0;
+
     @include padding-vert(15px, 14px);
     @include padding-hor(21px);
     @include font(400, 18px, 30px);
@@ -499,6 +509,7 @@
 
   &--emotions {
     height: 201px;
+
     @include padding-hor(19px);
     overflow-y: hidden;
     resize: none;
@@ -507,16 +518,16 @@
   @media (min-width: $tablet-min) {
     @include padding-vert(14px, 15px);
     @include padding-hor(21px);
-  }
 
-  &--contacts {
-    width: calc(100% - 60px);
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
+    &--contacts {
+      width: calc(100% - 60px);
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
 
-  &--emotions {
-    height: 193px;
+    &--emotions {
+      height: 193px;
+    }
   }
 
   @media (min-width: $desktop-min) {
@@ -530,6 +541,7 @@
   display: block;
   width: 100%;
   margin-bottom: 35px;
+
   @include padding-vert(17px, 16px);
   @include padding-hor(10px);
   @include font(700, 18px, 30px);
@@ -542,8 +554,8 @@
 
   &:hover {
     background-color: #1c9b5e;
-
   }
+
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
@@ -565,6 +577,7 @@
 
   @media (min-width: $tablet-min) {
     margin-top: 18px;
+
     @include padding-hor(0);
   }
 }

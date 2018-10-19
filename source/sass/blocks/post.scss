@@ -8,6 +8,7 @@
     position: relative;
     width: 320px;
     height: 137px;
+
     @include margin-hor(auto);
   }
 
@@ -55,6 +56,7 @@
   top: 0;
   right: 20px;
   width: 140px;
+
   @include padding-vert(6px, 6px);
   @include padding-hor(10px);
   @include font(700, 12px, 24px);

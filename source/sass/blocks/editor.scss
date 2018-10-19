@@ -38,6 +38,7 @@
   @media (min-width: $tablet-min) {
     display: flex;
     justify-content: space-between;
+
     @include padding-vert(57px, 54px);
     @include padding-hor;
   }
@@ -55,12 +56,14 @@
   height: 374px;
   overflow: hidden;
   margin-bottom: 40px;
+
   @include margin-hor(auto);
 
   @media (min-width: $tablet-min) {
     width: 300px;
     height: 400px;
     margin-bottom: 0;
+
     @include margin-hor(0);
   }
 }
@@ -84,8 +87,10 @@
 .editor__toggles {
   display: flex;
   justify-content: center;
+
   @include list;
   margin-bottom: 34px;
+
   @include padding-hor(20px);
 
   @media (min-width: $tablet-min) {
@@ -151,11 +156,13 @@
 
 .editor__item {
   padding-bottom: 28px;
+
   @include padding-hor;
   border-bottom: 1px solid #dddfe0;
 
   @media (min-width: $tablet-min) {
     position: relative;
+
     @include padding-vert(29px, 28px);
     padding-left: 57px;
     padding-right: 18px;
@@ -251,6 +258,7 @@
   display: block;
   width: 240px;
   height: 14px;
+
   @include margin-hor(20px);
   padding: 0;
   background: transparent;
@@ -307,6 +315,7 @@
 
   @media (min-width: $tablet-min) {
     width: 200px;
+
     @include margin-hor(0);
   }
 
@@ -331,6 +340,7 @@
 
 .editor__button {
   width: 280px;
+
   @include margin-hor(auto);
 
   &:first-of-type {
@@ -347,6 +357,7 @@
 
   @media (min-width: $desktop-min) {
     width: 183px;
+
     @include margin-hor(0);
 
     &:first-of-type {

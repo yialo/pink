@@ -1,5 +1,6 @@
 .button {
   display: block;
+
   @include padding-vert(15px, 16px);
   @include padding-hor(10px);
   @include font(700, 18px, 18px);

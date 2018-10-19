@@ -35,9 +35,11 @@
 
   &--body {
     position: relative;
+
     @include padding-vert(15px, 14px);
     padding-left: calc(20% / 7);
     padding-right: calc(25% / 3);
+
     @include font;
     color: $navy;
     background-color: white;
@@ -58,6 +60,7 @@
       left: 3px;
       width: 74px;
       height: 73px;
+
       @include font(600, 14px, 30px);
       text-transform: uppercase;
       color: white;
@@ -128,6 +131,7 @@
 .table__column-title {
   display: block;
   margin-bottom: 1px;
+
   @include font(700, 18px, 30px);
   text-transform: uppercase;
   color: white;
@@ -146,6 +150,7 @@
 .table__price-value {
   display: inline-block;
   vertical-align: top;
+
   @include font(300, 24px, 30px);
   color: white;
 
@@ -193,12 +198,12 @@
   @media (min-width: $tablet-min) {
     &--yes {
       top: 13px;
-      left: calc(50% - 31px/2);
+      left: calc(50% - 31px / 2);
     }
 
     &--no {
       top: 9px;
-      left: calc(50% - 27px/2);
+      left: calc(50% - 27px / 2);
     }
   }
 }

@@ -1,12 +1,14 @@
 .caption {
   display: flex;
   flex-direction: column;
+
   @include padding-vert(18px, 20px);
   @include padding-hor(18px);
   background-color: $gray;
 
   @media (min-width: $tablet-min) {
     padding-top: 24px;
+
     @include padding-hor(28px);
 
     &--panorama {
@@ -51,6 +53,7 @@
 
 .caption__body {
   margin-bottom: 10px;
+
   @include font(400, 14px, 24px);
   color: $navy;
 
@@ -115,6 +118,7 @@
 
 .caption__counter {
   display: block;
+
   @include font(400, 12px, 24px);
   text-transform: uppercase;
   color: $pink;

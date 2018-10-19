@@ -25,6 +25,7 @@
 
   @media (min-width: $desktop-min) {
     margin-bottom: 70px;
+
     @include padding-hor(90px);
   }
 }

@@ -1,14 +1,11 @@
 @import "variables.scss";
 @import "mixins.scss";
-
 @import "scaffolding/normalize.scss";
 @import "scaffolding/fonts.scss";
 @import "scaffolding/global.scss";
-
 @import "auxiliary/button-fix.scss";
 @import "auxiliary/text-wrap.scss";
 @import "auxiliary/visually-hidden.scss";
-
 @import "blocks/advantages.scss";
 @import "blocks/aligner.scss";
 @import "blocks/button.scss";
@@ -25,7 +22,6 @@
 @import "blocks/main-menu.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
-@import "blocks/page-main.scss";
 @import "blocks/post.scss";
 @import "blocks/price.scss";
 @import "blocks/request.scss";
@@ -33,5 +29,4 @@
 @import "blocks/reviews.scss";
 @import "blocks/social.scss";
 @import "blocks/table.scss";
-
 @import "js-styles.scss";

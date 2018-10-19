@@ -18,6 +18,7 @@
 
   @media (min-width: $tablet-min) {
     display: flex;
+
     @include padding-vert(37px, 37px);
   }
 
@@ -30,6 +31,7 @@
 .page-footer__logo {
   width: 147px;
   margin-bottom: 40px;
+
   @include margin-hor(auto);
 
   @media (min-width: $tablet-min) {
