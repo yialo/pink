@@ -1,5 +1,5 @@
-@import "variables.scss";
-@import "mixins.scss";
+@import "scaffolding/variables.scss";
+@import "scaffolding/mixins.scss";
 @import "scaffolding/normalize.scss";
 @import "scaffolding/fonts.scss";
 @import "scaffolding/global.scss";
@@ -29,4 +29,4 @@
 @import "blocks/reviews.scss";
 @import "blocks/social.scss";
 @import "blocks/table.scss";
-@import "js-styles.scss";
+@import "scaffolding/js-styles.scss";

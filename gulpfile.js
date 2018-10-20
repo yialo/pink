@@ -62,7 +62,10 @@ var html = function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(htmlmin())
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+    }))
     .pipe(gulp.dest('build'));
 }
 

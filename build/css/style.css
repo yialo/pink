@@ -307,24 +307,28 @@ template {
   font-weight: 300;
   font-family: "Open Sans";
   font-style: normal;
+  font-display: swap;
   src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff"); }
 
 @font-face {
   font-weight: 400;
   font-family: "Open Sans";
   font-style: normal;
+  font-display: swap;
   src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff"); }
 
 @font-face {
   font-weight: 600;
   font-family: "Open Sans";
   font-style: normal;
+  font-display: swap;
   src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url("../fonts/opensans-semibold-webfont.woff2") format("woff2"), url("../fonts/opensans-semibold-webfont.woff") format("woff"); }
 
 @font-face {
   font-weight: 700;
   font-family: "Open Sans";
   font-style: normal;
+  font-display: swap;
   src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff"); }
 
 html {
