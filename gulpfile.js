@@ -59,7 +59,6 @@ var minbitmap = function () {
       })
     ]))
     .pipe(gulp.dest('./source/img/'))
-    .pipe(gulp.src('./source/img/*.{jpg,png}'))
     .pipe(webp({
       quality: 80
     }))
@@ -81,7 +80,7 @@ var copysvg = function () {
 }
 
 var copybitmap = function () {
-  return gulp.src('./source/img/*.{jpg,png}')
+  return gulp.src('./source/img/*.{jpg,png,webp}')
     .pipe(gulp.dest('./build/img/'));
 }
 
