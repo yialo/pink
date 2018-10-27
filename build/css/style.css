@@ -943,7 +943,7 @@ input[type="radio"].visually-hidden {
       height: 372px;
       background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@1x.jpg");
       background-position: 50% 193px, 50% -133px;
-      background-size: auto, 700px; } }
+      background-size: 36px 36px, 700px; } }
   @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
     .contacts__map {
       background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@2x.jpg"); } }
@@ -955,7 +955,7 @@ input[type="radio"].visually-hidden {
       height: 521px;
       background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-desktop@1x.jpg");
       background-position: 50% 283px, 50% -45px;
-      background-size: auto, 1200px; } }
+      background-size: 36px 36px, 1200px; } }
   @media (min-width: 980px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 980px) and (min-resolution: 144dpi), (min-width: 980px) and (min-resolution: 1.5dppx) {
     .contacts__map {
       background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-desktop@2x.jpg"); } }
