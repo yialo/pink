@@ -29,14 +29,50 @@ var minsvg = function () {
     .pipe(minimage([
       minimage.svgo({
         plugins: [
+          {cleanupAttrs: false},
+          {inlineStyles: false},
           {removeDoctype: true},
           {removeXMLProcInst: true},
           {removeComments: true},
           {removeMetadata: true},
+          {removeTitle: true},
+          {removeDesc: true},
+          {removeUselessDefs: false},
+          {removeXMLNS: false},
+          {removeEditorsNSData: true},
+          {removeEmptyAttrs: true},
+          {removeHiddenElems: true},
+          {removeEmptyText: true},
+          {removeEmptyContainers: true},
+          {removeViewBox: false},
+          {cleanupEnableBackground: true},
+          {minifyStyles: false},
+          {convertStyleToAttrs: false},
+          {convertColors: true},
+          {convertPathData: true},
           {convertTransform: true},
-          {removeViewBox: false}
-        ]
-      })
+          {removeUnknownsAndDefaults: true},
+          {removeNonInheritableGroupAttrs: true},
+          {removeUselessStrokeAndFill: true},
+          {removeUnusedNS: true},
+          {cleanupIDs: true},
+          {cleanupNumericValues: true},
+          {cleanupListOfValues: true},
+          {moveElemsAttrsToGroup: true},
+          {moveGroupAttrsToElems: false},
+          {collapseGroups: true},
+          {removeRasterImages: false},
+          {mergePaths: true},
+          {convertShapeToPath: false},
+          {sortAttrs: false},
+          {removeDimensions: true},
+          {removeAttrs: true},
+          {removeElementsByAttr: false},
+          {addClassesToSVGElement: false},
+          {addAttributesToSVGElement: false},
+          {removeStyleElement: true},
+          {removeScriptElement: true}
+      ]})
     ]))
     .pipe(gulp.dest('./source/img/'));
 }
