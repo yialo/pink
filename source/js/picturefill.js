@@ -147,7 +147,7 @@ window.matchMedia || (window.matchMedia = function() {
 		 * If length is specified in  `vw` units, use `%` instead since the div we’re measuring
 		 * is injected at the top of the document.
 		 *
-		 * TODO: maybe we should put this behind a feature test for `vw`? The risk of doing this is possible browser inconsistancies with vw vs %
+		 * TODO maybe we should put this behind a feature test for `vw`? The risk of doing this is possible browser inconsistancies with vw vs %
 		 */
 		length = length.replace( "vw", "%" );
 
@@ -654,7 +654,6 @@ window.matchMedia || (window.matchMedia = function() {
 
 				// return the first match which might undefined
 				// returns false if there is a pending source
-				// TODO the return type here is brutal, cleanup
 				firstMatch = pf.getMatch( element, parent );
 
 				// if any sources are pending in this picture due to async type test(s)
