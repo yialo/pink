@@ -55,7 +55,7 @@ var minsvg = function () {
           {removeNonInheritableGroupAttrs: true},
           {removeUselessStrokeAndFill: true},
           {removeUnusedNS: true},
-          {cleanupIDs: true},
+          {cleanupIDs: false},
           {cleanupNumericValues: true},
           {cleanupListOfValues: true},
           {moveElemsAttrsToGroup: true},
