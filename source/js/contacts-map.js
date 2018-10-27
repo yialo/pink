@@ -23,7 +23,7 @@ function initMap() {
   var markerIcon = {
     url: 'img/icon-map-marker.svg',
     size: new google.maps.Size(36, 36),
-    scaleSize: new google.maps.Size(36, 36),
+    scaledSize: new google.maps.Size(36, 36),
     origin: new google.maps.Point(0, 0),
     anchor: new google.maps.Point(18, 18)
   };
